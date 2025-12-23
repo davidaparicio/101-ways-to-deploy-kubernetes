@@ -6,155 +6,155 @@ A comprehensive list of ways to deploy Kubernetes, organized by deployment type.
 
 ## Desktop
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| canonical kubernetes (snap) | Canonical | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | | [[1]](#references) | Apache 2.0 |
-| colima | | [GitHub](https://github.com/abiosoft/colima) | lima-vm | [[2]](#references) | Apache 2.0 |
-| crc (openshift 4 on a desktop) | Openshift | [GitHub](https://github.com/crc-org/crc) | OpenShift | [[3]](#references) | Apache 2.0 |
-| Desktop-Kubernetes | | [GitHub](https://github.com/aceeric/desktop-kubernetes) | | [[4]](#references) | Apache 2.0 |
-| Docker desktop | Docker (Mirantis) | [Website](https://www.docker.com/products/docker-desktop/) | kubeadm, kind | [[5]](#references) | No |
-| k3d | Rancher | [GitHub](https://github.com/k3d-io/k3d) | k3s | [[6]](#references) | Apache 2.0 |
-| kind | | [GitHub](https://github.com/kubernetes-sigs/kind) | kubeadm | [[7]](#references) | Apache 2.0 |
-| kubefire | | [GitHub](https://github.com/innobead/kubefire) | kubeadm, k3s, rke2, k0s | [[8]](#references) | Apache 2.0 |
-| lima-vm | | [GitHub](https://github.com/lima-vm/lima/blob/master/examples/k8s.yaml) | kubeadm, k3s, rke2 | [[9]](#references) | Apache 2.0 |
-| microk8s | Canonical | [GitHub](https://github.com/canonical/microk8s) | | [[10]](#references) [[11]](#references) | Apache 2.0 |
-| Minikube | | [GitHub](https://github.com/kubernetes/minikube) | | [[12]](#references) [[13]](#references) | Apache 2.0 |
-| Minishift | Redhat | [GitHub](https://github.com/minishift/minishift) | OpenShift | [[14]](#references) | Apache 2.0 |
-| mykube | | [GitHub](https://github.com/guyst16/mykube) | kubeadm | | Apache 2.0 |
-| Oracle Cloud Native Environment | Oracle | [GitHub](https://github.com/oracle-cne/ocne) | | | Apache 2.0 |
-| Orbstack | | [Website](https://orbstack.dev/) | | [[15]](#references) | No |
-| Rancher Desktop | Rancher | [GitHub](https://github.com/rancher-sandbox/rancher-desktop) | LimaVM and k3s | [[16]](#references) | Apache 2.0 |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| canonical kubernetes (snap) | Canonical | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | Apache 2.0 | | [[1]](#references) |
+| colima | | [GitHub](https://github.com/abiosoft/colima) | Apache 2.0 | lima-vm | [[2]](#references) |
+| crc (openshift 4 on a desktop) | Openshift | [GitHub](https://github.com/crc-org/crc) | Apache 2.0 | OpenShift | [[3]](#references) |
+| Desktop-Kubernetes | | [GitHub](https://github.com/aceeric/desktop-kubernetes) | Apache 2.0 | | [[4]](#references) |
+| Docker desktop | Docker (Mirantis) | [Website](https://www.docker.com/products/docker-desktop/) | No | kubeadm, kind | [[5]](#references) |
+| k3d | Rancher | [GitHub](https://github.com/k3d-io/k3d) | Apache 2.0 | k3s | [[6]](#references) |
+| kind | | [GitHub](https://github.com/kubernetes-sigs/kind) | Apache 2.0 | kubeadm | [[7]](#references) |
+| kubefire | | [GitHub](https://github.com/innobead/kubefire) | Apache 2.0 | kubeadm, k3s, rke2, k0s | [[8]](#references) |
+| lima-vm | | [GitHub](https://github.com/lima-vm/lima/blob/master/examples/k8s.yaml) | Apache 2.0 | kubeadm, k3s, rke2 | [[9]](#references) |
+| microk8s | Canonical | [GitHub](https://github.com/canonical/microk8s) | Apache 2.0 | | [[10]](#references) [[11]](#references) |
+| Minikube | | [GitHub](https://github.com/kubernetes/minikube) | Apache 2.0 | | [[12]](#references) [[13]](#references) |
+| Minishift | Redhat | [GitHub](https://github.com/minishift/minishift) | Apache 2.0 | OpenShift | [[14]](#references) |
+| mykube | | [GitHub](https://github.com/guyst16/mykube) | Apache 2.0 | kubeadm | |
+| Oracle Cloud Native Environment | Oracle | [GitHub](https://github.com/oracle-cne/ocne) | Apache 2.0 | | |
+| Orbstack | | [Website](https://orbstack.dev/) | No | | [[15]](#references) |
+| Rancher Desktop | Rancher | [GitHub](https://github.com/rancher-sandbox/rancher-desktop) | Apache 2.0 | LimaVM and k3s | [[16]](#references) |
 
 ---
 
 ## IaC (Infrastructure as Code)
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| aks-engine (abandoned) | Azure | [GitHub](https://github.com/Azure/aks-engine) | | | Apache 2.0 |
-| Alvistack Ansible | Alvistack | ansible-collection-kubernetes | kubeadm | | Apache 2.0 |
-| Alvistack Vagrant-kubernetes | Alvistack | [GitHub](https://github.com/alvistack/vagrant-kubernetes) | kubeadm | [[17]](#references) | Apache 2.0 |
-| Crossplane | | [GitHub](https://github.com/crossplane/crossplane) | | [[18]](#references) [[19]](#references) | Apache 2.0 |
-| Kube-hetzner | Hetzner | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | Terraform / OpenTofu | [[20]](#references) | MIT |
-| Kubernetes ClusterAPI | | [GitHub](https://github.com/kubernetes-sigs/cluster-api) | | [[21]](#references) | Apache 2.0 |
-| Kubespray | | [GitHub](https://github.com/kubernetes-sigs/kubespray) | kubeadm | [[22]](#references) [[23]](#references) | Apache 2.0 |
-| OpenTofu | | [GitHub](https://github.com/opentofu/opentofu) | | [[24]](#references) | MPL 2.0 |
-| Pulumi | | [GitHub](https://github.com/pulumi/pulumi) | | [[25]](#references) | Apache 2.0 |
-| Puppet | | [Puppet Forge](https://forge.puppet.com/modules/puppetlabs/kubernetes/readme) | Terraform / OpenTofu | | Apache 2.0 |
-| typhoon | | [GitHub](https://github.com/poseidon/typhoon) | Terraform / OpenTofu | [[26]](#references) | MIT |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| aks-engine (abandoned) | Azure | [GitHub](https://github.com/Azure/aks-engine) | Apache 2.0 | | |
+| Alvistack Ansible | Alvistack | ansible-collection-kubernetes | Apache 2.0 | kubeadm | |
+| Alvistack Vagrant-kubernetes | Alvistack | [GitHub](https://github.com/alvistack/vagrant-kubernetes) | Apache 2.0 | kubeadm | [[17]](#references) |
+| Crossplane | | [GitHub](https://github.com/crossplane/crossplane) | Apache 2.0 | | [[18]](#references) [[19]](#references) |
+| Kube-hetzner | Hetzner | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | MIT | Terraform / OpenTofu | [[20]](#references) |
+| Kubernetes ClusterAPI | | [GitHub](https://github.com/kubernetes-sigs/cluster-api) | Apache 2.0 | | [[21]](#references) |
+| Kubespray | | [GitHub](https://github.com/kubernetes-sigs/kubespray) | Apache 2.0 | kubeadm | [[22]](#references) [[23]](#references) |
+| OpenTofu | | [GitHub](https://github.com/opentofu/opentofu) | MPL 2.0 | | [[24]](#references) |
+| Pulumi | | [GitHub](https://github.com/pulumi/pulumi) | Apache 2.0 | | [[25]](#references) |
+| Puppet | | [Puppet Forge](https://forge.puppet.com/modules/puppetlabs/kubernetes/readme) | Apache 2.0 | Terraform / OpenTofu | |
+| typhoon | | [GitHub](https://github.com/poseidon/typhoon) | MIT | Terraform / OpenTofu | [[26]](#references) |
 
 ---
 
 ## Kubernetes in Kubernetes
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| k3k | Rancher | [GitHub](https://github.com/rancher/k3k) | k3s | [[27]](#references) | Apache 2.0 |
-| vcluster | loft.sh | [GitHub](https://github.com/loft-sh/vcluster) | kubeadm, k3s or k0s | [[28]](#references) | Apache 2.0 |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| k3k | Rancher | [GitHub](https://github.com/rancher/k3k) | Apache 2.0 | k3s | [[27]](#references) |
+| vcluster | loft.sh | [GitHub](https://github.com/loft-sh/vcluster) | Apache 2.0 | kubeadm, k3s or k0s | [[28]](#references) |
 
 ---
 
 ## Kubernetes OS
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| elemental (ex k3os) | Rancher | [GitHub](https://github.com/rancher/elemental) | | [[29]](#references) [[30]](#references) | Apache 2.0 |
-| Kairos Linux | Spectro cloud | [GitHub](https://github.com/kairos-io/kairos) | | [[31]](#references) | Apache 2.0 |
-| RKE (abandoned) | Rancher | [GitHub](https://github.com/rancher/rke) | | [[32]](#references) | Apache 2.0 |
-| Talos Linux | SideroLabs | [GitHub](https://github.com/siderolabs/talos) | | [[33]](#references) [[34]](#references) | MPL 2.0 |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| elemental (ex k3os) | Rancher | [GitHub](https://github.com/rancher/elemental) | Apache 2.0 | | [[29]](#references) [[30]](#references) |
+| Kairos Linux | Spectro cloud | [GitHub](https://github.com/kairos-io/kairos) | Apache 2.0 | | [[31]](#references) |
+| RKE (abandoned) | Rancher | [GitHub](https://github.com/rancher/rke) | Apache 2.0 | | [[32]](#references) |
+| Talos Linux | SideroLabs | [GitHub](https://github.com/siderolabs/talos) | MPL 2.0 | | [[33]](#references) [[34]](#references) |
 
 ---
 
 ## Managed
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| AKS | Azure | [Website](https://azure.microsoft.com/fr-fr/products/kubernetes-service) | | [[35]](#references) [[36]](#references) | Not applicable |
-| Alibaba Cloud Container Service for Kubernetes (ACK) | Alibaba Cloud | [Website](https://www.alibabacloud.com/fr/product/kubernetes) | | | Not applicable |
-| Civo | | [Website](https://www.civo.com/) | k3s or Talos Linux | [[37]](#references) [[38]](#references) | Not applicable |
-| Clever Kubernetes Engine (CKE) | Clever Cloud | [Website](https://www.clever-cloud.com/product/kubernetes/) | | | Not applicable |
-| DOKS | Digital Ocean | [Website](https://www.digitalocean.com/products/kubernetes/) | | [[39]](#references) | Not applicable |
-| EKS | AWS | [Website](https://aws.amazon.com/fr/eks/) | | [[40]](#references) | Not applicable |
-| GKE | Google Cloud Platform | [Website](https://cloud.google.com/kubernetes-engine?hl=fr) | | [[41]](#references) | Not applicable |
-| Gridscale Managed Kubernetes (GSK) | | [Website](https://gridscale.io/en/products/kubernetes/) | | | Not applicable |
-| IBM Cloud (IKS) | IBM Cloud | [Website](https://www.ibm.com/cloud/container-service/) | | | Not applicable |
-| IONOS Kubernetes Service | IONOS | [Website](https://cloud.ionos.com/managed/kubernetes) | | | Not applicable |
-| Kapsule | Scaleway | [Website](https://www.scaleway.com/en/kubernetes-kapsule/) | | [[42]](#references) | Not applicable |
-| Kosmos | Scaleway | [Website](https://www.scaleway.com/fr/kubernetes-kosmos/) | | [[43]](#references) | Not applicable |
-| LeafCloud | | [Website](https://www.leaf.cloud/) | Gardener | [[44]](#references) | Not applicable |
-| Linode Kubernetes Engine (LKE) | Linode | [Website](https://www.linode.com/docs/kubernetes/) | | | Not applicable |
-| MetaKube | SysEleven | [Website](https://www.syseleven.de/en/) | | | Not applicable |
-| MKS | OVHcloud | [Website](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) | | [[45]](#references) [[46]](#references) | Not applicable |
-| Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE) | Oracle Cloud Infrastructure | [Website](https://www.oracle.com/fr/cloud/cloud-native/container-engine-kubernetes/) | | [[47]](#references) | Not applicable |
-| Redhat Openshift cloud | Redhat | [Website](https://www.redhat.com/fr/technologies/cloud-computing/openshift/openshift-cloud-services) | Openshift | [[48]](#references) | Not applicable |
-| SKS | Exoscale | [Website](https://community.exoscale.com/documentation/sks/overview/) | | [[49]](#references) [[50]](#references) | Not applicable |
-| VKE | Vultr | [Website](https://www.vultr.com/kubernetes/) | | | Not applicable |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| AKS | Azure | [Website](https://azure.microsoft.com/fr-fr/products/kubernetes-service) | Not applicable | | [[35]](#references) [[36]](#references) |
+| Alibaba Cloud Container Service for Kubernetes (ACK) | Alibaba Cloud | [Website](https://www.alibabacloud.com/fr/product/kubernetes) | Not applicable | | |
+| Civo | | [Website](https://www.civo.com/) | Not applicable | k3s or Talos Linux | [[37]](#references) [[38]](#references) |
+| Clever Kubernetes Engine (CKE) | Clever Cloud | [Website](https://www.clever-cloud.com/product/kubernetes/) | Not applicable | | |
+| DOKS | Digital Ocean | [Website](https://www.digitalocean.com/products/kubernetes/) | Not applicable | | [[39]](#references) |
+| EKS | AWS | [Website](https://aws.amazon.com/fr/eks/) | Not applicable | | [[40]](#references) |
+| GKE | Google Cloud Platform | [Website](https://cloud.google.com/kubernetes-engine?hl=fr) | Not applicable | | [[41]](#references) |
+| Gridscale Managed Kubernetes (GSK) | | [Website](https://gridscale.io/en/products/kubernetes/) | Not applicable | | |
+| IBM Cloud (IKS) | IBM Cloud | [Website](https://www.ibm.com/cloud/container-service/) | Not applicable | | |
+| IONOS Kubernetes Service | IONOS | [Website](https://cloud.ionos.com/managed/kubernetes) | Not applicable | | |
+| Kapsule | Scaleway | [Website](https://www.scaleway.com/en/kubernetes-kapsule/) | Not applicable | | [[42]](#references) |
+| Kosmos | Scaleway | [Website](https://www.scaleway.com/fr/kubernetes-kosmos/) | Not applicable | | [[43]](#references) |
+| LeafCloud | | [Website](https://www.leaf.cloud/) | Not applicable | Gardener | [[44]](#references) |
+| Linode Kubernetes Engine (LKE) | Linode | [Website](https://www.linode.com/docs/kubernetes/) | Not applicable | | |
+| MetaKube | SysEleven | [Website](https://www.syseleven.de/en/) | Not applicable | | |
+| MKS | OVHcloud | [Website](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) | Not applicable | | [[45]](#references) [[46]](#references) |
+| Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE) | Oracle Cloud Infrastructure | [Website](https://www.oracle.com/fr/cloud/cloud-native/container-engine-kubernetes/) | Not applicable | | [[47]](#references) |
+| Redhat Openshift cloud | Redhat | [Website](https://www.redhat.com/fr/technologies/cloud-computing/openshift/openshift-cloud-services) | Not applicable | Openshift | [[48]](#references) |
+| SKS | Exoscale | [Website](https://community.exoscale.com/documentation/sks/overview/) | Not applicable | | [[49]](#references) [[50]](#references) |
+| VKE | Vultr | [Website](https://www.vultr.com/kubernetes/) | Not applicable | | |
 
 ---
 
 ## Management Platform
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| Gardener | | [GitHub](https://github.com/gardener/gardener) | | [[51]](#references) | Apache 2.0 |
-| hypershift | redhat | [GitHub](https://github.com/openshift/hypershift) | Openshift/OKD | | Apache 2.0 |
-| k0rdent | Mirantis | [GitHub](https://github.com/k0rdent/kcm) | k0smotron and cluster API | [[52]](#references) | Apache 2.0 |
-| Kamaji | Clastix | [GitHub](https://github.com/clastix/kamaji) | kubeadm and Cluster API | [[53]](#references) | Apache 2.0 |
-| KubeClipper | | [GitHub](https://github.com/kubeclipper/kubeclipper) | | | Apache 2.0 |
-| Kubermatic Kubernetes Platform | Kubermatic | [GitHub](https://github.com/kubermatic/kubermatic) | | [[54]](#references) | Apache 2.0 |
-| Omni | SideroLabs | [Website](https://www.siderolabs.com/platform/saas-for-kubernetes/) | Talos Linux | [[55]](#references) | BUSL 1.1 |
-| Rancher | Rancher | [GitHub](https://github.com/rancher/rancher) | | [[56]](#references) | Apache 2.0 |
-| Tanzu | VMware | [Website](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/index.html) | | | No |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| Gardener | | [GitHub](https://github.com/gardener/gardener) | Apache 2.0 | | [[51]](#references) |
+| hypershift | redhat | [GitHub](https://github.com/openshift/hypershift) | Apache 2.0 | Openshift/OKD | |
+| k0rdent | Mirantis | [GitHub](https://github.com/k0rdent/kcm) | Apache 2.0 | k0smotron and cluster API | [[52]](#references) |
+| Kamaji | Clastix | [GitHub](https://github.com/clastix/kamaji) | Apache 2.0 | kubeadm and Cluster API | [[53]](#references) |
+| KubeClipper | | [GitHub](https://github.com/kubeclipper/kubeclipper) | Apache 2.0 | | |
+| Kubermatic Kubernetes Platform | Kubermatic | [GitHub](https://github.com/kubermatic/kubermatic) | Apache 2.0 | | [[54]](#references) |
+| Omni | SideroLabs | [Website](https://www.siderolabs.com/platform/saas-for-kubernetes/) | BUSL 1.1 | Talos Linux | [[55]](#references) |
+| Rancher | Rancher | [GitHub](https://github.com/rancher/rancher) | Apache 2.0 | | [[56]](#references) |
+| Tanzu | VMware | [Website](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/index.html) | No | | |
 
 ---
 
 ## Other
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| By hand, using containers | | [GitHub](https://github.com/kubernetes/registry.k8s.io) | | | Apache 2.0 |
-| By hand, using binaries | | [GitHub](https://github.com/kubernetes/kubernetes) | | [[57]](#references) [[58]](#references) | Apache 2.0 |
-| Devops playgrounds | | [Website](https://labs.iximiuz.com/playgrounds) | | | Not applicable |
-| Kubernetes the hard way | | [GitHub](https://github.com/kelseyhightower/kubernetes-the-hard-way) | | [[59]](#references) | Apache 2.0 |
-| Kubernetes the hard way w/ Terraform | | [GitHub](https://github.com/aidanSoles/kubernetes-the-hard-way-terraform) | Terraform / OpenTofu | | Apache 2.0 |
-| KwoK | | [GitHub](https://github.com/kubernetes-sigs/kwok) | | [[60]](#references) | Apache 2.0 |
-| Play with k8s | | [GitHub](https://github.com/play-with-docker/play-with-k8s) | | | Apache 2.0 |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| By hand, using containers | | [GitHub](https://github.com/kubernetes/registry.k8s.io) | Apache 2.0 | | |
+| By hand, using binaries | | [GitHub](https://github.com/kubernetes/kubernetes) | Apache 2.0 | | [[57]](#references) [[58]](#references) |
+| Devops playgrounds | | [Website](https://labs.iximiuz.com/playgrounds) | Not applicable | | |
+| Kubernetes the hard way | | [GitHub](https://github.com/kelseyhightower/kubernetes-the-hard-way) | Apache 2.0 | | [[59]](#references) |
+| Kubernetes the hard way w/ Terraform | | [GitHub](https://github.com/aidanSoles/kubernetes-the-hard-way-terraform) | Apache 2.0 | Terraform / OpenTofu | |
+| KwoK | | [GitHub](https://github.com/kubernetes-sigs/kwok) | Apache 2.0 | | [[60]](#references) |
+| Play with k8s | | [GitHub](https://github.com/play-with-docker/play-with-k8s) | Apache 2.0 | | |
 
 ---
 
 ## Selfhosted
 
-| Name | Publisher / Project | URL | Based on | External References | Open source |
-|------|---------------------|-----|----------|---------------------|-------------|
-| EKS Anywhere | AWS | [GitHub](https://github.com/aws/eks-anywhere) | EKS | [[61]](#references) | Apache 2.0 |
-| Harvester | Rancher | [GitHub](https://github.com/harvester/harvester) | | [[62]](#references) [[63]](#references) | Apache 2.0 |
-| Hepto | | [Forge Tedomum](https://forge.tedomum.net/acides/hepto) | | | Apache 2.0 |
-| Juju | Canonical | [GitHub](https://github.com/juju/juju) | | [[64]](#references) | Apache 2.0 |
-| k0s | Mirantis | [GitHub](https://github.com/k0sproject/k0s) | | [[65]](#references) | Apache 2.0 |
-| k0smotron | Mirantis | [GitHub](https://github.com/k0sproject/k0smotron) | k0s and clusterAPI | [[66]](#references) | Apache 2.0 |
-| k3s | Rancher | [GitHub](https://github.com/k3s-io/k3s) | | [[67]](#references) [[68]](#references) | Apache 2.0 |
-| k3sup | | [GitHub](https://github.com/alexellis/k3sup) | k3s | [[69]](#references) | MIT |
-| k8e - Kubernetes easy engine | | [GitHub](https://github.com/xiaods/k8e) | k3s | [[70]](#references) | Apache 2.0 |
-| K8S The Easy way | | [GitHub](https://github.com/darxkies/k8s-tew) | | [[71]](#references) | MIT |
-| Kops | | [GitHub](https://github.com/kubernetes/kops) | kubeadm | [[72]](#references) | Apache 2.0 |
-| kubeadm w/ CLI | | [GitHub](https://github.com/kubernetes/kubernetes) | | [[73]](#references) [[74]](#references) | Apache 2.0 |
-| kubeadm w/ ClusterConfiguration | | [GitHub](https://github.com/kubernetes/kubernetes) | | [[75]](#references) [[76]](#references) | Apache 2.0 |
-| Kubean | | [GitHub](https://github.com/kubean-io/kubean) | Kubespray | | Apache 2.0 |
-| KubeKey | | [GitHub](https://github.com/kubesphere/kubekey) | kubeadm / k3s | [[77]](#references) | Apache 2.0 |
-| KubeMarine | | [GitHub](https://github.com/Netcracker/KubeMarine) | Kubeadm | [[78]](#references) | Apache 2.0 |
-| KubeOne | Kubermatic | [GitHub](https://github.com/kubermatic/kubeone) | Kubeadm / ClusterAPI | [[79]](#references) | Apache 2.0 |
-| KubeSolo | portainer.io | [GitHub](https://github.com/portainer/kubesolo) | k3s | | Apache 2.0 |
-| Kurl | ReplicatedHQ | [GitHub](https://github.com/replicatedhq/kurl) | Kubeadm | [[80]](#references) | Apache 2.0 |
-| Magnum | OpenStack | [GitHub](https://github.com/openstack/magnum) | | [[81]](#references) | Apache 2.0 |
-| MKE (Mirantis Kubernetes Engine) | Mirantis | [Website](https://docs.mirantis.com/mke4k/latest/) | k0s | | No |
-| NKP (Nutanix Kubernetes Platform) | Nutanix | [Website](https://www.nutanix.com/products/kubernetes-management-platform) | | | No |
-| OKD (open source openshift) | Redhat | [GitHub](https://github.com/okd-project/okd) | OpenShift | [[82]](#references) | Apache 2.0 |
-| OneKE | OpenNebula | [GitHub](https://github.com/OpenNebula/one-apps) | rke2 | [[83]](#references) | Apache 2.0 |
-| RKE2 | Rancher | [GitHub](https://github.com/rancher/rke2) | | [[84]](#references) | Apache 2.0 |
-| SIGHUP | | [GitHub](https://github.com/sighupio/distribution) | | | BSD 3-Clause |
-| TALM | Cosystack | [GitHub](https://github.com/cozystack/talm) | Talos Linux | | Apache 2.0 |
-| tarook | | [GitHub](https://github.com/alasca-association/tarook) | Terraform / Opentofu | | Apache 2.0 |
-| Welkin | Elastisys | [GitHub](https://github.com/elastisys/welkin) | CAPI | | Apache 2.0 |
+| Name | Publisher / Project | URL | Open source | Based on | External References |
+|------|---------------------|-----|-------------|----------|---------------------|
+| EKS Anywhere | AWS | [GitHub](https://github.com/aws/eks-anywhere) | Apache 2.0 | EKS | [[61]](#references) |
+| Harvester | Rancher | [GitHub](https://github.com/harvester/harvester) | Apache 2.0 | | [[62]](#references) [[63]](#references) |
+| Hepto | | [Forge Tedomum](https://forge.tedomum.net/acides/hepto) | Apache 2.0 | | |
+| Juju | Canonical | [GitHub](https://github.com/juju/juju) | Apache 2.0 | | [[64]](#references) |
+| k0s | Mirantis | [GitHub](https://github.com/k0sproject/k0s) | Apache 2.0 | | [[65]](#references) |
+| k0smotron | Mirantis | [GitHub](https://github.com/k0sproject/k0smotron) | Apache 2.0 | k0s and clusterAPI | [[66]](#references) |
+| k3s | Rancher | [GitHub](https://github.com/k3s-io/k3s) | Apache 2.0 | | [[67]](#references) [[68]](#references) |
+| k3sup | | [GitHub](https://github.com/alexellis/k3sup) | MIT | k3s | [[69]](#references) |
+| k8e - Kubernetes easy engine | | [GitHub](https://github.com/xiaods/k8e) | Apache 2.0 | k3s | [[70]](#references) |
+| K8S The Easy way | | [GitHub](https://github.com/darxkies/k8s-tew) | MIT | | [[71]](#references) |
+| Kops | | [GitHub](https://github.com/kubernetes/kops) | Apache 2.0 | kubeadm | [[72]](#references) |
+| kubeadm w/ CLI | | [GitHub](https://github.com/kubernetes/kubernetes) | Apache 2.0 | | [[73]](#references) [[74]](#references) |
+| kubeadm w/ ClusterConfiguration | | [GitHub](https://github.com/kubernetes/kubernetes) | Apache 2.0 | | [[75]](#references) [[76]](#references) |
+| Kubean | | [GitHub](https://github.com/kubean-io/kubean) | Apache 2.0 | Kubespray | |
+| KubeKey | | [GitHub](https://github.com/kubesphere/kubekey) | Apache 2.0 | kubeadm / k3s | [[77]](#references) |
+| KubeMarine | | [GitHub](https://github.com/Netcracker/KubeMarine) | Apache 2.0 | Kubeadm | [[78]](#references) |
+| KubeOne | Kubermatic | [GitHub](https://github.com/kubermatic/kubeone) | Apache 2.0 | Kubeadm / ClusterAPI | [[79]](#references) |
+| KubeSolo | portainer.io | [GitHub](https://github.com/portainer/kubesolo) | Apache 2.0 | k3s | |
+| Kurl | ReplicatedHQ | [GitHub](https://github.com/replicatedhq/kurl) | Apache 2.0 | Kubeadm | [[80]](#references) |
+| Magnum | OpenStack | [GitHub](https://github.com/openstack/magnum) | Apache 2.0 | | [[81]](#references) |
+| MKE (Mirantis Kubernetes Engine) | Mirantis | [Website](https://docs.mirantis.com/mke4k/latest/) | No | k0s | |
+| NKP (Nutanix Kubernetes Platform) | Nutanix | [Website](https://www.nutanix.com/products/kubernetes-management-platform) | No | | |
+| OKD (open source openshift) | Redhat | [GitHub](https://github.com/okd-project/okd) | Apache 2.0 | OpenShift | [[82]](#references) |
+| OneKE | OpenNebula | [GitHub](https://github.com/OpenNebula/one-apps) | Apache 2.0 | rke2 | [[83]](#references) |
+| RKE2 | Rancher | [GitHub](https://github.com/rancher/rke2) | Apache 2.0 | | [[84]](#references) |
+| SIGHUP | | [GitHub](https://github.com/sighupio/distribution) | BSD 3-Clause | | |
+| TALM | Cosystack | [GitHub](https://github.com/cozystack/talm) | Apache 2.0 | Talos Linux | |
+| tarook | | [GitHub](https://github.com/alasca-association/tarook) | Apache 2.0 | Terraform / Opentofu | |
+| Welkin | Elastisys | [GitHub](https://github.com/elastisys/welkin) | Apache 2.0 | CAPI | |
 
 ---
 
