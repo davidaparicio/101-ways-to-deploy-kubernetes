@@ -20,7 +20,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | kubefire | | [GitHub](https://github.com/innobead/kubefire) | Apache 2.0 | kubeadm, k3s, rke2, k0s | [[ref]](#kubefire) |
 | lima-vm | | [GitHub](https://github.com/lima-vm/lima/blob/master/examples/k8s.yaml) | Apache 2.0 | kubeadm, k3s, rke2 | [[ref]](#lima-vm) |
 | microk8s | Canonical | [GitHub](https://github.com/canonical/microk8s) | Apache 2.0 | | [[ref]](#microk8s) |
-| Minikube | | [GitHub](https://github.com/kubernetes/minikube) | Apache 2.0 | | [[ref]](#minikube) |
+| Minikube | | [GitHub](https://github.com/kubernetes/minikube) | Apache 2.0 | kubeadm | [[ref]](#minikube) |
 | Minishift | Redhat | [GitHub](https://github.com/minishift/minishift) | Apache 2.0 | OpenShift | [[ref]](#minishift) |
 | mykube | | [GitHub](https://github.com/guyst16/mykube) | Apache 2.0 | kubeadm | |
 | Oracle Cloud Native Environment | Oracle | [GitHub](https://github.com/oracle-cne/ocne) | Apache 2.0 | | |
@@ -103,10 +103,10 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | hypershift | redhat | [GitHub](https://github.com/openshift/hypershift) | Apache 2.0 | Openshift/OKD | |
 | k0rdent | Mirantis | [GitHub](https://github.com/k0rdent/kcm) | Apache 2.0 | k0smotron and cluster API | |
 | Kamaji | Clastix | [GitHub](https://github.com/clastix/kamaji) | Apache 2.0 | kubeadm and Cluster API | |
-| KubeClipper | | [GitHub](https://github.com/kubeclipper/kubeclipper) | Apache 2.0 | | |
+| KubeClipper | | [GitHub](https://github.com/kubeclipper/kubeclipper) | Apache 2.0 | kubeadm | |
 | Kubermatic Kubernetes Platform | Kubermatic | [GitHub](https://github.com/kubermatic/kubermatic) | Apache 2.0 | | [[ref]](#kubermatic-kubernetes-platform) |
 | Omni | SideroLabs | [Website](https://www.siderolabs.com/platform/saas-for-kubernetes/) | BUSL 1.1 | Talos Linux | [[ref]](#omni) |
-| Palette | Spectro Cloud | [Website](https://www.spectrocloud.com/product/palette/) | ❌ | | |
+| Palette | Spectro Cloud | [Website](https://www.spectrocloud.com/product/palette/) | ❌ | Cluster API | |
 | Platform9 | Platform9 | [Website](https://platform9.com/) | ❌ | | |
 | Portainer | Portainer.io | [Website](https://www.portainer.io/) | Zlib (CE) / ❌ (BE) | | |
 | Rafay | Rafay Systems | [Website](https://rafay.co/) | ❌ | | |
@@ -152,16 +152,16 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | KubeOne | Kubermatic | [GitHub](https://github.com/kubermatic/kubeone) | Apache 2.0 | Kubeadm / ClusterAPI | [[ref]](#kubeone) |
 | KubeSolo | portainer.io | [GitHub](https://github.com/portainer/kubesolo) | Apache 2.0 | k3s | |
 | Kurl | ReplicatedHQ | [GitHub](https://github.com/replicatedhq/kurl) | Apache 2.0 | Kubeadm | [[ref]](#kurl) |
-| Magnum | OpenStack | [GitHub](https://github.com/openstack/magnum) | Apache 2.0 | | [[ref]](#magnum) |
+| Magnum | OpenStack | [GitHub](https://github.com/openstack/magnum) | Apache 2.0 | Cluster API | [[ref]](#magnum) |
 | MKE (Mirantis Kubernetes Engine) | Mirantis | [Website](https://docs.mirantis.com/mke4k/latest/) | ❌ | k0s | |
 | NKP (Nutanix Kubernetes Platform) | Nutanix | [Website](https://www.nutanix.com/products/kubernetes-management-platform) | ❌ | | |
 | OKD (open source openshift) | Redhat | [GitHub](https://github.com/okd-project/okd) | Apache 2.0 | OpenShift | [[ref]](#okd-open-source-openshift) |
 | OneKE | OpenNebula | [GitHub](https://github.com/OpenNebula/one-apps) | Apache 2.0 | rke2 | [[ref]](#oneke) |
-| RKE2 | Rancher | [GitHub](https://github.com/rancher/rke2) | Apache 2.0 | | |
+| RKE2 | Rancher | [GitHub](https://github.com/rancher/rke2) | Apache 2.0 | k3s and RKE | |
 | SIGHUP | | [GitHub](https://github.com/sighupio/distribution) | BSD 3-Clause | | |
 | TALM | Cosystack | [GitHub](https://github.com/cozystack/talm) | Apache 2.0 | Talos Linux | |
 | tarook | | [GitHub](https://github.com/alasca-association/tarook) | Apache 2.0 | Terraform / Opentofu | |
-| Welkin | Elastisys | [GitHub](https://github.com/elastisys/welkin) | Apache 2.0 | CAPI | |
+| Welkin | Elastisys | [GitHub](https://github.com/elastisys/welkin) | Apache 2.0 | Cluster API | |
 
 ---
 
