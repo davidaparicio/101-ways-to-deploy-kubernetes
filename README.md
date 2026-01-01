@@ -11,20 +11,20 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | Name | Publisher / Project | URL | Open source | Based on | External References |
 |------|---------------------|-----|-------------|----------|---------------------|
 | canonical kubernetes (snap) | Canonical | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | Apache 2.0 | | [[ref]](#canonical-kubernetes-snap) |
-| colima | | [GitHub](https://github.com/abiosoft/colima) | Apache 2.0 | lima-vm | |
+| colima | | [GitHub](https://github.com/abiosoft/colima) | Apache 2.0 | lima-vm | [[ref]](#colima) |
 | crc (openshift 4 on a desktop) | Openshift | [GitHub](https://github.com/crc-org/crc) | Apache 2.0 | OpenShift | [[ref]](#crc-openshift-4-on-a-desktop) |
 | Desktop-Kubernetes | | [GitHub](https://github.com/aceeric/desktop-kubernetes) | Apache 2.0 | | [[ref]](#desktop-kubernetes) |
-| Docker desktop | Docker (Mirantis) | [Website](https://www.docker.com/products/docker-desktop/) | No | kubeadm, kind | [[ref]](#docker-desktop) |
+| Docker desktop | Docker (Mirantis) | [Website](https://www.docker.com/products/docker-desktop/) | ❌ | kubeadm, kind | [[ref]](#docker-desktop) |
 | k3d | Rancher | [GitHub](https://github.com/k3d-io/k3d) | Apache 2.0 | k3s | [[ref]](#k3d) |
 | kind | | [GitHub](https://github.com/kubernetes-sigs/kind) | Apache 2.0 | kubeadm | [[ref]](#kind) |
 | kubefire | | [GitHub](https://github.com/innobead/kubefire) | Apache 2.0 | kubeadm, k3s, rke2, k0s | [[ref]](#kubefire) |
 | lima-vm | | [GitHub](https://github.com/lima-vm/lima/blob/master/examples/k8s.yaml) | Apache 2.0 | kubeadm, k3s, rke2 | [[ref]](#lima-vm) |
 | microk8s | Canonical | [GitHub](https://github.com/canonical/microk8s) | Apache 2.0 | | [[ref]](#microk8s) |
 | Minikube | | [GitHub](https://github.com/kubernetes/minikube) | Apache 2.0 | kubeadm | [[ref]](#minikube) |
-| Minishift | Redhat | [GitHub](https://github.com/minishift/minishift) | Apache 2.0 | OpenShift | |
+| Minishift | Redhat | [GitHub](https://github.com/minishift/minishift) | Apache 2.0 | OpenShift | [[ref]](#minishift) |
 | mykube | | [GitHub](https://github.com/guyst16/mykube) | Apache 2.0 | kubeadm | |
 | Oracle Cloud Native Environment | Oracle | [GitHub](https://github.com/oracle-cne/ocne) | Apache 2.0 | | |
-| Orbstack | | [Website](https://orbstack.dev/) | No | | [[ref]](#orbstack) |
+| Orbstack | | [Website](https://orbstack.dev/) | ❌ | | [[ref]](#orbstack) |
 | Rancher Desktop | Rancher | [GitHub](https://github.com/rancher-sandbox/rancher-desktop) | Apache 2.0 | LimaVM and k3s | [[ref]](#rancher-desktop) |
 
 ---
@@ -106,12 +106,12 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | KubeClipper | | [GitHub](https://github.com/kubeclipper/kubeclipper) | Apache 2.0 | kubeadm | |
 | Kubermatic Kubernetes Platform | Kubermatic | [GitHub](https://github.com/kubermatic/kubermatic) | Apache 2.0 | | [[ref]](#kubermatic-kubernetes-platform) |
 | Omni | SideroLabs | [Website](https://www.siderolabs.com/platform/saas-for-kubernetes/) | BUSL 1.1 | Talos Linux | [[ref]](#omni) |
-| Palette | Spectro Cloud | [Website](https://www.spectrocloud.com/product/palette/) | No | Cluster API | |
-| Platform9 | Platform9 | [Website](https://platform9.com/) | No | | |
-| Portainer | Portainer.io | [Website](https://www.portainer.io/) | Zlib (CE) / No (BE) | | |
-| Rafay | Rafay Systems | [Website](https://rafay.co/) | No | | |
+| Palette | Spectro Cloud | [Website](https://www.spectrocloud.com/product/palette/) | ❌ | | |
+| Platform9 | Platform9 | [Website](https://platform9.com/) | ❌ | | |
+| Portainer | Portainer.io | [Website](https://www.portainer.io/) | Zlib (CE) / ❌ (BE) | | |
+| Rafay | Rafay Systems | [Website](https://rafay.co/) | ❌ | | |
 | Rancher | Rancher | [GitHub](https://github.com/rancher/rancher) | Apache 2.0 | | [[ref]](#rancher) |
-| Tanzu | VMware | [Website](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/index.html) | No | | |
+| Tanzu | VMware | [Website](https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/index.html) | ❌ | | |
 
 ---
 
@@ -153,8 +153,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | KubeSolo | portainer.io | [GitHub](https://github.com/portainer/kubesolo) | Apache 2.0 | k3s | |
 | Kurl | ReplicatedHQ | [GitHub](https://github.com/replicatedhq/kurl) | Apache 2.0 | Kubeadm | [[ref]](#kurl) |
 | Magnum | OpenStack | [GitHub](https://github.com/openstack/magnum) | Apache 2.0 | Cluster API | [[ref]](#magnum) |
-| MKE (Mirantis Kubernetes Engine) | Mirantis | [Website](https://docs.mirantis.com/mke4k/latest/) | No | k0s | |
-| NKP (Nutanix Kubernetes Platform) | Nutanix | [Website](https://www.nutanix.com/products/kubernetes-management-platform) | No | | |
+| MKE (Mirantis Kubernetes Engine) | Mirantis | [Website](https://docs.mirantis.com/mke4k/latest/) | ❌ | k0s | |
+| NKP (Nutanix Kubernetes Platform) | Nutanix | [Website](https://www.nutanix.com/products/kubernetes-management-platform) | ❌ | | |
 | OKD (open source openshift) | Redhat | [GitHub](https://github.com/okd-project/okd) | Apache 2.0 | OpenShift | [[ref]](#okd-open-source-openshift) |
 | OneKE | OpenNebula | [GitHub](https://github.com/OpenNebula/one-apps) | Apache 2.0 | rke2 | [[ref]](#oneke) |
 | RKE2 | Rancher | [GitHub](https://github.com/rancher/rke2) | Apache 2.0 | k3s and RKE | |
@@ -199,14 +199,19 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 14 (Civo)
 - [FR] [Civo - Du Kubernetes managé à partir de 4€/mois, vraiment?](https://blog.zwindler.fr/2021/07/16/civo-du-kubernetes-manage-a-partir-de-4-mois-vraiment/)
 
+### colima
+
+- [EN] [Cloud Native development with Colima](https://dischord.org/2024/10/27/cloud-native-development-with-colima/)
+
 ### crc (openshift 4 on a desktop)
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 13 (crc)
+- [EN] [Setting up Redhat Openshift Local on your Laptop](https://virtutechnotes.in/setting-up-redhat-openshift-local-on-your-laptop/)
 
 ### Crossplane
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 37 (Crossplane)
-- [Step-by-step guide to working with Crossplane and Kubernetes](https://www.techtarget.com/searchitoperations/tutorial/Step-by-step-guide-to-working-with-Crossplane-and-Kubernetes)
+- [EN] [Step-by-step guide to working with Crossplane and Kubernetes](https://www.techtarget.com/searchitoperations/tutorial/Step-by-step-guide-to-working-with-Crossplane-and-Kubernetes)
 
 ### Desktop-Kubernetes
 
@@ -215,6 +220,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Docker desktop
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 3 (Docker desktop)
+- [EN] [Kubernetes on Docker Desktop in 2 Minutes](https://collabnix.com/kubernetes-on-docker-desktop-in-2-minutes/)
 
 ### EKS
 
@@ -245,6 +251,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### k3d
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 7 (k3d)
+- [EN] [Local Kubernetes stack with k3d in seconds](https://ianhomer.com/deploying-a-local-kubernetes-cluster-with-k3d/)
 
 ### k3k
 
@@ -278,6 +285,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### kind
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 1 (kind)
+- [EN] [Getting Started with Kind for Local Kubernetes Development](https://betterstack.com/community/guides/scaling-docker/kind/)
 
 ### Kops
 
@@ -337,6 +345,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### lima-vm
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 8 (lima-vm)
+- [EN] [Mac - how to use kubernetes with Lima-VM](https://infoheap.com/mac-use-kubernetes-with-lima-vm/)
 
 ### Magnum
 
@@ -346,11 +355,17 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 2 (microk8s)
 - [FR] [Installer MicroK8s dans WSL 2](https://blog.zwindler.fr/2020/06/01/installer-microk8s-dans-wsl-2/)
+- [EN] [Setting Up a MicroK8s Kubernetes Cluster on Ubuntu](https://mangohost.net/blog/setting-up-a-microk8s-kubernetes-cluster-on-ubuntu-24/)
 
 ### Minikube
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 6 (Minikube)
 - [FR] [Minikube sur Hyper-V - Part 2 - Troubleshooting de l'installation](https://blog.zwindler.fr/2018/10/02/minikube-sur-hyper-v-part-2-troubleshooting-de-linstallation/)
+- [EN] [A Guide to Local Kubernetes Development with Minikube](https://betterstack.com/community/guides/scaling-docker/minikube/)
+
+### Minishift
+
+- [EN] [Getting Started with Minishift](https://www.gleamingthekube.com/getting-started-with-minishift/)
 
 ### MKS
 
@@ -380,6 +395,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Orbstack
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 5 (Orbstack)
+- [EN] [Running Containers Natively on Mac with Orbstack](https://www.corpit.org/running-containers-natively-on-mac-with-orbstack/)
 
 ### Pulumi
 
