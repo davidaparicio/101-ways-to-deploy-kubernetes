@@ -167,11 +167,11 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 ## Other Useful Projects
 
-| Name | URL |
-|------|-----|
-| Karpenter (AWS) | [Website](https://karpenter.sh/) / [Article](https://medium.com/israeli-tech-radar/karpenter-and-the-future-of-kubernetes-4ab7428b7f87) |
-| Flatcar | [Website](https://www.flatcar.org/docs/latest/#getting-started) |
-| KubeEdge | [GitHub](https://github.com/kubeedge/kubeedge) |
+| Name | URL | Description |
+|------|-----|-------------|
+| Karpenter (AWS) | [Website](https://karpenter.sh/) / [Article](https://medium.com/israeli-tech-radar/karpenter-and-the-future-of-kubernetes-4ab7428b7f87) | High-performance autoscaler for Kubernetes that provisions nodes in seconds based on workload demands, optimizing costs and resource usage |
+| Flatcar | [Website](https://www.flatcar.org/docs/latest/#getting-started) | Lightweight, immutable container-optimized Linux OS with atomic updates, designed for secure and reliable Kubernetes deployments |
+| KubeEdge | [Website](https://kubeedge.io/) / [GitHub](https://github.com/kubeedge/kubeedge) | Extends Kubernetes to edge computing, enabling cloud-native orchestration of IoT devices and applications at the edge with offline autonomy |
 
 ---
 
