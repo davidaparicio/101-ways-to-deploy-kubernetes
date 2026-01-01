@@ -11,7 +11,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | Name | Publisher / Project | URL | Open source | Based on | External References |
 |------|---------------------|-----|-------------|----------|---------------------|
 | canonical kubernetes (snap) | Canonical | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | Apache 2.0 | | [[ref]](#canonical-kubernetes-snap) |
-| colima | | [GitHub](https://github.com/abiosoft/colima) | Apache 2.0 | lima-vm | |
+| colima | | [GitHub](https://github.com/abiosoft/colima) | Apache 2.0 | lima-vm | [[ref]](#colima) |
 | crc (openshift 4 on a desktop) | Openshift | [GitHub](https://github.com/crc-org/crc) | Apache 2.0 | OpenShift | [[ref]](#crc-openshift-4-on-a-desktop) |
 | Desktop-Kubernetes | | [GitHub](https://github.com/aceeric/desktop-kubernetes) | Apache 2.0 | | [[ref]](#desktop-kubernetes) |
 | Docker desktop | Docker (Mirantis) | [Website](https://www.docker.com/products/docker-desktop/) | No | kubeadm, kind | [[ref]](#docker-desktop) |
@@ -21,9 +21,9 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | lima-vm | | [GitHub](https://github.com/lima-vm/lima/blob/master/examples/k8s.yaml) | Apache 2.0 | kubeadm, k3s, rke2 | [[ref]](#lima-vm) |
 | microk8s | Canonical | [GitHub](https://github.com/canonical/microk8s) | Apache 2.0 | | [[ref]](#microk8s) |
 | Minikube | | [GitHub](https://github.com/kubernetes/minikube) | Apache 2.0 | | [[ref]](#minikube) |
-| Minishift | Redhat | [GitHub](https://github.com/minishift/minishift) | Apache 2.0 | OpenShift | |
+| Minishift | Redhat | [GitHub](https://github.com/minishift/minishift) | Apache 2.0 | OpenShift | [[ref]](#minishift) |
 | mykube | | [GitHub](https://github.com/guyst16/mykube) | Apache 2.0 | kubeadm | |
-| Oracle Cloud Native Environment | Oracle | [GitHub](https://github.com/oracle-cne/ocne) | Apache 2.0 | | |
+| Oracle Cloud Native Environment | Oracle | [GitHub](https://github.com/oracle-cne/ocne) | Apache 2.0 | | [[ref]](#oracle-cloud-native-environment) |
 | Orbstack | | [Website](https://orbstack.dev/) | No | | [[ref]](#orbstack) |
 | Rancher Desktop | Rancher | [GitHub](https://github.com/rancher-sandbox/rancher-desktop) | Apache 2.0 | LimaVM and k3s | [[ref]](#rancher-desktop) |
 
@@ -199,6 +199,12 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 14 (Civo)
 - [FR] [Civo - Du Kubernetes managé à partir de 4€/mois, vraiment?](https://blog.zwindler.fr/2021/07/16/civo-du-kubernetes-manage-a-partir-de-4-mois-vraiment/)
 
+### colima
+
+- [Quickly building a Kubernetes development environment with Colima](https://www.sobyte.net/post/2023-06/colima/)
+- [Running Docker and Kubernetes on Colima](https://blog.avenuecode.com/running-docker-and-kubernetes-on-colima)
+- [Cloud Native development with Colima](https://dischord.org/2024/10/27/cloud-native-development-with-colima/)
+
 ### crc (openshift 4 on a desktop)
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 13 (crc)
@@ -352,6 +358,12 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 6 (Minikube)
 - [FR] [Minikube sur Hyper-V - Part 2 - Troubleshooting de l'installation](https://blog.zwindler.fr/2018/10/02/minikube-sur-hyper-v-part-2-troubleshooting-de-linstallation/)
 
+### Minishift
+
+- [Getting Started with Minishift](https://www.gleamingthekube.com/getting-started-with-minishift/)
+- [Learn OpenShift with Minishift](https://www.redhat.com/en/blog/learn-openshift-minishift)
+- [OpenShift For Beginners: 30+ Hands-On labs You Must Perform](https://k21academy.com/azure-cloud/devops/openshift-hands-on-lab/)
+
 ### MKS
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 36 (MKS)
@@ -376,6 +388,12 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE)
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 16 (OKE)
+
+### Oracle Cloud Native Environment
+
+- [Deploy Oracle Cloud Native Environment](https://docs.oracle.com/en/learn/ocne-install/)
+- [Manually Install on OCI - Oracle Linux Training Station](https://oracle-samples.github.io/oltrain/posts/ocne/post-1/)
+- [Oracle Cloud Native Environment: Kubernetes, Modules and Component Releases](https://blogs.oracle.com/scoter/ocne-component-releases)
 
 ### Orbstack
 
