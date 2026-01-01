@@ -230,6 +230,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 40 (elemental)
 - [FR] [K3OS - Le reboot de RancherOS à la sauce K3S](https://blog.zwindler.fr/2020/12/08/k3os-le-reboot-de-rancheros-a-la-sauce-k3s/)
+- [EN] [Elemental - How to download and setup](https://srclog.com/rancherelemental)
 
 ### Gardener
 
@@ -277,6 +278,10 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Kairos Linux
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 39 (Kairos Linux)
+- [EN] [Using Kairos to fully bootstrap a Kubernetes cluster with almost zero intervention](https://tyzbit.blog/using-kairos-to-fully-bootstrap-a-kubernetes-cluster-with-almost-zero-intervention)
+- [EN] [Livin' Kubernetes on the (Immutable) Edge with Kairos Project](https://www.spectrocloud.com/blog/livin-kubernetes-on-the-immutable-edge-with-kairos-project)
+- [EN] [Kairos: The immutable Linux meta-distribution for edge Kubernetes](https://cloudification.io/cloud-blog/kairos-the-immutable-linux-meta-distribution-for-edge-kubernetes/)
+- [EN] [Building secure Kubernetes Edge images with Kairos and k0s](https://www.cncf.io/blog/2025/03/25/building-secure-kubernetes-edge-images-with-kairos-and-k0s/)
 
 ### Kapsule
 
@@ -412,6 +417,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### RKE (abandoned)
 
 - [FR] [Kubernetes avec RancherOS et RKE - Partie 2](https://blog.zwindler.fr/2020/11/30/kubernetes-avec-rancheros-et-rke-partie-2/)
+- [EN] [Install Kubernetes with Rancher RKE (Step-by-Step)](https://computingforgeeks.com/install-kubernetes-production-cluster-using-rancher-rke/)
 
 ### SKS
 
@@ -422,6 +428,9 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 38 (Talos Linux)
 - [FR] [Talos Linux](https://une-tasse-de.cafe/blog/talos/)
+- [EN] [Set Up Talos Linux on Your Machine](https://thenewstack.io/set-up-talos-linux-on-your-machine/)
+- [EN] [Setting Up a k8s Cluster on Talos Linux](https://hostkey.com/blog/102-setting-up-a-k8s-cluster-on-talos-linux/)
+- [EN] [Kubernetes Homelab Series Part 1 - Talos Linux & Proxmox](https://blog.dalydays.com/post/kubernetes-homelab-series-part-1-talos-linux-proxmox/)
 
 ### typhoon
 
