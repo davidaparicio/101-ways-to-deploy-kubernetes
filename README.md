@@ -201,17 +201,17 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 ### colima
 
-- [Cloud Native development with Colima](https://dischord.org/2024/10/27/cloud-native-development-with-colima/)
+- [EN] [Cloud Native development with Colima](https://dischord.org/2024/10/27/cloud-native-development-with-colima/)
 
 ### crc (openshift 4 on a desktop)
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 13 (crc)
-- [Setting up Redhat Openshift Local on your Laptop](https://virtutechnotes.in/setting-up-redhat-openshift-local-on-your-laptop/)
+- [EN] [Setting up Redhat Openshift Local on your Laptop](https://virtutechnotes.in/setting-up-redhat-openshift-local-on-your-laptop/)
 
 ### Crossplane
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 37 (Crossplane)
-- [Step-by-step guide to working with Crossplane and Kubernetes](https://www.techtarget.com/searchitoperations/tutorial/Step-by-step-guide-to-working-with-Crossplane-and-Kubernetes)
+- [EN] [Step-by-step guide to working with Crossplane and Kubernetes](https://www.techtarget.com/searchitoperations/tutorial/Step-by-step-guide-to-working-with-Crossplane-and-Kubernetes)
 
 ### Desktop-Kubernetes
 
@@ -220,7 +220,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Docker desktop
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 3 (Docker desktop)
-- [Kubernetes on Docker Desktop in 2 Minutes](https://collabnix.com/kubernetes-on-docker-desktop-in-2-minutes/)
+- [EN] [Kubernetes on Docker Desktop in 2 Minutes](https://collabnix.com/kubernetes-on-docker-desktop-in-2-minutes/)
 
 ### EKS
 
@@ -251,7 +251,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### k3d
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 7 (k3d)
-- [Local Kubernetes stack with k3d in seconds](https://ianhomer.com/deploying-a-local-kubernetes-cluster-with-k3d/)
+- [EN] [Local Kubernetes stack with k3d in seconds](https://ianhomer.com/deploying-a-local-kubernetes-cluster-with-k3d/)
 
 ### k3k
 
@@ -285,7 +285,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### kind
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 1 (kind)
-- [Getting Started with Kind for Local Kubernetes Development](https://betterstack.com/community/guides/scaling-docker/kind/)
+- [EN] [Getting Started with Kind for Local Kubernetes Development](https://betterstack.com/community/guides/scaling-docker/kind/)
 
 ### Kops
 
@@ -345,7 +345,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### lima-vm
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 8 (lima-vm)
-- [Mac - how to use kubernetes with Lima-VM](https://infoheap.com/mac-use-kubernetes-with-lima-vm/)
+- [EN] [Mac - how to use kubernetes with Lima-VM](https://infoheap.com/mac-use-kubernetes-with-lima-vm/)
 
 ### Magnum
 
@@ -355,17 +355,17 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 2 (microk8s)
 - [FR] [Installer MicroK8s dans WSL 2](https://blog.zwindler.fr/2020/06/01/installer-microk8s-dans-wsl-2/)
-- [Setting Up a MicroK8s Kubernetes Cluster on Ubuntu](https://mangohost.net/blog/setting-up-a-microk8s-kubernetes-cluster-on-ubuntu-24/)
+- [EN] [Setting Up a MicroK8s Kubernetes Cluster on Ubuntu](https://mangohost.net/blog/setting-up-a-microk8s-kubernetes-cluster-on-ubuntu-24/)
 
 ### Minikube
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 6 (Minikube)
 - [FR] [Minikube sur Hyper-V - Part 2 - Troubleshooting de l'installation](https://blog.zwindler.fr/2018/10/02/minikube-sur-hyper-v-part-2-troubleshooting-de-linstallation/)
-- [A Guide to Local Kubernetes Development with Minikube](https://betterstack.com/community/guides/scaling-docker/minikube/)
+- [EN] [A Guide to Local Kubernetes Development with Minikube](https://betterstack.com/community/guides/scaling-docker/minikube/)
 
 ### Minishift
 
-- [Getting Started with Minishift](https://www.gleamingthekube.com/getting-started-with-minishift/)
+- [EN] [Getting Started with Minishift](https://www.gleamingthekube.com/getting-started-with-minishift/)
 
 ### MKS
 
@@ -395,7 +395,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Orbstack
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 5 (Orbstack)
-- [Running Containers Natively on Mac with Orbstack](https://www.corpit.org/running-containers-natively-on-mac-with-orbstack/)
+- [EN] [Running Containers Natively on Mac with Orbstack](https://www.corpit.org/running-containers-natively-on-mac-with-orbstack/)
 
 ### Pulumi
 
@@ -408,7 +408,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Rancher Desktop
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 4 (Rancher Desktop)
-- [Kubernetes Rancher: The Basics and a Quick Tutorial](https://komodor.com/learn/kubernetes-rancher-the-basics-and-a-quick-tutorial/)
 
 ### RKE (abandoned)
 
