@@ -355,14 +355,14 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 32 (Kubespray)
 - [FR] [Installer Kubernetes avec Kubespray (Ansible)](https://blog.zwindler.fr/2017/12/05/installer-kubernetes-kubespray-ansible/)
 
-### Kurl
-
-- [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 27 (Kurl)
-
 ### Kube-hetzner
 
 - [EN] [Getting Started with Kube-Hetzner](https://deepwiki.com/kube-hetzner/terraform-hcloud-kube-hetzner/1.1-getting-started)
 - [EN] [Kubernetes cluster on Hetzner using k3s and Terraform](https://bogoyavlensky.com/blog/kubernetes-hetzner/)
+
+### Kurl
+
+- [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 27 (Kurl)
 
 ### KwoK
 
