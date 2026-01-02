@@ -152,12 +152,6 @@ If you're unsure whether your contribution fits or which category to use:
 2. Open an issue to discuss before creating a PR
 3. Tag @zwindler in your issue for guidance
 
-## Code of Conduct
-
-- Be respectful and constructive
-- Focus on the content, not the contributor
-- Remember this is a community effort to help everyone learn about Kubernetes deployment options
-
 ## License
 
 By contributing, you agree that your contributions will be licensed under the same [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license as the project.
