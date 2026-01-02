@@ -4,6 +4,21 @@ A comprehensive list of ways to deploy Kubernetes, organized by deployment type.
 
 This repository is based on the original work [@zwindler](https://github.com/zwindler) did in a [Google Sheet file](https://docs.google.com/spreadsheets/d/1zjOLU8MblsN8VPwUyHNDFbBQ7EihHM2joD2Q9Tv2DiI/edit?usp=sharing)
 
+## Table of Contents
+
+- [Contributing](#contributing)
+- [Desktop](#desktop)
+- [IaC (Infrastructure as Code)](#iac-infrastructure-as-code)
+- [Kubernetes in Kubernetes](#kubernetes-in-kubernetes)
+- [Kubernetes OS](#kubernetes-os)
+- [Managed](#managed)
+- [Management Platform](#management-platform)
+- [Other](#other)
+- [Selfhosted](#selfhosted)
+- [Other Useful Projects](#other-useful-projects)
+- [References](#references)
+- [License](#license)
+
 ## Contributing
 
 Want to add a tool or resource to this list? Please read our [Contributing Guidelines](CONTRIBUTING.md) to understand what belongs in this list and how to contribute effectively.
