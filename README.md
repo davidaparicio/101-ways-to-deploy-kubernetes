@@ -134,10 +134,10 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 | Name | Publisher / Project | URL | Open source | Based on | External References |
 |------|---------------------|-----|-------------|----------|---------------------|
-| EKS Anywhere | AWS | [GitHub](https://github.com/aws/eks-anywhere) | Apache 2.0 | EKS | |
+| EKS Anywhere | AWS | [GitHub](https://github.com/aws/eks-anywhere) | Apache 2.0 | EKS | [[ref]](#eks-anywhere) |
 | Harvester | Rancher | [GitHub](https://github.com/harvester/harvester) | Apache 2.0 | | [[ref]](#harvester) |
 | Hepto | | [Forge Tedomum](https://forge.tedomum.net/acides/hepto) | Apache 2.0 | | |
-| Juju | Canonical | [GitHub](https://github.com/juju/juju) | Apache 2.0 | | |
+| Juju | Canonical | [GitHub](https://github.com/juju/juju) | Apache 2.0 | | [[ref]](#juju) |
 | k0s | Mirantis | [GitHub](https://github.com/k0sproject/k0s) | Apache 2.0 | | [[ref]](#k0s) |
 | k0smotron | Mirantis | [GitHub](https://github.com/k0sproject/k0smotron) | Apache 2.0 | k0s and clusterAPI | [[ref]](#k0smotron) |
 | k3s | Rancher | [GitHub](https://github.com/k3s-io/k3s) | Apache 2.0 | | [[ref]](#k3s) |
@@ -151,16 +151,16 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | KubeKey | | [GitHub](https://github.com/kubesphere/kubekey) | Apache 2.0 | kubeadm / k3s | [[ref]](#kubekey) |
 | KubeMarine | | [GitHub](https://github.com/Netcracker/KubeMarine) | Apache 2.0 | Kubeadm | [[ref]](#kubemarine) |
 | KubeOne | Kubermatic | [GitHub](https://github.com/kubermatic/kubeone) | Apache 2.0 | Kubeadm / ClusterAPI | [[ref]](#kubeone) |
-| KubeSolo | portainer.io | [GitHub](https://github.com/portainer/kubesolo) | Apache 2.0 | k3s | |
+| KubeSolo | portainer.io | [GitHub](https://github.com/portainer/kubesolo) | Apache 2.0 | k3s | [[ref]](#kubesolo) |
 | Kurl | ReplicatedHQ | [GitHub](https://github.com/replicatedhq/kurl) | Apache 2.0 | Kubeadm | [[ref]](#kurl) |
 | Magnum | OpenStack | [GitHub](https://github.com/openstack/magnum) | Apache 2.0 | Cluster API | [[ref]](#magnum) |
 | MKE (Mirantis Kubernetes Engine) | Mirantis | [Website](https://docs.mirantis.com/mke4k/latest/) | ❌ | k0s | |
 | NKP (Nutanix Kubernetes Platform) | Nutanix | [Website](https://www.nutanix.com/products/kubernetes-management-platform) | ❌ | | |
 | OKD (open source openshift) | Redhat | [GitHub](https://github.com/okd-project/okd) | Apache 2.0 | OpenShift | [[ref]](#okd-open-source-openshift) |
 | OneKE | OpenNebula | [GitHub](https://github.com/OpenNebula/one-apps) | Apache 2.0 | rke2 | [[ref]](#oneke) |
-| RKE2 | Rancher | [GitHub](https://github.com/rancher/rke2) | Apache 2.0 | k3s and RKE | |
-| SIGHUP | | [GitHub](https://github.com/sighupio/distribution) | BSD 3-Clause | | |
-| TALM | Cosystack | [GitHub](https://github.com/cozystack/talm) | Apache 2.0 | Talos Linux | |
+| RKE2 | Rancher | [GitHub](https://github.com/rancher/rke2) | Apache 2.0 | k3s and RKE | [[ref]](#rke2) |
+| SIGHUP | | [GitHub](https://github.com/sighupio/distribution) | BSD 3-Clause | | [[ref]](#sighup) |
+| TALM | Cosystack | [GitHub](https://github.com/cozystack/talm) | Apache 2.0 | Talos Linux | [[ref]](#talm) |
 | tarook | | [GitHub](https://github.com/alasca-association/tarook) | Apache 2.0 | Terraform / Opentofu | |
 | Welkin | Elastisys | [GitHub](https://github.com/elastisys/welkin) | Apache 2.0 | Cluster API | |
 
@@ -231,6 +231,10 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 18 (EKS)
 
+### EKS Anywhere
+
+- [EN] [EKS Anywhere Cluster Tutorial [Deploy Cluster in 7 Steps]](https://devopscube.com/eks-anywhere-cluster/)
+
 ### elemental (ex k3os)
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 40 (elemental)
@@ -290,6 +294,10 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 - [EN] [Kairos: The immutable Linux meta-distribution for edge Kubernetes](https://cloudification.io/cloud-blog/kairos-the-immutable-linux-meta-distribution-for-edge-kubernetes/)
 - [EN] [Building secure Kubernetes Edge images with Kairos and k0s](https://www.cncf.io/blog/2025/03/25/building-secure-kubernetes-edge-images-with-kairos-and-k0s/)
 
+### Juju
+
+- [EN] [How to Deploy Kubernetes with Juju](https://cloud.garr.it/support/kb/juju/deploy_kubernetes_with_juju/)
+
 ### Kapsule
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 17 (Kapsule)
@@ -332,6 +340,10 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### KubeOne
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 25 (KubeOne)
+
+### KubeSolo
+
+- [EN] [KubeSolo New Kubernetes Edge Distro by Portainer](https://www.virtualizationhowto.com/2025/06/kubesolo-new-kubernetes-edge-distro-by-portainer/)
 
 ### Kubermatic Kubernetes Platform
 
@@ -434,10 +446,19 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 - [FR] [Kubernetes avec RancherOS et RKE - Partie 2](https://blog.zwindler.fr/2020/11/30/kubernetes-avec-rancheros-et-rke-partie-2/)
 - [EN] [Install Kubernetes with Rancher RKE (Step-by-Step)](https://computingforgeeks.com/install-kubernetes-production-cluster-using-rancher-rke/)
 
+### RKE2
+
+- [EN] [Rancher Kubernetes: A Quick Installation Guide for RKE2](https://devtron.ai/blog/rancher-kubernetes-a-quick-installation-guide-for-rke2/)
+- [EN] [Installing Kubernetes Rancher with RKE2, Helm and Cert Manager](https://christalks.dev/post/installing-kubernetes-rancher-with-rke2-helm-and-cert-manager-6e2e39c5)
+
 ### SKS
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 15 (SKS)
 - [FR] [Test de SKS, le Kubernetes managé chez Exoscale](https://blog.zwindler.fr/2021/05/03/test-de-sks-le-kubernetes-manage-chez-exoscale/)
+
+### SIGHUP
+
+- [EN] [Getting started guides to deploy the Kubernetes Fury Distribution](https://github.com/sighupio/fury-getting-started)
 
 ### Talos Linux
 
@@ -446,6 +467,10 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 - [EN] [Set Up Talos Linux on Your Machine](https://thenewstack.io/set-up-talos-linux-on-your-machine/)
 - [EN] [Setting Up a k8s Cluster on Talos Linux](https://hostkey.com/blog/102-setting-up-a-k8s-cluster-on-talos-linux/)
 - [EN] [Kubernetes Homelab Series Part 1 - Talos Linux & Proxmox](https://blog.dalydays.com/post/kubernetes-homelab-series-part-1-talos-linux-proxmox/)
+
+### TALM
+
+- [EN] [Use Talm to bootstrap a Cozystack cluster](https://cozystack.io/docs/install/kubernetes/talm/)
 
 ### typhoon
 
