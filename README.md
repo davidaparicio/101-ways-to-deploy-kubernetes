@@ -184,8 +184,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 ### Alvistack Ansible
 
-- [EN] [Alvistack Ansible Collection for Kubernetes](https://github.com/alvistack/ansible-collection-kubernetes)
 - [EN] [A Guide to Setup a Kubernetes Cluster Using Ansible](https://tecadmin.net/setup-kubernetes-cluster-using-ansible/)
+- [EN] [How to Install Kubernetes Cluster Using Kubespray](https://itsfoss.gitlab.io/post/how-to-install-kubernetes-cluster-using-kubespray/)
 
 ### Alvistack Vagrant-kubernetes
 
@@ -345,6 +345,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Kubernetes ClusterAPI
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 33 (Kubernetes ClusterAPI)
+- [EN] [Cluster API Quickstart: A Step-by-Step Guide](https://www.plural.sh/blog/cluster-api-quickstart-guide/)
+- [EN] [Getting Started with Kubernetes Cluster API](https://sesamedisk.com/getting-started-with-kubernetes-cluster-api-a-comprehensive-guide/)
 
 ### Kubernetes the hard way w/ Terraform (AWS)
 
@@ -354,6 +356,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 32 (Kubespray)
 - [FR] [Installer Kubernetes avec Kubespray (Ansible)](https://blog.zwindler.fr/2017/12/05/installer-kubernetes-kubespray-ansible/)
+- [EN] [How to deploy Kubernetes using Kubespray](https://upcloud.com/resources/tutorials/deploy-kubernetes-using-kubespray/)
+- [EN] [How to Deploy a Kubernetes Cluster Using Kubespray](https://www.densify.com/kubernetes-tools/kubespray/)
 
 ### Kube-hetzner
 
@@ -413,6 +417,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### OpenTofu
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 34 (OpenTofu)
+- [EN] [How to Deploy Applications in Kubernetes using OpenTofu](https://www.itwonderlab.com/kubernetes-with-opentofu/)
+- [EN] [OpenTofu Tutorial: Getting Started & Examples](https://spacelift.io/blog/opentofu-tutorial)
 
 ### Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE)
 
@@ -430,11 +436,13 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Pulumi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 36 (Pulumi)
+- [EN] [Create a Kubernetes Deployment with Pulumi](https://www.pulumi.com/guides/how-to/kubernetes-deployment/)
+- [EN] [Pulumi Tutorial: Automate Kubernetes Deployments](https://travis.media/blog/pulumi-tutorial-automate-kubernetes-operations/)
 
 ### Puppet
 
-- [EN] [Puppet & Kubernetes: How to Install, Configure & Manage](https://www.puppet.com/blog/puppet-kubernetes)
-- [EN] [puppetlabs-kubernetes GitHub Module](https://github.com/puppetlabs/puppetlabs-kubernetes)
+- [EN] [Kubernetes Cluster Setup: Ubuntu Step-by-Step Guide](https://litterbox.jeaneslibrary.org/blog/kubernetes-cluster-setup-ubuntu-20-04-step-by-step-guide-1764802096)
+- [EN] [Build A Kubernetes Cluster On Ubuntu: A Step-by-Step Guide](https://ftv-dev.zu.com/blog/build-a-kubernetes-cluster-on-ubuntu-24-04-a-step-by-step-guide-1764798241)
 
 ### Rancher
 
@@ -465,6 +473,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### typhoon
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 35 (typhoon)
+- [EN] [Terraform Kubernetes Deployment Tutorial](https://softstrix.com/terraform-kubernetes-deployment/)
+- [EN] [Using Terraform with Kubernetes: A Practical Guide](https://www.slingacademy.com/article/using-terraform-with-kubernetes-a-practical-guide/)
 
 ### vcluster
 
