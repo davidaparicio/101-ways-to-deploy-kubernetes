@@ -60,7 +60,7 @@ Cloud provider or third-party managed Kubernetes services where the control plan
 ### Management Platform
 Platforms that help you deploy and manage multiple Kubernetes clusters across different infrastructures.
 
-**Examples**: Rancher, Gardener, Kubermatic, Tanzu
+**Examples**: Rancher, Gardener, Kubermatic, Tanzu Kubernetes Grid
 
 ### Selfhosted
 Tools for deploying production-grade Kubernetes clusters on your own infrastructure with full control.
