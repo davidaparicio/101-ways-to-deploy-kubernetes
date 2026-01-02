@@ -103,10 +103,11 @@ Related projects that complement Kubernetes deployment but aren't deployment too
 ### Adding External References
 
 External references should be:
-- Tutorials, guides, or blog posts about deploying or using the tool
-- Case studies or real-world examples
+- Tutorials, guides, or blog posts that explain **how to deploy or use the tool** with specific commands, steps, or configuration examples
+- Case studies or real-world deployment examples
 - In any language (mark with [EN], [FR], etc.)
 - ❌ NOT official documentation (these are already available with the tool link)
+- ❌ NOT high-level overviews or marketing content without practical deployment instructions
 
 Format:
 ```markdown
