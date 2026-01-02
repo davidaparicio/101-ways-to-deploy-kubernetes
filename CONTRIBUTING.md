@@ -4,7 +4,7 @@ Thank you for your interest in contributing to this project! This guide will hel
 
 ## What This Project Is About
 
-This repository is a comprehensive list of **ways to deploy Kubernetes clusters**. The focus is on tools, platforms, and methods that help you create, install, or provision Kubernetes infrastructure.
+This repository is a comprehensive list of **ways to deploy Kubernetes clusters**. The focus is on tools, platforms, and methods that help you **create, install, or provision** Kubernetes infrastructure.
 
 ## What Belongs in This List
 
@@ -16,17 +16,17 @@ This repository is a comprehensive list of **ways to deploy Kubernetes clusters*
 - **Managed Kubernetes Services**: Cloud provider services that provide managed Kubernetes clusters (EKS, AKS, GKE, etc.)
 - **Desktop/Local Development Tools**: Tools for running Kubernetes locally for development purposes
 - **Selfhosted Solutions**: Tools for deploying production Kubernetes clusters on your own infrastructure
-- **Management Platforms**: Multi-cluster management platforms that help deploy and manage multiple Kubernetes clusters
+- **Management Platforms**: Multi-cluster management platforms that help **deploy** and manage multiple Kubernetes clusters
 - **Kubernetes-specific Operating Systems**: OS distributions specifically designed to run Kubernetes
 - **Learning Resources**: Tutorials and guides specifically about deploying Kubernetes (like "Kubernetes the Hard Way")
 
 ### ❌ Not Accepted
 
-- **PaaS Offerings Running ON Kubernetes**: Platforms like Northflank, Symbiosis, Heroku-like platforms, or any service that uses Kubernetes internally but doesn't help you deploy Kubernetes itself
+- **PaaS Offerings Running ON Kubernetes**: Platforms (in the sense of Heroku-like platforms), or any service that uses Kubernetes internally but doesn't help you deploy Kubernetes itself
 - **Applications Deployed TO Kubernetes**: Tools for deploying applications to existing clusters (Helm charts, Kustomize, ArgoCD, FluxCD, etc.)
 - **Kubernetes Add-ons and Extensions**: Tools that extend Kubernetes functionality but don't help with initial cluster deployment (service meshes, ingress controllers, monitoring tools, etc.)
 - **Container Runtimes**: Docker, containerd, CRI-O (unless they include a complete Kubernetes deployment method)
-- **General Infrastructure Tools**: Generic IaC tools without specific Kubernetes deployment examples or modules
+- **General Infrastructure Tools**: Generic IaC tools without **specific** Kubernetes deployment examples or modules
 
 ## Category Definitions
 
@@ -87,7 +87,7 @@ Related projects that complement Kubernetes deployment but aren't deployment too
    - Name of the tool/service
    - Publisher/Project name (if applicable)
    - URL (GitHub repo for open source, official website for commercial)
-   - License information (specific license for open source, ❌ for proprietary, "Not applicable" for services)
+   - License information (specific license for open source, ❌ for proprietary, "Not applicable" for managed services)
    - "Based on" information (what underlying technology it uses, if applicable)
    - External references (blog posts, tutorials, documentation)
 
@@ -104,9 +104,9 @@ Related projects that complement Kubernetes deployment but aren't deployment too
 
 External references should be:
 - Tutorials, guides, or blog posts about deploying or using the tool
-- Official documentation
 - Case studies or real-world examples
 - In any language (mark with [EN], [FR], etc.)
+- ❌ NOT official documentation (these are already available with the tool link)
 
 Format:
 ```markdown
