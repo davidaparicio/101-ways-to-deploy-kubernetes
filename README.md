@@ -185,7 +185,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Alvistack Ansible
 
 - [EN] [A Guide to Setup a Kubernetes Cluster Using Ansible](https://tecadmin.net/setup-kubernetes-cluster-using-ansible/)
-- [EN] [How to Install Kubernetes Cluster Using Kubespray](https://itsfoss.gitlab.io/post/how-to-install-kubernetes-cluster-using-kubespray/)
 
 ### Alvistack Vagrant-kubernetes
 
@@ -356,6 +355,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 32 (Kubespray)
 - [FR] [Installer Kubernetes avec Kubespray (Ansible)](https://blog.zwindler.fr/2017/12/05/installer-kubernetes-kubespray-ansible/)
+- [EN] [How to Install Kubernetes Cluster Using Kubespray](https://itsfoss.gitlab.io/post/how-to-install-kubernetes-cluster-using-kubespray/)
 - [EN] [How to deploy Kubernetes using Kubespray](https://upcloud.com/resources/tutorials/deploy-kubernetes-using-kubespray/)
 - [EN] [How to Deploy a Kubernetes Cluster Using Kubespray](https://www.densify.com/kubernetes-tools/kubespray/)
 
@@ -441,8 +441,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 ### Puppet
 
-- [EN] [Kubernetes Cluster Setup: Ubuntu Step-by-Step Guide](https://litterbox.jeaneslibrary.org/blog/kubernetes-cluster-setup-ubuntu-20-04-step-by-step-guide-1764802096)
-- [EN] [Build A Kubernetes Cluster On Ubuntu: A Step-by-Step Guide](https://ftv-dev.zu.com/blog/build-a-kubernetes-cluster-on-ubuntu-24-04-a-step-by-step-guide-1764798241)
+- [EN] [Puppet and Kubernetes - DEV Community Tutorial](https://dev.to/betadots/puppet-and-kubernetes-182e)
+- [EN] [Puppet & Kubernetes Configuration Management Guide](https://betanet.net/view-post/puppet-and-kubernetes-a-comprehensive-guide)
 
 ### Rancher
 
