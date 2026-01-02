@@ -103,7 +103,7 @@ Related projects that complement Kubernetes deployment but aren't deployment too
 ### Adding External References
 
 External references should be:
-- **Written content only**: Tutorials, guides, or blog posts (articles) that explain **how to deploy Kubernetes using the tool** with specific commands, steps, or configuration examples (such as command-line examples, YAML configuration files, or step-by-step setup procedures)
+- **Written content only**: Tutorials, guides, or blog posts that explain **how to deploy Kubernetes using the tool** with specific commands, steps, or configuration examples (such as command-line examples, YAML configuration files, or step-by-step setup procedures)
 - Case studies or real-world deployment examples
 - In any language (mark with [EN], [FR], etc.)
 - ❌ NOT official documentation (these are already available with the tool link)
