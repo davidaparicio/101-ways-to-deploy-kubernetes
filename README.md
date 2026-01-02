@@ -261,6 +261,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### k3k
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 47 (k3k)
+- [EN] [Kubernetes Rancher: The Basics and a Quick Tutorial](https://komodor.com/learn/kubernetes-rancher-the-basics-and-a-quick-tutorial/)
+- [EN] [Installing Rancher on K3s with Ingress, Domain, and SSL Configuration](https://code2deploy.com/blog/installing-rancher-on-k3s-with-ingress-domain-and-ssl-configuration/)
 
 ### k3s
 
@@ -443,6 +445,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### vcluster
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 46 (vcluster)
+- [EN] [vCluster: The Complete Guide to Virtual Kubernetes Clusters](https://collabnix.com/vcluster-the-complete-guide-to-virtual-kubernetes-clusters-in-2025/)
+- [EN] [Build On Weekly vcluster demo](https://hackmd.io/@KNFb-hAMT7-2CZWxFt822g/SJaRSHa0q)
 
 ---
 
