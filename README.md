@@ -34,15 +34,15 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | Name | Publisher / Project | URL | Open source | Based on | External References |
 |------|---------------------|-----|-------------|----------|---------------------|
 | aks-engine (abandoned) | Azure | [GitHub](https://github.com/Azure/aks-engine) | Apache 2.0 | | |
-| Alvistack Ansible | Alvistack | ansible-collection-kubernetes | Apache 2.0 | kubeadm | |
+| Alvistack Ansible | Alvistack | [GitHub](https://github.com/alvistack/ansible-collection-kubernetes) | Apache 2.0 | kubeadm | |
 | Alvistack Vagrant-kubernetes | Alvistack | [GitHub](https://github.com/alvistack/vagrant-kubernetes) | Apache 2.0 | kubeadm | [[ref]](#alvistack-vagrant-kubernetes) |
 | Crossplane | | [GitHub](https://github.com/crossplane/crossplane) | Apache 2.0 | | [[ref]](#crossplane) |
-| Kube-hetzner | Hetzner | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | MIT | Terraform / OpenTofu | |
+| Kube-hetzner | Hetzner | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | MIT | Terraform / OpenTofu | [[ref]](#kube-hetzner) |
 | Kubernetes ClusterAPI | | [GitHub](https://github.com/kubernetes-sigs/cluster-api) | Apache 2.0 | | [[ref]](#kubernetes-clusterapi) |
 | Kubespray | | [GitHub](https://github.com/kubernetes-sigs/kubespray) | Apache 2.0 | kubeadm | [[ref]](#kubespray) |
 | OpenTofu | | [GitHub](https://github.com/opentofu/opentofu) | MPL 2.0 | | [[ref]](#opentofu) |
 | Pulumi | | [GitHub](https://github.com/pulumi/pulumi) | Apache 2.0 | | [[ref]](#pulumi) |
-| Puppet | | [Puppet Forge](https://forge.puppet.com/modules/puppetlabs/kubernetes/readme) | Apache 2.0 | Terraform / OpenTofu | |
+| Puppet | | [Puppet Forge](https://forge.puppet.com/modules/puppetlabs/kubernetes/readme) | Apache 2.0 | Terraform / OpenTofu | [[ref]](#puppet) |
 | typhoon | | [GitHub](https://github.com/poseidon/typhoon) | MIT | Terraform / OpenTofu | [[ref]](#typhoon) |
 
 ---
@@ -340,6 +340,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Kubernetes ClusterAPI
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 33 (Kubernetes ClusterAPI)
+- [EN] [Cluster API Quickstart: A Step-by-Step Guide](https://www.plural.sh/blog/cluster-api-quickstart-guide/)
+- [EN] [Getting Started with Kubernetes Cluster API](https://sesamedisk.com/getting-started-with-kubernetes-cluster-api-a-comprehensive-guide/)
 
 ### Kubernetes the hard way w/ Terraform (AWS)
 
@@ -349,6 +351,14 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 32 (Kubespray)
 - [FR] [Installer Kubernetes avec Kubespray (Ansible)](https://blog.zwindler.fr/2017/12/05/installer-kubernetes-kubespray-ansible/)
+- [EN] [How to Install Kubernetes Cluster Using Kubespray](https://itsfoss.gitlab.io/post/how-to-install-kubernetes-cluster-using-kubespray/)
+- [EN] [How to deploy Kubernetes using Kubespray](https://upcloud.com/resources/tutorials/deploy-kubernetes-using-kubespray/)
+- [EN] [How to Deploy a Kubernetes Cluster Using Kubespray](https://www.densify.com/kubernetes-tools/kubespray/)
+
+### Kube-hetzner
+
+- [EN] [Getting Started with Kube-Hetzner](https://deepwiki.com/kube-hetzner/terraform-hcloud-kube-hetzner/1.1-getting-started)
+- [EN] [Kubernetes cluster on Hetzner using k3s and Terraform](https://bogoyavlensky.com/blog/kubernetes-hetzner/)
 
 ### Kurl
 
@@ -403,6 +413,8 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### OpenTofu
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 34 (OpenTofu)
+- [EN] [How to Deploy Applications in Kubernetes using OpenTofu](https://www.itwonderlab.com/kubernetes-with-opentofu/)
+- [EN] [OpenTofu Tutorial: Getting Started & Examples](https://spacelift.io/blog/opentofu-tutorial)
 
 ### Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE)
 
@@ -420,6 +432,13 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### Pulumi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 36 (Pulumi)
+- [EN] [Create a Kubernetes Deployment with Pulumi](https://www.pulumi.com/guides/how-to/kubernetes-deployment/)
+- [EN] [Infrastructure as Code (IaC) on OVHcloud - Pulumi](https://blog.ovhcloud.com/infrastructure-as-code-iac-on-ovhcloud-part-1-terraform-opentofu/)
+
+### Puppet
+
+- [EN] [Puppet and Kubernetes - DEV Community Tutorial](https://dev.to/betadots/puppet-and-kubernetes-182e)
+- [EN] [Puppet & Kubernetes Configuration Management Guide](https://betanet.net/view-post/puppet-and-kubernetes-a-comprehensive-guide)
 
 ### Rancher
 
