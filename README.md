@@ -72,7 +72,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | Name | Publisher / Project | URL | Open source | Based on | External References |
 |------|---------------------|-----|-------------|----------|---------------------|
 | AKS | Azure | [Website](https://azure.microsoft.com/fr-fr/products/kubernetes-service) | Not applicable | | [[ref]](#aks) |
-| Alibaba Cloud Container Service for Kubernetes (ACK) | Alibaba Cloud | [Website](https://www.alibabacloud.com/fr/product/kubernetes) | Not applicable | | [[ref]](#alibaba-cloud-container-service-for-kubernetes-ack) |
+| Alibaba Cloud Container Service for Kubernetes (ACK) | Alibaba Cloud | [Website](https://www.alibabacloud.com/fr/product/kubernetes) | Not applicable | | |
 | Civo | | [Website](https://www.civo.com/) | Not applicable | k3s or Talos Linux | [[ref]](#civo) |
 | Clever Kubernetes Engine (CKE) | Clever Cloud | [Website](https://www.clever-cloud.com/product/kubernetes/) | Not applicable | | |
 | DOKS | Digital Ocean | [Website](https://www.digitalocean.com/products/kubernetes/) | Not applicable | | [[ref]](#doks) |
@@ -90,7 +90,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 | Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE) | Oracle Cloud Infrastructure | [Website](https://www.oracle.com/fr/cloud/cloud-native/container-engine-kubernetes/) | Not applicable | | [[ref]](#oracle-cloud-infrastructure-container-engine-for-kubernetes-oke) |
 | Redhat Openshift cloud | Redhat | [Website](https://www.redhat.com/fr/technologies/cloud-computing/openshift/openshift-cloud-services) | Not applicable | Openshift | [[ref]](#redhat-openshift-cloud) |
 | SKS | Exoscale | [Website](https://community.exoscale.com/documentation/sks/overview/) | Not applicable | | [[ref]](#sks) |
-| UpCloud Managed Kubernetes (UKS) | UpCloud | [Website](https://upcloud.com/products/managed-kubernetes) | Not applicable | | [[ref]](#upcloud-managed-kubernetes-uks) |
+| UpCloud Managed Kubernetes (UKS) | UpCloud | [Website](https://upcloud.com/products/managed-kubernetes) | Not applicable | | |
 | VKE | Vultr | [Website](https://www.vultr.com/kubernetes/) | Not applicable | | [[ref]](#vke) |
 
 ---
@@ -182,10 +182,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] [J'ai testé pour vous AKS, la plateforme Kubernetes managée d'Azure](https://blog.zwindler.fr/2018/12/18/jai-teste-pour-vous-aks-la-plateforme-kubernetes-managee-dazure/)
 
-### Alibaba Cloud Container Service for Kubernetes (ACK)
-
-- [EN] [ACK Service: Orchestrating Containers in the Cloud](https://www.c-sharpcorner.com/article/alibaba-cloud-kubernetes-service-orchestrating-containers-in-the-cloud/)
-
 ### Alvistack Vagrant-kubernetes
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 11 (Alvistack Vagrant-kubernetes)
@@ -234,7 +230,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 ### DOKS
 
 - [EN] [Getting Started with Kubernetes on DigitalOcean: A Beginner's Guide](https://k8s-ops.net/posts/getting-started-with-kubernetes-digitalocean/)
-- [EN] [DigitalOcean Kubernetes: Start Small, Grow with Plural](https://www.plural.sh/blog/digitalocean-kubernetes-guide/)
 
 ### EKS
 
@@ -384,8 +379,7 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 ### Linode Kubernetes Engine (LKE)
 
-- [EN] [Deploying an application to LKE intro](https://notes.kodekloud.com/docs/Linode-Kubernetes-Engine/Working-with-Linode/Deploying-an-application-to-LKE-intro)
-- [EN] [Linode Kubernetes: The Ultimate 2025 Guide](https://www.plural.sh/blog/kubernetes-on-linode-guide/)
+- [EN] [Managing clusters with the Linode CLI](https://notes.kodekloud.com/docs/Linode-Kubernetes-Engine/Working-with-Linode/Managing-clusters-with-the-Linode-CLI)
 
 ### Magnum
 
@@ -455,7 +449,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 ### Redhat Openshift cloud
 
-- [EN] [CI/CD with Azure DevOps to managed Red Hat OpenShift cloud services](https://www.redhat.com/en/blog/cicd-azure-devops-managed-red-hat-openshift-cloud-services)
 - [EN] [A Practical OpenShift Tutorial for Developers](https://trilio.io/openshift-tutorial/)
 
 ### RKE (abandoned)
@@ -480,10 +473,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 35 (typhoon)
 
-### UpCloud Managed Kubernetes (UKS)
-
-- [EN] [UpCloud and Kubernetes: Seamless Integration for Cloud-Native Apps](https://nestify.io/blog/upcloud-and-kubernetes-integration/)
-
 ### vcluster
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 46 (vcluster)
@@ -492,7 +481,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 ### VKE
 
-- [EN] [How to Deploy Vultr Kubernetes Engine Cluster](https://bobcares.com/blog/how-to-deploy-vultr-kubernetes-engine-cluster/)
 - [EN] [Vultr Kubernetes Engine (VKE) Reference Guide](https://blog.cobrasoft.org/vultr-kubernetes-engine-vke-reference-guide/)
 
 ---
