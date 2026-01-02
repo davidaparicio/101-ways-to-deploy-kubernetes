@@ -89,7 +89,7 @@ Related projects that complement Kubernetes deployment but aren't deployment too
    - Name of the tool/service
    - Publisher/Project name (if applicable)
    - URL (GitHub repo for open source, official website for commercial)
-   - License information (specific license for open source, ❌ for proprietary, "Not applicable" for managed services)
+   - License information (specific license for open source, ❌ for proprietary, "☁️ N/A" for managed services)
    - "Based on" information (what underlying technology it uses, if applicable)
    - External references (blog posts, tutorials, documentation)
 
