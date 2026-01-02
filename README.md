@@ -433,7 +433,6 @@ This repository is based on the original work [@zwindler](https://github.com/zwi
 
 - [FR] ["Kubernetes - 50 solutions pour les postes de développement et les clusters de production"](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/) - Chapter 46 (vcluster)
 - [EN] [vCluster: The Complete Guide to Virtual Kubernetes Clusters](https://collabnix.com/vcluster-the-complete-guide-to-virtual-kubernetes-clusters-in-2025/)
-- [EN] [Getting Started with vCluster: A Simple Hands-On Guide](https://tfir.io/vcluster-getting-started-hands-on-guide/)
 - [EN] [Build On Weekly vcluster demo](https://hackmd.io/@KNFb-hAMT7-2CZWxFt822g/SJaRSHa0q)
 
 ---
