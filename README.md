@@ -46,6 +46,7 @@ Tools for running Kubernetes on local development machines (laptops, workstation
 | mykube | | [GitHub](https://github.com/guyst16/mykube) | Apache 2.0 | kubeadm | |
 | Oracle Cloud Native Environment | Oracle | [GitHub](https://github.com/oracle-cne/ocne) | Apache 2.0 | | |
 | Orbstack | Orbital Stack | [Website](https://orbstack.dev/) | ❌ | | [[ref]](#orbstack) |
+| Podman Desktop | Podman Desktop | [GitHub](https://github.com/podman-desktop/podman-desktop) | Apache 2.0 | kind, minikube | [[ref]](#podman-desktop) |
 | Rancher Desktop | Rancher | [GitHub](https://github.com/rancher-sandbox/rancher-desktop) | Apache 2.0 | LimaVM and k3s | [[ref]](#rancher-desktop) |
 
 ---
@@ -499,6 +500,11 @@ Tools for deploying production-grade Kubernetes clusters on your own infrastruct
 ### Play with k8s
 
 - [EN] [Getting Started with Kubernetes on Play with Kubernetes Platform in 5 Minutes](https://dockerlabs.collabnix.com/kubernetes/beginners/getting-started-on-pwk.html)
+
+### Podman Desktop
+
+- [EN] [Running a Kubernetes cluster - Podman Desktop](https://podman-desktop.io/tutorial/running-a-kubernetes-cluster)
+- [EN] [Working with Kubernetes in Podman Desktop - Red Hat Developer](https://developers.redhat.com/articles/2023/11/06/working-kubernetes-podman-desktop)
 
 ### Pulumi
 
