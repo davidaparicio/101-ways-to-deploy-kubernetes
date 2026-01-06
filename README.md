@@ -191,7 +191,7 @@ Tools for deploying production-grade Kubernetes clusters on your own infrastruct
 | k0smotron | Mirantis | [GitHub](https://github.com/k0sproject/k0smotron) | Apache 2.0 | k0s and clusterAPI | [[ref]](#k0smotron) |
 | k3s | Rancher | [GitHub](https://github.com/k3s-io/k3s) | Apache 2.0 | | [[ref]](#k3s) |
 | k3sup | | [GitHub](https://github.com/alexellis/k3sup) | MIT | k3s | [[ref]](#k3sup) |
-| k8e - Kubernetes easy engine | | [GitHub](https://github.com/xiaods/k8e) | Apache 2.0 | k3s | [[ref]](#k8e-kubernetes-easy-engine) |
+| k8e - Kubernetes easy engine | | [GitHub](https://github.com/xiaods/k8e) | Apache 2.0 | k3s | [[ref]](#k8e---kubernetes-easy-engine) |
 | K8S The Easy way | | [GitHub](https://github.com/darxkies/k8s-tew) | MIT | | [[ref]](#k8s-the-easy-way) |
 | Kops | | [GitHub](https://github.com/kubernetes/kops) | Apache 2.0 | kubeadm | [[ref]](#kops) |
 | kubeadm w/ CLI | | [GitHub](https://github.com/kubernetes/kubernetes) | Apache 2.0 | | [[ref]](#kubeadm-w-cli) |
