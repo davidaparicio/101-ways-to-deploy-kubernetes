@@ -63,7 +63,7 @@ Tools and frameworks that use code to automate the deployment of Kubernetes clus
 | Crossplane | | [GitHub](https://github.com/crossplane/crossplane) | Apache 2.0 | | [[ref]](#crossplane) |
 | Cybozu Kubernetes Engine (CKE) | Cybozu | [GitHub](https://github.com/cybozu-go/cke) | Apache 2.0 | | |
 | Kube-hetzner | | [GitHub](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner) | MIT | Terraform / OpenTofu | [[ref]](#kube-hetzner) |
-| Kubeasz | EaszLab | [GitHub](https://github.com/easzlab/kubeasz) | MIT | Ansible | Chinese documentation only |
+| Kubeasz (Chinese documentation only) | EaszLab | [GitHub](https://github.com/easzlab/kubeasz) | MIT | |  |
 | Kubernetes ClusterAPI | | [GitHub](https://github.com/kubernetes-sigs/cluster-api) | Apache 2.0 | | [[ref]](#kubernetes-clusterapi) |
 | Kubespray | | [GitHub](https://github.com/kubernetes-sigs/kubespray) | Apache 2.0 | kubeadm | [[ref]](#kubespray) |
 | OpenTofu | | [GitHub](https://github.com/opentofu/opentofu) | MPL 2.0 | | [[ref]](#opentofu) |
@@ -119,7 +119,6 @@ Cloud provider or third-party managed Kubernetes services where the control plan
 | Kapsule | Scaleway | [Website](https://www.scaleway.com/en/kubernetes-kapsule/) | ☁️ N/A | | [[ref]](#kapsule) |
 | Kosmos | Scaleway | [Website](https://www.scaleway.com/fr/kubernetes-kosmos/) | ☁️ N/A | | [[ref]](#kosmos) |
 | LeafCloud | LeafCloud | [Website](https://www.leaf.cloud/) | ☁️ N/A | Gardener | |
-| Leaseweb Managed Kubernetes | Leaseweb | [Website](https://www.leaseweb.com/cloud/kubernetes) | ☁️ N/A | | |
 | Linode Kubernetes Engine (LKE) | Linode | [Website](https://www.linode.com/docs/kubernetes/) | ☁️ N/A | | [[ref]](#linode-kubernetes-engine-lke) |
 | Metal Stack Cloud Kubernetes | Metal Stack | [Website](https://www.metalstack.cloud/) | ☁️ N/A | | |
 | MetaKube | SysEleven | [Website](https://www.syseleven.de/en/) | ☁️ N/A | | |
@@ -128,12 +127,12 @@ Cloud provider or third-party managed Kubernetes services where the control plan
 | Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE) | Oracle Cloud Infrastructure | [Website](https://www.oracle.com/fr/cloud/cloud-native/container-engine-kubernetes/) | ☁️ N/A | | [[ref]](#oracle-cloud-infrastructure-container-engine-for-kubernetes-oke) |
 | Redhat Openshift cloud | Redhat | [Website](https://www.redhat.com/fr/technologies/cloud-computing/openshift/openshift-cloud-services) | ☁️ N/A | Openshift | [[ref]](#redhat-openshift-cloud) |
 | SKS | Exoscale | [Website](https://community.exoscale.com/documentation/sks/overview/) | ☁️ N/A | | [[ref]](#sks) |
-| STACKIT Kubernetes Engine (SKE) | STACKIT | [Website](https://www.stackit.de/en/product/stackit-kubernetes-engine/) | ☁️ N/A | | |
-| StarlingX | OpenStack | [Website](https://www.starlingx.io/) | ☁️ N/A | OpenStack + Kubernetes | |
+| STACKIT Kubernetes Engine (SKE) | STACKIT | [Website](https://stackit.com/en/products/runtime/stackit-kubernetes-engine) | ☁️ N/A | | |
+| StarlingX | | [Website](https://www.starlingx.io/) | ☁️ N/A | | |
 | Tencent Kubernetes Engine (TKE) | Tencent Cloud | [Website](https://www.tencentcloud.com/products/tke) | ☁️ N/A | | |
 | UpCloud Managed Kubernetes (UKS) | UpCloud | [Website](https://upcloud.com/products/managed-kubernetes) | ☁️ N/A | | |
 | VKE | Vultr | [Website](https://www.vultr.com/kubernetes/) | ☁️ N/A | | [[ref]](#vke) |
-| Volcengine Kubernetes Engine (VKE) | ByteDance | [Website](https://www.volcengine.com/products/kubernetes-engine) | ☁️ N/A | | |
+| Volcengine Kubernetes Engine (VKE) | ByteDance | [Website](https://www.volcengine.com/product/vke) | ☁️ N/A | | |
 
 ---
 
