@@ -1,7 +1,7 @@
 solutions:
 - name: canonical kubernetes (snap)
   category: Desktop
-  url: https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner
+  url: https://github.com/canonical/microk8s
   publisher: Canonical
   license: Apache 2.0
   open_source: true
@@ -196,7 +196,7 @@ solutions:
 - name: Minishift
   category: Desktop
   url: https://github.com/minishift/minishift
-  publisher: Redhat
+  publisher: Red Hat
   license: Apache 2.0
   open_source: true
   based_on:
@@ -840,10 +840,10 @@ solutions:
 - name: Redhat Openshift cloud
   category: Managed
   url: https://www.redhat.com/fr/technologies/cloud-computing/openshift/openshift-cloud-services
-  publisher: Redhat
+  publisher: Red Hat
   license: cloud
   based_on:
-  - Openshift
+  - OpenShift
   status: active
   references:
   - title: A Practical OpenShift Tutorial for Developers
@@ -921,7 +921,7 @@ solutions:
 - name: hypershift
   category: ManagementPlatform
   url: https://github.com/openshift/hypershift
-  publisher: redhat
+  publisher: Red Hat
   license: Apache 2.0
   open_source: true
   based_on:
@@ -1336,7 +1336,7 @@ solutions:
   license: Apache 2.0
   open_source: true
   based_on:
-  - Kubeadm
+  - kubeadm
   status: active
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters de production
@@ -1380,7 +1380,7 @@ solutions:
   license: Apache 2.0
   open_source: true
   based_on:
-  - Kubeadm
+  - kubeadm
   status: active
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters de production
@@ -1422,7 +1422,7 @@ solutions:
 - name: OKD (open source openshift)
   category: Selfhosted
   url: https://github.com/okd-project/okd
-  publisher: Redhat
+  publisher: Red Hat
   license: Apache 2.0
   open_source: true
   based_on:
@@ -1485,7 +1485,7 @@ solutions:
 - name: TALM
   category: Selfhosted
   url: https://github.com/cozystack/talm
-  publisher: Cosystack
+  publisher: Cozystack
   license: Apache 2.0
   open_source: true
   based_on:
