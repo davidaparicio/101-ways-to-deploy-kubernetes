@@ -1,0 +1,128 @@
+# Schema for solutions.yaml
+# This file documents the structure for Kubernetes deployment solutions
+
+# Each solution follows this structure:
+solution:
+  # ===== REQUIRED FIELDS =====
+  
+  name: string
+  # The name of the solution
+  # Example: "Talos Linux", "k3s", "Minikube"
+  
+  category: enum
+  # The deployment category. Must be one of:
+  # - Desktop: Local development tools
+  # - IaC: Infrastructure as Code
+  # - KubernetesInKubernetes: Virtual/nested clusters
+  # - KubernetesOS: Immutable OS for K8s
+  # - Managed: Cloud managed services
+  # - ManagementPlatform: Multi-cluster platforms
+  # - Other: Playgrounds, education
+  # - Selfhosted: On-premise deployment
+  
+  url: string
+  # Main link (GitHub repository or official website)
+  # Example: "https://github.com/siderolabs/talos"
+  
+  # ===== OPTIONAL FIELDS =====
+  
+  publisher: string
+  # Publisher, company, or project organization
+  # Example: "Rancher", "AWS", "Canonical", "SideroLabs"
+  
+  description: string
+  # Short description of the solution
+  # Example: "Secure, immutable, and minimal Linux OS designed for Kubernetes"
+  
+  license: string
+  # License type
+  # - For open source: "Apache 2.0", "MIT", "MPL 2.0", "AGPL 3.0", "BSD 3-Clause", "BUSL 1.1", "Zlib"
+  # - For proprietary: "proprietary"
+  # - For managed cloud services: "cloud"
+  
+  open_source: boolean
+  # true for open source, false for proprietary
+  # Omit for cloud managed services
+  
+  based_on: array[string]
+  # Underlying technologies or tools the solution is based on
+  # Example: ["kubeadm", "k3s"], ["Terraform", "OpenTofu"]
+  
+  tags: array[string]
+  # Tags for filtering and categorization
+  # Example: ["local", "production", "edge", "immutable", "secure", "api-driven"]
+  
+  cloud_providers: array[string]
+  # For IaC/Managed solutions: supported cloud providers
+  # Example: ["aws", "gcp", "azure", "hetzner", "digitalocean"]
+  
+  status: enum
+  # Solution status. Must be one of:
+  # - active: Currently maintained (default if omitted)
+  # - deprecated: Deprecated but still available
+  # - abandoned: No longer maintained
+  
+  # ===== STRUCTURED REFERENCES =====
+  
+  references: array[reference]
+  # Array of external references (articles, tutorials, documentation)
+  
+  reference:
+    title: string
+    # Article/resource title
+    # Example: "Getting Started with Talos Linux"
+    
+    description: string
+    # Optional short description
+    # Example: "Step-by-step installation guide"
+    
+    language: enum
+    # Language code. Must be one of:
+    # en, fr, de, es, zh, ja, pt, ko, it, ru, nl, pl, tr, ar, hi
+    
+    url: string
+    # Link to the resource
+    # Example: "https://thenewstack.io/set-up-talos-linux-on-your-machine/"
+    
+    type: enum
+    # Resource type. Must be one of:
+    # - article: Blog post or news article
+    # - book: Book or book chapter
+    # - video: YouTube, conference talk recording
+    # - tutorial: Step-by-step guide
+    # - documentation: Official documentation
+    # - talk: Conference presentation slides
+
+# ===== EXAMPLE SOLUTION ENTRY =====
+
+example_solution:
+  name: "Talos Linux"
+  category: "KubernetesOS"
+  publisher: "SideroLabs"
+  url: "https://github.com/siderolabs/talos"
+  description: "Secure, immutable, and minimal Linux OS designed for Kubernetes"
+  license: "MPL 2.0"
+  open_source: true
+  based_on: []
+  tags:
+    - "production"
+    - "immutable"
+    - "secure"
+    - "api-driven"
+  status: "active"
+  references:
+    - title: "Kubernetes - 50 solutions pour les postes de développement et les clusters de production"
+      description: "Chapter 38 (Talos Linux)"
+      language: "fr"
+      url: "https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/"
+      type: "book"
+    - title: "Talos Linux"
+      description: "Introduction complète à Talos Linux"
+      language: "fr"
+      url: "https://une-tasse-de.cafe/blog/talos/"
+      type: "article"
+    - title: "Set Up Talos Linux on Your Machine"
+      description: "Step-by-step guide to install Talos locally"
+      language: "en"
+      url: "https://thenewstack.io/set-up-talos-linux-on-your-machine/"
+      type: "tutorial"
