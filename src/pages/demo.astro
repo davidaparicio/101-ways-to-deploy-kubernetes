@@ -186,6 +186,7 @@ const demoSolutions = [
         
         const searchableText = [
           solution.name,
+          solution.category,
           solution.publisher,
           solution.description,
           ...(solution.tags || []),
@@ -195,24 +196,33 @@ const demoSolutions = [
         return searchableText.includes(query);
       }
 
+      // Cache parsed solution data
+      const solutionCards = document.querySelectorAll('.solution-card');
+      const solutionsCache = new Map();
+      
+      solutionCards.forEach((card) => {
+        const solutionData = card.getAttribute('data-solution');
+        if (solutionData) {
+          solutionsCache.set(card, JSON.parse(solutionData));
+        }
+      });
+
       // Listen for search-change event from SearchBar
       window.addEventListener('search-change', (e) => {
         const query = e.detail.query;
-        const solutionCards = document.querySelectorAll('.solution-card');
         
         let visibleCount = 0;
         
         solutionCards.forEach((card) => {
-          const solutionData = card.getAttribute('data-solution');
-          if (solutionData) {
-            const solution = JSON.parse(solutionData);
+          const solution = solutionsCache.get(card);
+          if (solution) {
             const matches = matchesSolution(solution, query);
             
             if (matches) {
-              card.style.display = '';
+              card.classList.remove('hidden');
               visibleCount++;
             } else {
-              card.style.display = 'none';
+              card.classList.add('hidden');
             }
           }
         });
@@ -223,5 +233,10 @@ const demoSolutions = [
         }));
       });
     </script>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
   </body>
 </html>
