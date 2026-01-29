@@ -102,8 +102,9 @@ const demoSolutions = [
       In production, use a proper Tailwind CSS setup with your build system.
     -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+    <script is:inline>
       // Enable dark mode support
+      // @ts-ignore - tailwind is loaded from CDN
       tailwind.config = {
         darkMode: "class",
       };
