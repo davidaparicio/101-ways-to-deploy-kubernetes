@@ -86,6 +86,21 @@ Each solution should follow this structure:
 | `Other` | Playgrounds, education |
 | `Selfhosted` | On-premise deployment tools |
 
+#### Choosing the Right Category
+
+If you're unsure about category placement:
+
+1. **Primary function wins**: If a tool does multiple things, categorize by its primary use case
+2. **Desktop vs Selfhosted**: 
+   - Desktop: Designed for local development, single machine, easy setup
+   - Selfhosted: Designed for production, multi-node, requires infrastructure
+3. **IaC vs Tool**: 
+   - IaC: Focuses on infrastructure automation and can work across providers
+   - Selfhosted: The tool itself manages the cluster lifecycle
+4. **Managed vs Management Platform**:
+   - Managed: Service provides the cluster (you're a customer)
+   - Management Platform: You install it to manage your own clusters
+
 ### Reference Types
 
 | Type | Description |
