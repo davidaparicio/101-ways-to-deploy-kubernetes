@@ -1,124 +1,59 @@
 ---
-// Demo page to showcase the SolutionCard component
+// Demo page to showcase the SolutionCard component with FilterBar and SearchBar
+import Layout from "../layouts/Layout.astro";
 import SolutionCard from "../components/SolutionCard.astro";
+import FilterBar from "../components/FilterBar.astro";
 import SearchBar from "../components/SearchBar.astro";
+import { readFileSync } from "node:fs";
+import { load } from "js-yaml";
+import { join } from "node:path";
 
-const demoSolutions = [
-  {
-    name: "k3s",
-    category: "Selfhosted",
-    publisher: "Rancher",
-    url: "https://github.com/k3s-io/k3s",
-    description: "Lightweight Kubernetes distribution for IoT and edge computing",
-    license: "Apache 2.0",
-    open_source: true,
-    based_on: [],
-    tags: ["production", "lightweight", "edge", "iot"],
-    status: "active" as const,
-    references: [
-      {
-        title: "K3S et Cilium",
-        language: "fr",
-        url: "#",
-        type: "article",
-      },
-      {
-        title: "K3s Guide",
-        language: "en",
-        url: "#",
-        type: "tutorial",
-      },
-    ],
-  },
-  {
-    name: "Docker Desktop",
-    category: "Desktop",
-    publisher: "Docker (Mirantis)",
-    url: "https://www.docker.com/products/docker-desktop/",
-    description: "Docker Desktop includes a standalone Kubernetes server and client",
-    license: "proprietary",
-    open_source: false,
-    based_on: ["kubeadm", "kind"],
-    tags: ["local", "development", "gui"],
-    status: "active" as const,
-    references: [],
-  },
-  {
-    name: "Minishift",
-    category: "Desktop",
-    publisher: "Red Hat",
-    url: "https://github.com/minishift/minishift",
-    description: "Run OpenShift locally",
-    license: "Apache 2.0",
-    open_source: true,
-    based_on: ["OpenShift"],
-    tags: ["local", "development", "openshift"],
-    status: "abandoned" as const,
-    references: [],
-  },
-  {
-    name: "kops",
-    category: "IaC",
-    publisher: "Kubernetes SIG",
-    url: "https://github.com/kubernetes/kops",
-    description:
-      "Production-grade Kubernetes deployment automation on AWS, GCE, and more",
-    license: "Apache 2.0",
-    open_source: true,
-    based_on: [],
-    tags: ["production", "cloud", "automation", "aws", "gce", "azure", "digitalocean"],
-    status: "deprecated" as const,
-    references: [
-      {
-        title: "kops Tutorial",
-        language: "en",
-        url: "#",
-        type: "tutorial",
-      },
-      {
-        title: "kops Best Practices",
-        language: "en",
-        url: "#",
-        type: "article",
-      },
-      {
-        title: "kops Documentation",
-        language: "en",
-        url: "#",
-        type: "documentation",
-      },
-    ],
-  },
+// Load solutions from YAML file
+const yamlPath = join(process.cwd(), "data", "solutions.yaml");
+const yamlContent = readFileSync(yamlPath, "utf8");
+const data = load(yamlContent) as { solutions: any[] };
+const allSolutions = data.solutions || [];
+
+// Extract unique categories from solutions
+const categories = [
+  "Desktop",
+  "IaC",
+  "KubernetesInKubernetes",
+  "KubernetesOS",
+  "Managed",
+  "ManagementPlatform",
+  "Other",
+  "Selfhosted",
+];
+
+// Define cloud providers
+const cloudProviders = [
+  "aws",
+  "gcp",
+  "azure",
+  "civo",
+  "digitalocean",
+  "scaleway",
+  "ovh",
+  "hetzner",
+  "linode",
+  "vultr",
+  "oracle",
+  "ibm",
+  "alibaba",
 ];
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SolutionCard Component Demo</title>
-    <!-- 
-      NOTE: This demo uses Tailwind CDN for simplicity.
-      In production, use a proper Tailwind CSS setup with your build system.
-    -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script is:inline>
-      // Enable dark mode support
-      tailwind.config = {
-        darkMode: "class",
-      };
-    </script>
-  </head>
-  <body class="bg-gray-100 dark:bg-gray-900 min-h-screen">
+<Layout title="Kubernetes Deployment Solutions">
+  <div class="bg-gray-100 dark:bg-gray-900 min-h-screen">
     <div class="container mx-auto px-4 py-12">
       <!-- Header -->
-      <div class="mb-12 text-center">
+      <div class="mb-8 text-center">
         <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          SolutionCard Component Demo
+          Kubernetes Deployment Solutions
         </h1>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
-          Showcasing different states and configurations of the SolutionCard component
+          Browse and filter {allSolutions.length} ways to deploy Kubernetes
         </p>
         <!-- Dark Mode Toggle -->
         <button
@@ -129,41 +64,103 @@ const demoSolutions = [
         </button>
       </div>
 
-      <!-- SearchBar Component -->
-      <SearchBar totalCount={demoSolutions.length} />
+      <!-- Filter Bar -->
+      <FilterBar categories={categories} cloudProviders={cloudProviders} />
+
+      <!-- Search Bar -->
+      <SearchBar totalCount={allSolutions.length} />
 
       <!-- Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="solutions-grid">
+      <div
+        id="solutions-grid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
         {
-          demoSolutions.map((solution) => (
-            <div class="solution-card" data-solution={JSON.stringify(solution)}>
-              <SolutionCard solution={solution} />
-            </div>
+          allSolutions.map((solution) => (
+            <SolutionCard solution={solution} />
           ))
         }
+      </div>
+
+      <!-- No results message -->
+      <div
+        id="no-results"
+        class="hidden text-center py-12 text-gray-600 dark:text-gray-400"
+      >
+        <svg
+          class="w-16 h-16 mx-auto mb-4 text-gray-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <p class="text-lg font-medium">No solutions found</p>
+        <p class="text-sm">Try adjusting your filters</p>
       </div>
 
       <!-- Legend -->
       <div class="mt-12 bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          Component Features
+          Features
         </h2>
-        <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-          <li>✅ Modern card design with rounded corners and shadows</li>
-          <li>✅ Hover effects with smooth transitions</li>
-          <li>✅ Dark mode support for all elements</li>
-          <li>✅ Status badges (Deprecated/Abandoned)</li>
-          <li>✅ Open Source badge for OSS projects</li>
-          <li>✅ Based On section with purple pills</li>
-          <li>✅ Tags section with limit of 4 visible tags</li>
-          <li>✅ Footer with license, references count, and link</li>
-          <li>✅ GitHub vs external link icon detection</li>
-          <li>✅ Responsive grid layout</li>
-        </ul>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
+              SearchBar Component
+            </h3>
+            <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-400">
+              <li>✅ Real-time search</li>
+              <li>✅ Debounced input (150ms)</li>
+              <li>✅ Clear button</li>
+              <li>✅ Results counter</li>
+              <li>✅ Keyboard shortcuts (/ to focus)</li>
+              <li>✅ Search across all fields</li>
+              <li>✅ Works with FilterBar</li>
+              <li>✅ Dark mode support</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
+              FilterBar Component
+            </h3>
+            <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-400">
+              <li>✅ Category filter pills</li>
+              <li>✅ Cloud provider dropdown</li>
+              <li>✅ Open source filter toggle</li>
+              <li>✅ Status checkboxes</li>
+              <li>✅ Clear all filters button</li>
+              <li>✅ Real-time filtering</li>
+              <li>✅ Dark mode support</li>
+              <li>✅ Responsive design</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
+              SolutionCard Component
+            </h3>
+            <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-400">
+              <li>✅ Modern card design</li>
+              <li>✅ Status badges</li>
+              <li>✅ Open source badge</li>
+              <li>✅ Based on section</li>
+              <li>✅ Tags section</li>
+              <li>✅ License and references</li>
+              <li>✅ GitHub link detection</li>
+              <li>✅ Responsive grid layout</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <script is:inline>
+    <script>
       // Dark mode toggle functionality
       const darkModeToggle = document.getElementById("darkModeToggle");
       const html = document.documentElement;
@@ -180,63 +177,149 @@ const demoSolutions = [
         html.classList.add("dark");
       }
 
-      // Search functionality
-      function matchesSolution(solution, query) {
-        if (!query) return true;
-        
-        const searchableText = [
-          solution.name,
-          solution.category,
-          solution.publisher,
-          solution.description,
-          ...(solution.tags || []),
-          ...(solution.based_on || []),
-        ].filter(Boolean).join(' ').toLowerCase();
-        
-        return searchableText.includes(query);
-      }
+      // Filter solutions based on filter state
+      let currentSearchQuery = "";
+      let currentFilterState = {
+        category: "all",
+        cloudProvider: "",
+        openSourceOnly: false,
+        statuses: ["active", "deprecated", "abandoned"]
+      };
 
-      // Cache parsed solution data
-      const solutionCards = document.querySelectorAll('.solution-card');
-      const solutionsCache = new Map();
-      
-      solutionCards.forEach((card) => {
-        const solutionData = card.getAttribute('data-solution');
-        if (solutionData) {
-          solutionsCache.set(card, JSON.parse(solutionData));
-        }
-      });
+      function applyCombinedFilters() {
+        // Get all solution cards
+        const solutionsGrid = document.getElementById("solutions-grid");
+        const noResults = document.getElementById("no-results");
+        if (!solutionsGrid) return;
 
-      // Listen for search-change event from SearchBar
-      window.addEventListener('search-change', (e) => {
-        const query = e.detail.query;
-        
+        const cards = Array.from(solutionsGrid.children) as HTMLElement[];
+        const solutions = JSON.parse(
+          document.getElementById("solutions-data")?.textContent || "[]"
+        );
         let visibleCount = 0;
-        
-        solutionCards.forEach((card) => {
-          const solution = solutionsCache.get(card);
-          if (solution) {
-            const matches = matchesSolution(solution, query);
-            
-            if (matches) {
-              card.classList.remove('hidden');
-              visibleCount++;
-            } else {
-              card.classList.add('hidden');
+
+        cards.forEach((card, index) => {
+          const solution = solutions[index];
+          if (!solution) return;
+
+          // Extract solution data from card (stored in data attributes)
+          const solutionData = {
+            category: card.dataset.category || "",
+            cloudProviders: (card.dataset.cloudProviders || "").split(",").filter(Boolean),
+            openSource: card.dataset.openSource === "true",
+            status: card.dataset.status || "active",
+            name: solution.name || "",
+            publisher: solution.publisher || "",
+            description: solution.description || "",
+            tags: solution.tags || [],
+            based_on: solution.based_on || [],
+          };
+
+          // Apply filter bar filters
+          let visible = true;
+
+          // Category filter
+          if (currentFilterState.category !== "all" && solutionData.category !== currentFilterState.category) {
+            visible = false;
+          }
+
+          // Cloud provider filter (only for Managed/IaC)
+          if (
+            currentFilterState.cloudProvider &&
+            (currentFilterState.category === "Managed" || currentFilterState.category === "IaC")
+          ) {
+            if (!solutionData.cloudProviders.includes(currentFilterState.cloudProvider)) {
+              visible = false;
             }
           }
+
+          // Open source filter
+          if (currentFilterState.openSourceOnly && !solutionData.openSource) {
+            visible = false;
+          }
+
+          // Status filter
+          if (currentFilterState.statuses.length > 0 && !currentFilterState.statuses.includes(solutionData.status)) {
+            visible = false;
+          }
+
+          // Apply search filter
+          if (visible && currentSearchQuery) {
+            const searchableText = [
+              solutionData.name,
+              solutionData.category,
+              solutionData.publisher,
+              solutionData.description,
+              ...(solutionData.tags || []),
+              ...(solutionData.based_on || []),
+            ].filter(Boolean).join(' ').toLowerCase();
+            
+            if (!searchableText.includes(currentSearchQuery)) {
+              visible = false;
+            }
+          }
+
+          // Show/hide card
+          if (visible) {
+            card.classList.remove("hidden");
+            visibleCount++;
+          } else {
+            card.classList.add("hidden");
+          }
         });
-        
-        // Dispatch count update event
+
+        // Show/hide no results message
+        if (noResults) {
+          if (visibleCount === 0) {
+            noResults.classList.remove("hidden");
+          } else {
+            noResults.classList.add("hidden");
+          }
+        }
+
+        // Update search counter
         window.dispatchEvent(new CustomEvent('solutions-count-update', {
           detail: { count: visibleCount }
         }));
+      }
+
+      document.addEventListener("filter-change", (event: Event) => {
+        const customEvent = event as CustomEvent;
+        currentFilterState = customEvent.detail;
+        console.log("Filter state changed:", currentFilterState);
+        applyCombinedFilters();
+      });
+
+      // Listen for search-change event from SearchBar
+      window.addEventListener('search-change', ((event: CustomEvent) => {
+        currentSearchQuery = event.detail.query;
+        console.log("Search query changed:", currentSearchQuery);
+        applyCombinedFilters();
+      }) as EventListener);
+
+      // Add data attributes to solution cards for filtering
+      window.addEventListener("DOMContentLoaded", () => {
+        const solutionsGrid = document.getElementById("solutions-grid");
+        if (!solutionsGrid) return;
+
+        const cards = Array.from(solutionsGrid.children) as HTMLElement[];
+        const solutions = JSON.parse(
+          document.getElementById("solutions-data")?.textContent || "[]"
+        );
+
+        cards.forEach((card, index) => {
+          const solution = solutions[index];
+          if (solution) {
+            card.dataset.category = solution.category || "";
+            card.dataset.cloudProviders = (solution.cloud_providers || []).join(",");
+            card.dataset.openSource = String(solution.open_source || false);
+            card.dataset.status = solution.status || "active";
+          }
+        });
       });
     </script>
-    <style>
-      .hidden {
-        display: none;
-      }
-    </style>
-  </body>
-</html>
+
+    <!-- Store solutions data for filtering -->
+    <script id="solutions-data" type="application/json" is:inline set:html={JSON.stringify(allSolutions)} />
+  </div>
+</Layout>
