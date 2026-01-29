@@ -43,13 +43,13 @@ This repository is a comprehensive list of **ways to deploy Kubernetes clusters*
 Each solution should follow this structure:
 
 ```yaml
-- name: "Solution Name"
-  category: "Desktop"  # See categories below
-  url: "https://github.com/org/repo"
+- name: "Solution Name"  # REQUIRED
+  category: "Desktop"  # REQUIRED - See categories below
+  url: "https://github.com/org/repo"  # REQUIRED
   publisher: "Company Name"  # Optional
-  description: "Short description of the solution"
-  license: "Apache 2.0"  # Or "MIT", "proprietary", "cloud"
-  open_source: true  # true or false
+  description: "Short description of the solution"  # Optional
+  license: "Apache 2.0"  # Optional - See license types below
+  open_source: true  # Optional - true or false
   based_on:  # Optional - underlying technologies
     - "kubeadm"
     - "k3s"
@@ -59,7 +59,7 @@ Each solution should follow this structure:
   cloud_providers:  # Optional - for Managed/IaC solutions
     - "aws"
     - "gcp"
-  status: "active"  # active, deprecated, or abandoned
+  status: "active"  # Optional - active, deprecated, or abandoned (default: active)
   references:  # Optional - external resources
     - title: "Getting Started Guide"
       description: "Step-by-step tutorial"
@@ -67,6 +67,11 @@ Each solution should follow this structure:
       url: "https://example.com/guide"
       type: "tutorial"
 ```
+
+**License Types:**
+- Open source: `Apache 2.0`, `MIT`, `MPL 2.0`, `AGPL 3.0`, `BSD 3-Clause`, `BUSL 1.1`, `Zlib`
+- Proprietary: `proprietary`
+- Cloud managed services: `cloud`
 
 ### Categories
 
@@ -87,14 +92,16 @@ Each solution should follow this structure:
 |------|-------------|
 | `article` | Blog post or news article |
 | `book` | Book or book chapter |
-| `video` | YouTube, conference recording |
+| `video` | YouTube, conference talk recording |
 | `tutorial` | Step-by-step guide |
 | `documentation` | Official docs |
-| `talk` | Conference presentation |
+| `talk` | Conference presentation slides |
 
 ### Languages (ISO 639-1)
 
-Use standard language codes: `en`, `fr`, `de`, `es`, `zh`, `ja`, `pt`, `ko`, etc.
+Supported language codes: `en`, `fr`, `de`, `es`, `zh`, `ja`, `pt`, `ko`, `it`, `ru`, `nl`, `pl`, `tr`, `ar`, `hi`
+
+Use standard ISO 639-1 two-letter language codes for references.
 
 ## Development Setup
 
@@ -117,6 +124,9 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
 
 ### Project Structure

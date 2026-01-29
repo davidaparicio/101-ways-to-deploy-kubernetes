@@ -53,7 +53,7 @@ We welcome contributions of:
 - **Updates to existing entries** - Fix outdated information or broken links
 - **Site improvements** - Enhance the UI, add features, or improve documentation
 
-All contributions are reviewed and must follow our [schema guidelines](data/schema.yaml).
+All contributions are reviewed and must follow our [schema guidelines](./data/schema.yaml).
 
 ---
 
