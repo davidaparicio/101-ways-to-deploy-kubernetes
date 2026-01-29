@@ -192,7 +192,6 @@ const { categories, cloudProviders } = Astro.props;
     document.querySelectorAll('.filter-pill').forEach((btn) => {
       btn.addEventListener('click', (e) => {
         const target = e.currentTarget as HTMLElement;
-        const category = target.getAttribute('data-category');
         
         // Toggle active state
         document.querySelectorAll('.filter-pill').forEach((b) => {

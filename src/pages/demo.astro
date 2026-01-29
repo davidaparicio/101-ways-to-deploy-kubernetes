@@ -1,10 +1,11 @@
 ---
 // Demo page to showcase the SolutionCard component with FilterBar
+import Layout from "../layouts/Layout.astro";
 import SolutionCard from "../components/SolutionCard.astro";
 import FilterBar from "../components/FilterBar.astro";
-import { readFileSync } from "fs";
+import { readFileSync } from "node:fs";
 import { load } from "js-yaml";
-import { join } from "path";
+import { join } from "node:path";
 
 // Load solutions from YAML file
 const yamlPath = join(process.cwd(), "data", "solutions.yaml");
@@ -42,25 +43,8 @@ const cloudProviders = [
 ];
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SolutionCard Component Demo</title>
-    <!-- 
-      NOTE: This demo uses Tailwind CDN for simplicity.
-      In production, use a proper Tailwind CSS setup with your build system.
-    -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      // Enable dark mode support
-      tailwind.config = {
-        darkMode: "class",
-      };
-    </script>
-  </head>
-  <body class="bg-gray-100 dark:bg-gray-900 min-h-screen">
+<Layout title="Kubernetes Deployment Solutions">
+  <div class="bg-gray-100 dark:bg-gray-900 min-h-screen">
     <div class="container mx-auto px-4 py-12">
       <!-- Header -->
       <div class="mb-8 text-center">
@@ -268,6 +252,6 @@ const cloudProviders = [
     </script>
 
     <!-- Store solutions data for filtering -->
-    <script id="solutions-data" type="application/json" set:html={JSON.stringify(allSolutions)} />
-  </body>
-</html>
+    <script id="solutions-data" type="application/json" is:inline set:html={JSON.stringify(allSolutions)} />
+  </div>
+</Layout>
