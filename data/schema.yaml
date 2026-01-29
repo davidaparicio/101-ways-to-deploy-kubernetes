@@ -29,6 +29,7 @@ solution:
   icon_url: string
   # URL to an external icon/logo image (PNG, SVG, JPEG)
   # Example: "https://example.com/logo.svg"
+  # Note: Only use URLs from trusted sources (official websites, CDNs, reputable image hosts)
   
   publisher: string
   # Publisher, company, or project organization

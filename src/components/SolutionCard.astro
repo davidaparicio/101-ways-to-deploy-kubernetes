@@ -63,14 +63,16 @@ const remainingTags = (solution.tags?.length || 0) - visibleTags.length;
     <!-- Logo Placeholder -->
     {solution.icon_url ? (
       <div 
-        class="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 bg-white dark:bg-gray-700 p-2 icon-container"
+        class="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 bg-white dark:bg-gray-700 p-2"
         data-fallback-letter={firstLetter}
       >
         <img 
           src={solution.icon_url} 
           alt={`${solution.name} logo`}
-          class="w-full h-full object-contain icon-image"
+          class="w-full h-full object-contain"
           loading="lazy"
+          referrerpolicy="no-referrer"
+          onerror={`this.style.display='none'; const container = this.parentElement; container.classList.remove('bg-white', 'dark:bg-gray-700', 'p-2'); container.classList.add('bg-gradient-to-br', 'from-blue-500', 'to-blue-600', 'dark:from-blue-600', 'dark:to-blue-700'); const span = document.createElement('span'); span.className = 'text-white font-bold text-2xl'; span.textContent = container.getAttribute('data-fallback-letter'); container.appendChild(span);`}
         />
       </div>
     ) : (
@@ -274,20 +276,3 @@ const remainingTags = (solution.tags?.length || 0) - visibleTags.length;
     overflow: hidden;
   }
 </style>
-
-<script>
-  // Handle icon loading errors by falling back to letter placeholder
-  document.addEventListener('DOMContentLoaded', () => {
-    const iconImages = document.querySelectorAll('.icon-container .icon-image');
-    iconImages.forEach((img) => {
-      img.addEventListener('error', function(this: HTMLImageElement) {
-        const container = this.parentElement as HTMLElement;
-        const fallbackLetter = container.getAttribute('data-fallback-letter') || '?';
-        
-        // Replace container content with fallback placeholder
-        container.className = 'w-16 h-16 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 flex items-center justify-center text-white font-bold text-2xl flex-shrink-0';
-        container.innerHTML = fallbackLetter;
-      });
-    });
-  });
-</script>
