@@ -52,7 +52,7 @@ const { placeholder = "Search solutions...", totalCount = 0 } = Astro.props;
   const clearButton = document.getElementById('search-clear');
   const resultsCount = document.getElementById('visible-count');
   
-  let debounceTimer: number;
+  let debounceTimer: ReturnType<typeof setTimeout>;
   
   searchInput?.addEventListener('input', (e) => {
     const query = (e.target as HTMLInputElement).value.trim().toLowerCase();
