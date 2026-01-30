@@ -42,10 +42,14 @@ const firstLetter = solution.name.charAt(0).toUpperCase();
 // Limit visible tags to 4
 const visibleTags = solution.tags?.slice(0, 4) || [];
 const remainingTags = (solution.tags?.length || 0) - visibleTags.length;
+
+// Generate unique ID for this card (using URL to ensure uniqueness)
+const cardId = `card-${solution.url.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}`;
 ---
 
 <div
-  class="hover-lift bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 overflow-hidden flex flex-col h-full"
+  class="solution-card-wrapper hover-lift bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 overflow-hidden flex flex-col h-full cursor-pointer"
+  data-card-id={cardId}
 >
   <!-- Header Section -->
   <div class="p-6 flex items-start gap-4 relative">
@@ -205,7 +209,7 @@ const remainingTags = (solution.tags?.length || 0) - visibleTags.length;
       <!-- References Count -->
       {
         referencesCount > 0 && (
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             <svg
               class="w-4 h-4"
               fill="none"
@@ -220,7 +224,7 @@ const remainingTags = (solution.tags?.length || 0) - visibleTags.length;
                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
               />
             </svg>
-            <span>{referencesCount} refs</span>
+            <span class="font-medium">{referencesCount} refs</span>
           </div>
         )
       }
@@ -270,6 +274,336 @@ const remainingTags = (solution.tags?.length || 0) - visibleTags.length;
   </div>
 </div>
 
+<!-- Modal for expanded card view -->
+<div 
+  id={`modal-${cardId}`}
+  class="modal-overlay fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center p-4"
+  style="backdrop-filter: blur(8px); z-index: 9999;"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby={`modal-title-${cardId}`}
+>
+  <div class="modal-content bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-y-auto transform transition-all duration-300 scale-95 opacity-0">
+    <!-- Modal Header -->
+    <div class="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-6 flex items-start justify-between z-10">
+      <div class="flex items-start gap-4 flex-1 min-w-0">
+        <!-- Logo -->
+        <div
+          class="w-20 h-20 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 flex items-center justify-center text-white font-bold text-3xl flex-shrink-0"
+        >
+          {firstLetter}
+        </div>
+        
+        <!-- Name and Category -->
+        <div class="flex-1 min-w-0">
+          <h2 id={`modal-title-${cardId}`} class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            {solution.name}
+          </h2>
+          {solution.publisher && (
+            <p class="text-gray-600 dark:text-gray-400 mb-2">
+              {solution.publisher}
+            </p>
+          )}
+          <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm font-medium">
+            {solution.category}
+          </span>
+        </div>
+      </div>
+      
+      <!-- Close Button -->
+      <button 
+        class="modal-close flex-shrink-0 ml-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+        aria-label="Close modal"
+        type="button"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="p-6 space-y-6">
+      <!-- Status Badge -->
+      {solution.status && solution.status !== "active" && (
+        <div class={`inline-block px-4 py-2 rounded-lg text-sm font-medium ${statusColors[solution.status]}`}>
+          Status: {solution.status.charAt(0).toUpperCase() + solution.status.slice(1)}
+        </div>
+      )}
+
+      <!-- Description -->
+      {solution.description && (
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Description</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            {solution.description}
+          </p>
+        </div>
+      )}
+
+      <!-- All Tags -->
+      {solution.tags && solution.tags.length > 0 && (
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Tags</h3>
+          <div class="flex flex-wrap gap-2">
+            {solution.tags.map((tag) => (
+              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Based On -->
+      {solution.based_on && solution.based_on.length > 0 && (
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Based On</h3>
+          <div class="flex flex-wrap gap-2">
+            {solution.based_on.map((tech) => (
+              <span class="px-3 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-lg text-sm font-medium">
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Cloud Providers -->
+      {solution.cloud_providers && solution.cloud_providers.length > 0 && (
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Cloud Providers</h3>
+          <div class="flex flex-wrap gap-2">
+            {solution.cloud_providers.map((provider) => (
+              <span class="px-3 py-2 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300 rounded-lg text-sm font-medium">
+                {provider}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- References -->
+      {solution.references && solution.references.length > 0 && (
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+            References ({solution.references.length})
+          </h3>
+          <div class="space-y-3">
+            {solution.references.map((ref) => (
+              <a 
+                href={ref.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400"
+              >
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="font-medium text-gray-900 dark:text-white">
+                        {ref.title}
+                      </span>
+                      <span class="text-xs px-2 py-0.5 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded">
+                        {ref.language}
+                      </span>
+                      <span class="text-xs px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded">
+                        {ref.type}
+                      </span>
+                    </div>
+                    {ref.description && (
+                      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                        {ref.description}
+                      </p>
+                    )}
+                  </div>
+                  <svg 
+                    class="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      stroke-width="2" 
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Additional Info -->
+      <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+        <div class="flex flex-wrap gap-4 text-sm">
+          {solution.license && (
+            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              <span>License: {solution.license}</span>
+            </div>
+          )}
+          {solution.open_source && (
+            <div class="flex items-center gap-2 text-green-600 dark:text-green-400">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Open Source</span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <!-- Visit Link Button -->
+      <div class="pt-4">
+        <a
+          href={solution.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-press w-full flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+        >
+          {isGitHub ? (
+            <>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              Visit on GitHub
+            </>
+          ) : (
+            <>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+              Visit Website
+            </>
+          )}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ cardId }}>
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initModal);
+  } else {
+    initModal();
+  }
+  
+  function initModal() {
+    // Get elements
+    const card = document.querySelector(`[data-card-id="${cardId}"]`);
+    const modal = document.getElementById(`modal-${cardId}`);
+    const modalContent = modal?.querySelector('.modal-content');
+    const closeBtn = modal?.querySelector('.modal-close');
+    
+    // Store the element that opened the modal for focus restoration
+    let triggerElement = null;
+    
+    // Store original body overflow
+    let originalBodyOverflow = '';
+    
+    // Store original parent for cleanup
+    let originalParent = null;
+
+    // Open modal on card click
+    card?.addEventListener('click', (e) => {
+      // Don't open modal if clicking on the external link in footer
+      const target = e.target;
+      if (target && target.closest && target.closest('.btn-press')) {
+        return;
+      }
+      
+      if (modal && modalContent && closeBtn) {
+        // Store trigger element for focus restoration
+        triggerElement = card;
+        
+        // Store original overflow
+        originalBodyOverflow = document.body.style.overflow;
+        
+        // Move modal to body to ensure it's not constrained by parent containers
+        if (!originalParent) {
+          originalParent = modal.parentElement;
+        }
+        document.body.appendChild(modal);
+        
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        
+        // Trigger animation using requestAnimationFrame
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            modalContent.classList.remove('scale-95', 'opacity-0');
+            modalContent.classList.add('scale-100', 'opacity-100');
+          });
+        });
+        
+        // Focus the close button for accessibility
+        closeBtn.focus();
+      }
+    });
+
+    // Close modal function
+    const closeModal = () => {
+      if (modal && modalContent) {
+        modalContent.classList.remove('scale-100', 'opacity-100');
+        modalContent.classList.add('scale-95', 'opacity-0');
+        
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+          // Restore original overflow
+          document.body.style.overflow = originalBodyOverflow;
+          
+          // Restore focus to trigger element
+          if (triggerElement) {
+            triggerElement.focus();
+          }
+        }, 300);
+      }
+    };
+
+    // Close button - handle both click and keyboard
+    closeBtn?.addEventListener('click', closeModal);
+    closeBtn?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        closeModal();
+      }
+    });
+
+    // Close on overlay click
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close on escape key - only for this modal
+    const handleEscape = (e) => {
+      if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    };
+    
+    document.addEventListener('keydown', handleEscape);
+    
+    // Cleanup: Remove event listener when component is removed
+    // This prevents memory leaks in SPAs
+    if (typeof window !== 'undefined' && window.addEventListener) {
+      window.addEventListener('beforeunload', () => {
+        document.removeEventListener('keydown', handleEscape);
+      });
+    }
+  }
+</script>
+
 <style>
   /* Utility class for line clamping */
   .line-clamp-2 {
@@ -277,5 +611,19 @@ const remainingTags = (solution.tags?.length || 0) - visibleTags.length;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  /* Modal animations */
+  .modal-overlay {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .modal-content {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Card click effect */
+  .solution-card-wrapper:active {
+    transform: scale(0.98);
   }
 </style>
