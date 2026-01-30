@@ -60,7 +60,7 @@ Each solution should follow this structure:
   cloud_providers:  # Optional - for Managed/IaC solutions
     - "aws"
     - "gcp"
-  status: "active"  # Optional - active, deprecated, or abandoned (default: active)
+  abandoned: true  # Optional - boolean, default: false (false = maintained, true = no longer maintained)
   references:  # Optional - external resources
     - title: "Getting Started Guide"
       description: "Step-by-step tutorial"
@@ -166,7 +166,7 @@ npm run preview
 ### Do's
 - ✅ Add solutions you have personal experience with
 - ✅ Include references to tutorials or documentation
-- ✅ Mark abandoned/deprecated projects appropriately
+- ✅ Mark abandoned projects appropriately with `abandoned: true`
 - ✅ Use English for all content
 - ✅ Test your changes locally before submitting
 

@@ -63,7 +63,7 @@ const cloudProviders = [...new Set(solutions.flatMap(s => s.cloud_providers || [
                data-based-on={solution.based_on?.join(' ').toLowerCase() || ''}
                data-cloud-providers={solution.cloud_providers?.join(' ').toLowerCase() || ''}
                data-open-source={solution.open_source ? 'true' : 'false'}
-               data-status={solution.status || 'active'}>
+               data-abandoned={solution.abandoned ? 'true' : 'false'}>
             <SolutionCard solution={solution} />
           </div>
         ))}
@@ -141,7 +141,9 @@ const cloudProviders = [...new Set(solutions.flatMap(s => s.cloud_providers || [
 
       // Status filter
       if (visible && currentFilters.statuses.length > 0) {
-        visible = currentFilters.statuses.includes(el.dataset.status || 'active');
+        const isAbandoned = el.dataset.abandoned === 'true';
+        const itemStatus = isAbandoned ? 'abandoned' : 'active';
+        visible = currentFilters.statuses.includes(itemStatus);
       }
 
       el.style.display = visible ? '' : 'none';

@@ -183,7 +183,7 @@ const cloudProviders = [
         category: "all",
         cloudProvider: "",
         openSourceOnly: false,
-        statuses: ["active", "deprecated", "abandoned"]
+        statuses: ["active"]
       };
 
       function applyCombinedFilters() {
@@ -207,7 +207,7 @@ const cloudProviders = [
             category: card.dataset.category || "",
             cloudProviders: (card.dataset.cloudProviders || "").split(",").filter(Boolean),
             openSource: card.dataset.openSource === "true",
-            status: card.dataset.status || "active",
+            abandoned: card.dataset.abandoned === "true",
             name: solution.name || "",
             publisher: solution.publisher || "",
             description: solution.description || "",
@@ -239,8 +239,11 @@ const cloudProviders = [
           }
 
           // Status filter
-          if (currentFilterState.statuses.length > 0 && !currentFilterState.statuses.includes(solutionData.status)) {
-            visible = false;
+          if (currentFilterState.statuses.length > 0) {
+            const itemStatus = solutionData.abandoned ? 'abandoned' : 'active';
+            if (!currentFilterState.statuses.includes(itemStatus)) {
+              visible = false;
+            }
           }
 
           // Apply search filter
@@ -313,7 +316,7 @@ const cloudProviders = [
             card.dataset.category = solution.category || "";
             card.dataset.cloudProviders = (solution.cloud_providers || []).join(",");
             card.dataset.openSource = String(solution.open_source || false);
-            card.dataset.status = solution.status || "active";
+            card.dataset.abandoned = String(solution.abandoned || false);
           }
         });
       });
