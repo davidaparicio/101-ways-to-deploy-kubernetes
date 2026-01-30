@@ -5,7 +5,7 @@ A modern, reusable Astro component for displaying Kubernetes deployment solution
 ## Overview
 
 The `SolutionCard.astro` component provides a consistent, visually appealing way to display Kubernetes deployment solutions with support for:
-- Multiple deployment states (active, deprecated, abandoned)
+- Abandoned status indicator
 - Open source vs proprietary indicators
 - Technology dependencies ("Based on")
 - Tags and categorization
@@ -33,7 +33,7 @@ interface Props {
     based_on?: string[];            // Technology dependencies
     tags?: string[];                // Tags for categorization
     cloud_providers?: string[];     // Supported cloud providers
-    status?: "active" | "deprecated" | "abandoned";  // Solution status
+    abandoned?: boolean;             // Whether solution is abandoned (default: false)
     references?: {                  // External references
       title: string;
       description?: string;
@@ -81,10 +81,9 @@ interface Props {
 - Checkmark icon in OSS badge
 
 ### Status Badges
-Status badges appear in the top-right corner (only for non-active solutions):
-- **Deprecated**: Yellow background (`bg-yellow-100`)
+Status badges appear in the top-right corner (only for abandoned solutions):
 - **Abandoned**: Red background (`bg-red-100`)
-- **Active**: No badge shown
+- **Active**: No badge shown (default)
 
 ### Description
 - 2-line clamp to maintain consistent card heights
@@ -130,7 +129,6 @@ const solutions = [
     license: "Apache 2.0",
     open_source: true,
     tags: ["production", "lightweight", "edge", "iot"],
-    status: "active",
     references: [
       { title: "K3S et Cilium", language: "fr", url: "#", type: "article" },
     ],
@@ -149,7 +147,7 @@ const solutions = [
 
 A demo page is available at `src/pages/demo.astro` showing:
 - 4 example cards with different configurations
-- Active, deprecated, and abandoned states
+- Active and abandoned states
 - Open source and proprietary solutions
 - Solutions with and without "Based on" dependencies
 - Tag overflow handling (more than 4 tags)
