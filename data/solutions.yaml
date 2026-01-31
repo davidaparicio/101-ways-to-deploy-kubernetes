@@ -262,7 +262,8 @@ solutions:
   license: Apache 2.0
   open_source: true
   based_on:
-  - LimaVM and k3s
+  - LimaVM
+  - k3s
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters de production
     language: fr
@@ -937,7 +938,8 @@ solutions:
   license: Apache 2.0
   open_source: true
   based_on:
-  - k0smotron and cluster API
+  - k0smotron
+  - Cluster API
 - name: Kamaji
   category: ManagementPlatform
   url: https://github.com/clastix/kamaji
@@ -946,7 +948,8 @@ solutions:
   license: Apache 2.0
   open_source: true
   based_on:
-  - kubeadm and Cluster API
+  - kubeadm
+  - Cluster API
   references:
   - title: Setup a minimal Kamaji for development
     language: en
@@ -1198,7 +1201,8 @@ solutions:
   license: Apache 2.0
   open_source: true
   based_on:
-  - k0s and clusterAPI
+  - k0s
+  - Cluster API
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters de production
     language: fr
@@ -1469,7 +1473,8 @@ solutions:
   license: Apache 2.0
   open_source: true
   based_on:
-  - k3s and RKE
+  - k3s
+  - RKE
   references:
   - title: 'Rancher Kubernetes: A Quick Installation Guide for RKE2'
     language: en
