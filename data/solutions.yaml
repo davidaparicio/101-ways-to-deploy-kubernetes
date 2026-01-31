@@ -479,7 +479,7 @@ solutions:
 - name: k3k
   category: KubernetesInKubernetes
   url: https://github.com/rancher/k3k
-  icon_url: https://raw.githubusercontent.com/rancher/k3k/main/docs/k3k.svg
+  icon_url: https://avatars.githubusercontent.com/u/9343010?s=200&v=4
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -671,7 +671,7 @@ solutions:
 - name: CoreWeave Kubernetes Service (CKS)
   category: Managed
   url: https://www.coreweave.com/products/coreweave-kubernetes-service
-  icon_url: https://www.coreweave.com/hubfs/coreweave-logo.svg
+  icon_url: https://raw.githubusercontent.com/zwindler/101-ways-to-deploy-kubernetes/refs/heads/main/public/logos/coreweave-logo.svg
   publisher: CoreWeave
   license: cloud
 - name: DOKS
@@ -706,13 +706,13 @@ solutions:
 - name: Gcore Managed Kubernetes
   category: Managed
   url: https://gcore.com/cloud/managed-kubernetes
-  icon_url: https://gcore.com/img/logo-gcore.svg
+  icon_url: https://api.gcore.com/iam/files/get/?name=reselling.BrandingFile/bytes/filename/mimetype/5h7SsvEBwWrj.jpg
   publisher: Gcore
   license: cloud
 - name: GKE
   category: Managed
-  url: https://cloud.google.com/kubernetes-engine?hl=fr
-  icon_url: https://www.gstatic.com/images/branding/product/2x/google_kubernetes_engine_64dp.png
+  url: https://cloud.google.com/kubernetes-engine
+  icon_url: https://www.gstatic.com/bricks/image/a25e3d67-cda0-4dd2-88c4-49e04c469441.png
   publisher: Google Cloud Platform
   license: cloud
   references:
@@ -727,7 +727,7 @@ solutions:
 - name: Gridscale Managed Kubernetes (GSK)
   category: Managed
   url: https://gridscale.io/en/products/kubernetes/
-  icon_url: https://gridscale.io/wp-content/uploads/2023/05/gridscale_logo.svg
+  icon_url: https://gridscale.io/wp-content/uploads/gridscale-ovh-logo.svg
   publisher: Gridscale
   license: cloud
 - name: IBM Cloud (IKS)
@@ -748,7 +748,7 @@ solutions:
 - name: IONOS Kubernetes Service
   category: Managed
   url: https://cloud.ionos.com/managed/kubernetes
-  icon_url: https://www.ionos.com/resources/images/logo-ionos.svg
+  icon_url: https://cloud.ionos.com/_next/static/media/ionos.b2910554.svg
   publisher: IONOS
   license: cloud
 - name: Kapsule
@@ -778,7 +778,7 @@ solutions:
 - name: LeafCloud
   category: Managed
   url: https://www.leaf.cloud/
-  icon_url: https://www.leaf.cloud/images/leaf-logo.svg
+  icon_url: https://www.leaf.cloud/logos/leafcloud.svg
   publisher: LeafCloud
   license: cloud
   based_on:
@@ -803,7 +803,7 @@ solutions:
 - name: MetaKube
   category: Managed
   url: https://www.syseleven.de/en/
-  icon_url: https://www.syseleven.de/wp-content/themes/syseleven/assets/images/syseleven-logo.svg
+  icon_url: https://www.syseleven.de/wp-content/uploads/2026/01/secunet_syseleven_Logo_RGB_SchwarzRot_by-secunet_fuer-Website.png
   publisher: SysEleven
   license: cloud
 - name: MKS
@@ -825,13 +825,13 @@ solutions:
 - name: Orka
   category: Managed
   url: https://www.macstadium.com/orka
-  icon_url: https://www.macstadium.com/hubfs/macstadium-logo.svg
+  icon_url: https://cdn.prod.website-files.com/687e650a56916806eaaf8f62/68c24991575cbc9ba4d212e6_Orka-Logo-WhiteBellyRegistered.svg
   publisher: MacStadium
   license: cloud
 - name: Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE)
   category: Managed
   url: https://www.oracle.com/fr/cloud/cloud-native/container-engine-kubernetes/
-  icon_url: https://www.oracle.com/a/ocom/img/rh01-oracle-logo.svg
+  icon_url: https://raw.githubusercontent.com/zwindler/101-ways-to-deploy-kubernetes/refs/heads/main/public/logos/oracle-logo.svg
   publisher: Oracle Cloud Infrastructure
   license: cloud
   references:
@@ -856,7 +856,7 @@ solutions:
 - name: SKS
   category: Managed
   url: https://community.exoscale.com/documentation/sks/overview/
-  icon_url: https://www.exoscale.com/static/exoscale-logo.svg
+  icon_url: hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMNsYNpjXBRcMrauGVXEIFVHFFDXrBJYy-g&s
   publisher: Exoscale
   license: cloud
   references:
