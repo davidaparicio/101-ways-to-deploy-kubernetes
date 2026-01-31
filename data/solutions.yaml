@@ -796,7 +796,7 @@ solutions:
 - name: Metal Stack Cloud Kubernetes
   category: Managed
   url: https://www.metalstack.cloud/
-  icon_url: https://www.metalstack.cloud/images/metalstack-logo.svg
+  icon_url: https://metalstack.cloud/images/combination-mark-primary_double-lockup.svg
   publisher: Metal Stack
   license: cloud
 - name: MetaKube
@@ -808,7 +808,7 @@ solutions:
 - name: MKS
   category: Managed
   url: https://www.ovhcloud.com/fr/public-cloud/kubernetes/
-  icon_url: https://www.ovhcloud.com/sites/default/files/2022-07/OVHcloud_logo.svg
+  icon_url: https://pbs.twimg.com/profile_images/1580905240341127181/8nyVAd7F_400x400.jpg
   publisher: OVHcloud
   license: cloud
   references:
