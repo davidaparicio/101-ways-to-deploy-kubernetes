@@ -753,7 +753,7 @@ solutions:
 - name: Kapsule
   category: Managed
   url: https://www.scaleway.com/en/kubernetes-kapsule/
-  icon_url: https://www.scaleway.com/en/assets/favicon/favicon.svg
+  icon_url: https://enix.io/fr/technologies/Scaleway-Kapsule.png
   publisher: Scaleway
   license: cloud
   references:
@@ -765,7 +765,7 @@ solutions:
 - name: Kosmos
   category: Managed
   url: https://www.scaleway.com/fr/kubernetes-kosmos/
-  icon_url: https://www.scaleway.com/en/assets/favicon/favicon.svg
+  icon_url: https://www-uploads.scaleway.com/medium_Kubernetes_Kosmos_Illustration_Banner_f3a83046d6.webp
   publisher: Scaleway
   license: cloud
   references:
