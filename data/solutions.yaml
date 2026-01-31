@@ -1,7 +1,8 @@
 solutions:
 - name: canonical kubernetes (snap)
   category: Desktop
-  url: https://github.com/canonical/microk8s
+  url: https://github.com/canonical/k8s-snap
+  icon_url: https://assets.ubuntu.com/v1/adac6928-ubuntu.svg
   publisher: Canonical
   license: Apache 2.0
   open_source: true
@@ -14,7 +15,8 @@ solutions:
 - name: colima
   category: Desktop
   url: https://github.com/abiosoft/colima
-  license: Apache 2.0
+  icon_url: https://github.com/abiosoft/colima/raw/main/colima.png
+  license: MIT
   open_source: true
   based_on:
   - lima-vm
@@ -26,6 +28,7 @@ solutions:
 - name: crc (openshift 4 on a desktop)
   category: Desktop
   url: https://github.com/crc-org/crc
+  icon_url: https://avatars.githubusercontent.com/u/46589369?s=120
   publisher: Openshift
   license: Apache 2.0
   open_source: true
@@ -55,6 +58,7 @@ solutions:
 - name: Docker desktop
   category: Desktop
   url: https://www.docker.com/products/docker-desktop/
+  icon_url: https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png
   publisher: Docker (Mirantis)
   license: proprietary
   open_source: false
@@ -74,6 +78,7 @@ solutions:
 - name: k3d
   category: Desktop
   url: https://github.com/k3d-io/k3d
+  icon_url: https://raw.githubusercontent.com/k3d-io/k3d/main/docs/static/img/k3d_logo_black_blue.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -92,6 +97,7 @@ solutions:
 - name: kind
   category: Desktop
   url: https://github.com/kubernetes-sigs/kind
+  icon_url: https://raw.githubusercontent.com/kubernetes-sigs/kind/main/logo/logo.png
   license: Apache 2.0
   open_source: true
   based_on:
@@ -125,6 +131,7 @@ solutions:
 - name: lima-vm
   category: Desktop
   url: https://github.com/lima-vm/lima/blob/master/examples/k8s.yaml
+  icon_url: https://raw.githubusercontent.com/lima-vm/lima/master/docs/images/lima-logo-01.svg
   license: Apache 2.0
   open_source: true
   based_on:
@@ -144,6 +151,7 @@ solutions:
 - name: microk8s
   category: Desktop
   url: https://github.com/canonical/microk8s
+  icon_url: https://assets.ubuntu.com/v1/28e0ebb7-Microk8s_SnapStore_icon.svg
   publisher: Canonical
   license: Apache 2.0
   open_source: true
@@ -164,6 +172,7 @@ solutions:
 - name: Minikube
   category: Desktop
   url: https://github.com/kubernetes/minikube
+  icon_url: https://raw.githubusercontent.com/kubernetes/minikube/master/images/logo/logo.svg
   license: Apache 2.0
   open_source: true
   based_on:
@@ -185,6 +194,7 @@ solutions:
 - name: Minishift
   category: Desktop
   url: https://github.com/minishift/minishift
+  icon_url: https://avatars.githubusercontent.com/u/23212309?s=200&v=4
   publisher: Red Hat
   license: Apache 2.0
   open_source: true
@@ -206,12 +216,14 @@ solutions:
 - name: Oracle Cloud Native Environment
   category: Desktop
   url: https://github.com/oracle-cne/ocne
+  icon_url: https://avatars.githubusercontent.com/u/179813183?s=200&v=4
   publisher: Oracle
   license: Apache 2.0
   open_source: true
 - name: Orbstack
   category: Desktop
   url: https://orbstack.dev/
+  icon_url: https://camo.githubusercontent.com/d20582f77f0d485f7ab60b8e5c3116591e0abae14ad12ca91fe8f9d23ca254ff/68747470733a2f2f6f7262737461636b2e6465762f696d672f69636f6e3235362e706e67
   publisher: Orbital Stack
   license: proprietary
   open_source: false
@@ -228,6 +240,7 @@ solutions:
 - name: Podman Desktop
   category: Desktop
   url: https://github.com/podman-desktop/podman-desktop
+  icon_url: https://avatars.githubusercontent.com/u/129859460?s=200&v=4
   publisher: Podman Desktop
   license: Apache 2.0
   open_source: true
@@ -242,6 +255,7 @@ solutions:
 - name: Rancher Desktop
   category: Desktop
   url: https://github.com/rancher-sandbox/rancher-desktop
+  icon_url: https://rancherdesktop.io/images/icon-rancher-desktop.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -256,6 +270,7 @@ solutions:
 - name: aks-engine
   category: IaC
   url: https://github.com/Azure/aks-engine
+  icon_url: https://azure.microsoft.com/svghandler/kubernetes-service/
   publisher: Azure
   license: Apache 2.0
   open_source: true
@@ -285,6 +300,7 @@ solutions:
 - name: Crossplane
   category: IaC
   url: https://github.com/crossplane/crossplane
+  icon_url: https://avatars.githubusercontent.com/u/45158470?s=200&v=4
   license: Apache 2.0
   open_source: true
   references:
@@ -306,6 +322,7 @@ solutions:
 - name: Kube-hetzner
   category: IaC
   url: https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner
+  icon_url: https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner/raw/master/.images/kube-hetzner-logo.png
   license: MIT
   open_source: true
   based_on:
@@ -332,6 +349,7 @@ solutions:
 - name: Kubernetes ClusterAPI
   category: IaC
   url: https://github.com/kubernetes-sigs/cluster-api
+  icon_url: https://raw.githubusercontent.com/kubernetes-sigs/cluster-api/main/docs/book/src/images/introduction.svg
   license: Apache 2.0
   open_source: true
   references:
@@ -351,6 +369,7 @@ solutions:
 - name: Kubespray
   category: IaC
   url: https://github.com/kubernetes-sigs/kubespray
+  icon_url: https://kubespray.io/logo/logo-clear.png
   license: Apache 2.0
   open_source: true
   based_on:
@@ -380,6 +399,7 @@ solutions:
 - name: OpenTofu
   category: IaC
   url: https://github.com/opentofu/opentofu
+  icon_url: https://avatars.githubusercontent.com/u/142061836?s=200&v=4
   license: MPL 2.0
   open_source: true
   references:
@@ -399,6 +419,7 @@ solutions:
 - name: Pulumi
   category: IaC
   url: https://github.com/pulumi/pulumi
+  icon_url: https://www.pulumi.com/logos/brand/avatar-on-white.svg
   publisher: Pulumi Services
   license: Apache 2.0
   open_source: true
@@ -419,6 +440,7 @@ solutions:
 - name: Puppet
   category: IaC
   url: https://forge.puppet.com/modules/puppetlabs/kubernetes/readme
+  icon_url: https://gravatar.com/avatar/fdd009b7c1ec96e088b389f773e87aec.png?r=pg&s=75&d=404
   publisher: Perforce Software
   license: Apache 2.0
   open_source: true
@@ -436,6 +458,7 @@ solutions:
 - name: typhoon
   category: IaC
   url: https://github.com/poseidon/typhoon
+  icon_url: https://raw.githubusercontent.com/poseidon/typhoon/main/docs/img/typhoon.png
   license: MIT
   open_source: true
   based_on:
@@ -449,6 +472,7 @@ solutions:
 - name: k3k
   category: KubernetesInKubernetes
   url: https://github.com/rancher/k3k
+  icon_url: https://raw.githubusercontent.com/rancher/k3k/main/docs/k3k.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -471,6 +495,7 @@ solutions:
 - name: vcluster
   category: KubernetesInKubernetes
   url: https://github.com/loft-sh/vcluster
+  icon_url: https://avatars.githubusercontent.com/u/65466868?s=200&v=4
   publisher: loft.sh
   license: Apache 2.0
   open_source: true
@@ -494,6 +519,7 @@ solutions:
 - name: elemental (ex k3os)
   category: KubernetesOS
   url: https://github.com/rancher/elemental
+  icon_url: https://elemental.docs.rancher.com/img/logo.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -514,6 +540,7 @@ solutions:
 - name: Kairos Linux
   category: KubernetesOS
   url: https://github.com/kairos-io/kairos
+  icon_url: https://user-images.githubusercontent.com/2420543/193010398-72d4ba6e-7efe-4c2e-b7ba-d3a826a55b7d.png
   publisher: Spectro cloud
   license: Apache 2.0
   open_source: true
@@ -546,6 +573,7 @@ solutions:
 - name: RKE
   category: KubernetesOS
   url: https://github.com/rancher/rke
+  icon_url: https://rke.docs.rancher.com/img/logo-horizontal-rke.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -562,6 +590,7 @@ solutions:
 - name: Talos Linux
   category: KubernetesOS
   url: https://github.com/siderolabs/talos
+  icon_url: /logos/talos-logo.svg
   publisher: SideroLabs
   license: MPL 2.0
   open_source: true
@@ -594,6 +623,7 @@ solutions:
 - name: AKS
   category: Managed
   url: https://azure.microsoft.com/fr-fr/products/kubernetes-service
+  icon_url: https://blog.aks.azure.com/img/logo.svg
   publisher: Azure
   license: cloud
   references:
@@ -604,11 +634,13 @@ solutions:
 - name: Alibaba Cloud Container Service for Kubernetes (ACK)
   category: Managed
   url: https://www.alibabacloud.com/fr/product/kubernetes
+  icon_url: https://avatars.githubusercontent.com/u/16377432?s=200&v=4
   publisher: Alibaba Cloud
   license: cloud
 - name: Civo
   category: Managed
   url: https://www.civo.com/
+  icon_url: https://www.civo.com/assets-rebrand/logos/civo-black.svg
   publisher: Civo
   license: cloud
   based_on:
@@ -626,16 +658,19 @@ solutions:
 - name: Clever Kubernetes Engine (CKE)
   category: Managed
   url: https://www.clever-cloud.com/product/kubernetes/
+  icon_url: https://www.clever.cloud/app/themes/Starter/assets/img/brand-assets/logo_on_white.png
   publisher: Clever Cloud
   license: cloud
 - name: CoreWeave Kubernetes Service (CKS)
   category: Managed
   url: https://www.coreweave.com/products/coreweave-kubernetes-service
+  icon_url: https://www.coreweave.com/hubfs/coreweave-logo.svg
   publisher: CoreWeave
   license: cloud
 - name: DOKS
   category: Managed
   url: https://www.digitalocean.com/products/kubernetes/
+  icon_url: https://www.digitalocean.com/_next/static/media/logo.0e31b913.svg
   publisher: Digital Ocean
   license: cloud
   references:
@@ -646,11 +681,13 @@ solutions:
 - name: Elastx Private Kubernetes
   category: Managed
   url: https://elastx.se/en/kubernetes/
+  icon_url: https://elastx.se/wp-content/uploads/2023/09/elastx-logo-black.svg
   publisher: Elastx
   license: cloud
 - name: EKS
   category: Managed
   url: https://aws.amazon.com/fr/eks/
+  icon_url: https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg
   publisher: AWS
   license: cloud
   references:
@@ -662,11 +699,13 @@ solutions:
 - name: Gcore Managed Kubernetes
   category: Managed
   url: https://gcore.com/cloud/managed-kubernetes
+  icon_url: https://gcore.com/img/logo-gcore.svg
   publisher: Gcore
   license: cloud
 - name: GKE
   category: Managed
   url: https://cloud.google.com/kubernetes-engine?hl=fr
+  icon_url: https://www.gstatic.com/images/branding/product/2x/google_kubernetes_engine_64dp.png
   publisher: Google Cloud Platform
   license: cloud
   references:
@@ -681,11 +720,13 @@ solutions:
 - name: Gridscale Managed Kubernetes (GSK)
   category: Managed
   url: https://gridscale.io/en/products/kubernetes/
+  icon_url: https://gridscale.io/wp-content/uploads/2023/05/gridscale_logo.svg
   publisher: Gridscale
   license: cloud
 - name: IBM Cloud (IKS)
   category: Managed
   url: https://www.ibm.com/cloud/container-service/
+  icon_url: https://www.ibm.com/brand/experience-guides/developer/b1db1ae501d522a1a4b49613fe07c9f1/01_8-bar-positive.svg
   publisher: IBM Cloud
   license: cloud
   references:
@@ -700,11 +741,13 @@ solutions:
 - name: IONOS Kubernetes Service
   category: Managed
   url: https://cloud.ionos.com/managed/kubernetes
+  icon_url: https://www.ionos.com/resources/images/logo-ionos.svg
   publisher: IONOS
   license: cloud
 - name: Kapsule
   category: Managed
   url: https://www.scaleway.com/en/kubernetes-kapsule/
+  icon_url: https://www.scaleway.com/en/assets/favicon/favicon.svg
   publisher: Scaleway
   license: cloud
   references:
@@ -716,6 +759,7 @@ solutions:
 - name: Kosmos
   category: Managed
   url: https://www.scaleway.com/fr/kubernetes-kosmos/
+  icon_url: https://www.scaleway.com/en/assets/favicon/favicon.svg
   publisher: Scaleway
   license: cloud
   references:
@@ -727,6 +771,7 @@ solutions:
 - name: LeafCloud
   category: Managed
   url: https://www.leaf.cloud/
+  icon_url: https://www.leaf.cloud/images/leaf-logo.svg
   publisher: LeafCloud
   license: cloud
   based_on:
@@ -734,6 +779,7 @@ solutions:
 - name: Linode Kubernetes Engine (LKE)
   category: Managed
   url: https://www.linode.com/docs/kubernetes/
+  icon_url: https://www.linode.com/wp-content/uploads/2021/01/Linode-Logo-Black.svg
   publisher: Linode
   license: cloud
   references:
@@ -744,16 +790,19 @@ solutions:
 - name: Metal Stack Cloud Kubernetes
   category: Managed
   url: https://www.metalstack.cloud/
+  icon_url: https://www.metalstack.cloud/images/metalstack-logo.svg
   publisher: Metal Stack
   license: cloud
 - name: MetaKube
   category: Managed
   url: https://www.syseleven.de/en/
+  icon_url: https://www.syseleven.de/wp-content/themes/syseleven/assets/images/syseleven-logo.svg
   publisher: SysEleven
   license: cloud
 - name: MKS
   category: Managed
   url: https://www.ovhcloud.com/fr/public-cloud/kubernetes/
+  icon_url: https://www.ovhcloud.com/sites/default/files/2022-07/OVHcloud_logo.svg
   publisher: OVHcloud
   license: cloud
   references:
@@ -769,11 +818,13 @@ solutions:
 - name: Orka
   category: Managed
   url: https://www.macstadium.com/orka
+  icon_url: https://www.macstadium.com/hubfs/macstadium-logo.svg
   publisher: MacStadium
   license: cloud
 - name: Oracle Cloud Infrastructure Container Engine for Kubernetes (OKE)
   category: Managed
   url: https://www.oracle.com/fr/cloud/cloud-native/container-engine-kubernetes/
+  icon_url: https://www.oracle.com/a/ocom/img/rh01-oracle-logo.svg
   publisher: Oracle Cloud Infrastructure
   license: cloud
   references:
@@ -785,6 +836,7 @@ solutions:
 - name: Redhat Openshift cloud
   category: Managed
   url: https://www.redhat.com/fr/technologies/cloud-computing/openshift/openshift-cloud-services
+  icon_url: https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-OpenShift-A-Standard-RGB.svg
   publisher: Red Hat
   license: cloud
   based_on:
@@ -797,6 +849,7 @@ solutions:
 - name: SKS
   category: Managed
   url: https://community.exoscale.com/documentation/sks/overview/
+  icon_url: https://www.exoscale.com/static/exoscale-logo.svg
   publisher: Exoscale
   license: cloud
   references:
@@ -812,25 +865,30 @@ solutions:
 - name: STACKIT Kubernetes Engine (SKE)
   category: Managed
   url: https://stackit.com/en/products/runtime/stackit-kubernetes-engine
+  icon_url: https://stackit.de/wp-content/themes/stackit/assets/images/stackit-logo.svg
   publisher: STACKIT
   license: cloud
 - name: StarlingX
   category: Managed
   url: https://www.starlingx.io/
+  icon_url: https://www.starlingx.io/images/starlingx-logo.svg
   license: cloud
 - name: Tencent Kubernetes Engine (TKE)
   category: Managed
   url: https://www.tencentcloud.com/products/tke
+  icon_url: https://cloudcache.intl.tencent-cloud.com/cms/backend-cms/8a55158be74e11ee96d65254005e86df.svg
   publisher: Tencent Cloud
   license: cloud
 - name: UpCloud Managed Kubernetes (UKS)
   category: Managed
   url: https://upcloud.com/products/managed-kubernetes
+  icon_url: https://upcloud.com/wp-content/uploads/2023/03/upcloud-logo-black.svg
   publisher: UpCloud
   license: cloud
 - name: VKE
   category: Managed
   url: https://www.vultr.com/kubernetes/
+  icon_url: https://www.vultr.com/dist/img/brand/logo.svg
   publisher: Vultr
   license: cloud
   references:
@@ -841,11 +899,13 @@ solutions:
 - name: Volcengine Kubernetes Engine (VKE)
   category: Managed
   url: https://www.volcengine.com/product/vke
+  icon_url: https://lf3-static.bytednsdoc.com/obj/eden-cn/nuhbpqnulog/volcengine/new_logo.svg
   publisher: ByteDance
   license: cloud
 - name: Gardener
   category: ManagementPlatform
   url: https://github.com/gardener/gardener
+  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/gardener.svg
   license: Apache 2.0
   open_source: true
   references:
@@ -857,6 +917,7 @@ solutions:
 - name: hypershift
   category: ManagementPlatform
   url: https://github.com/openshift/hypershift
+  icon_url: https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-OpenShift-A-Standard-RGB.svg
   publisher: Red Hat
   license: Apache 2.0
   open_source: true
@@ -865,6 +926,7 @@ solutions:
 - name: k0rdent
   category: ManagementPlatform
   url: https://github.com/k0rdent/kcm
+  icon_url: https://www.mirantis.com/wp-content/themes/mirantis-sage/dist/images/logo.svg
   publisher: Mirantis
   license: Apache 2.0
   open_source: true
@@ -873,6 +935,7 @@ solutions:
 - name: Kamaji
   category: ManagementPlatform
   url: https://github.com/clastix/kamaji
+  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/kamaji.svg
   publisher: Clastix
   license: Apache 2.0
   open_source: true
@@ -886,6 +949,7 @@ solutions:
 - name: KubeClipper
   category: ManagementPlatform
   url: https://github.com/kubeclipper/kubeclipper
+  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/kube-clipper.svg
   license: Apache 2.0
   open_source: true
   based_on:
@@ -893,6 +957,7 @@ solutions:
 - name: Kubermatic Kubernetes Platform
   category: ManagementPlatform
   url: https://github.com/kubermatic/kubermatic
+  icon_url: https://www.kubermatic.com/images/kubermatic-logo.svg
   publisher: Kubermatic
   license: Apache 2.0
   open_source: true
@@ -905,6 +970,7 @@ solutions:
 - name: Omni
   category: ManagementPlatform
   url: https://www.siderolabs.com/platform/saas-for-kubernetes/
+  icon_url: https://www.siderolabs.com/images/omni-logo.svg
   publisher: SideroLabs
   license: BUSL 1.1
   open_source: true
@@ -923,6 +989,7 @@ solutions:
 - name: Palette
   category: ManagementPlatform
   url: https://www.spectrocloud.com/product/palette/
+  icon_url: https://www.spectrocloud.com/static/logo-80c60db24b.svg
   publisher: Spectro Cloud
   license: proprietary
   open_source: false
@@ -931,6 +998,7 @@ solutions:
 - name: Platform9
   category: ManagementPlatform
   url: https://platform9.com/
+  icon_url: https://platform9.com/wp-content/themes/platform9-2023/images/logos/platform9-logo.svg
   publisher: Platform9
   license: proprietary
   open_source: false
@@ -942,18 +1010,21 @@ solutions:
 - name: Portainer
   category: ManagementPlatform
   url: https://www.portainer.io/
+  icon_url: https://www.portainer.io/hubfs/portainer-logo-black.svg
   publisher: Portainer.io
   license: Zlib
   open_source: true
 - name: Rafay
   category: ManagementPlatform
   url: https://rafay.co/
+  icon_url: https://rafay.co/wp-content/uploads/2023/07/rafay-logo.svg
   publisher: Rafay Systems
   license: proprietary
   open_source: false
 - name: Rancher
   category: ManagementPlatform
   url: https://github.com/rancher/rancher
+  icon_url: https://www.suse.com/assets/img/rancher.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -966,12 +1037,14 @@ solutions:
 - name: Tanzu Kubernetes Grid
   category: ManagementPlatform
   url: https://techdocs.broadcom.com/us/en/vmware-tanzu/standalone-components/tanzu-kubernetes-grid/2-5/tkg/index.html
+  icon_url: https://tanzu.vmware.com/content/dam/tanzu/images/icons/vmware-tanzu-icon.svg
   publisher: VMware
   license: proprietary
   open_source: false
 - name: Tanzu Mission Control
   category: ManagementPlatform
   url: https://techdocs.broadcom.com/us/en/vmware-tanzu/standalone-components/tanzu-mission-control/1-4.html
+  icon_url: https://tanzu.vmware.com/content/dam/tanzu/images/icons/vmware-tanzu-icon.svg
   publisher: VMware
   license: proprietary
   open_source: false
@@ -1007,6 +1080,7 @@ solutions:
 - name: Kubernetes the hard way
   category: Other
   url: https://github.com/kelseyhightower/kubernetes-the-hard-way
+  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/kubernetes.svg
   license: Apache 2.0
   open_source: true
 - name: Kubernetes the hard way w/ Terraform (GCP)
@@ -1031,6 +1105,7 @@ solutions:
 - name: KwoK
   category: Other
   url: https://github.com/kubernetes-sigs/kwok
+  icon_url: https://raw.githubusercontent.com/kubernetes-sigs/kwok/main/logo/kwok.svg
   license: Apache 2.0
   open_source: true
   references:
@@ -1042,6 +1117,7 @@ solutions:
 - name: Play with k8s
   category: Other
   url: https://github.com/play-with-docker/play-with-k8s
+  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/play-with-kubernetes.svg
   license: Apache 2.0
   open_source: true
   references:
@@ -1052,6 +1128,7 @@ solutions:
 - name: Constellation
   category: Selfhosted
   url: https://github.com/edgelesssys/constellation
+  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/constellation.svg
   publisher: Edgeless Systems
   license: AGPL 3.0
   open_source: true
@@ -1059,6 +1136,7 @@ solutions:
 - name: EKS Anywhere
   category: Selfhosted
   url: https://github.com/aws/eks-anywhere
+  icon_url: https://anywhere.eks.amazonaws.com/img/logo-eks-a.svg
   publisher: AWS
   license: Apache 2.0
   open_source: true
@@ -1067,6 +1145,7 @@ solutions:
 - name: Harvester
   category: Selfhosted
   url: https://github.com/harvester/harvester
+  icon_url: https://docs.harvesterhci.io/v1.3/img/harvester-logo.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -1088,12 +1167,14 @@ solutions:
 - name: Juju
   category: Selfhosted
   url: https://github.com/juju/juju
+  icon_url: https://assets.ubuntu.com/v1/7144ec6d-logo-juju.svg
   publisher: Canonical
   license: Apache 2.0
   open_source: true
 - name: k0s
   category: Selfhosted
   url: https://github.com/k0sproject/k0s
+  icon_url: https://docs.k0sproject.io/img/k0s-logo.svg
   publisher: Mirantis
   license: Apache 2.0
   open_source: true
@@ -1106,6 +1187,7 @@ solutions:
 - name: k0smotron
   category: Selfhosted
   url: https://github.com/k0sproject/k0smotron
+  icon_url: https://docs.k0smotron.io/stable/img/k0smotron-logo-full-color-light.svg
   publisher: Mirantis
   license: Apache 2.0
   open_source: true
@@ -1120,6 +1202,7 @@ solutions:
 - name: k3s
   category: Selfhosted
   url: https://github.com/k3s-io/k3s
+  icon_url: https://k3s.io/img/k3s-logo-light.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -1136,6 +1219,7 @@ solutions:
 - name: k3sup
   category: Selfhosted
   url: https://github.com/alexellis/k3sup
+  icon_url: https://raw.githubusercontent.com/alexellis/k3sup/master/docs/assets/k3sup.png
   license: MIT
   open_source: true
   based_on:
@@ -1179,6 +1263,7 @@ solutions:
 - name: Kops
   category: Selfhosted
   url: https://github.com/kubernetes/kops
+  icon_url: https://raw.githubusercontent.com/kubernetes/kops/master/docs/img/logo.png
   license: Apache 2.0
   open_source: true
   based_on:
@@ -1192,6 +1277,7 @@ solutions:
 - name: kubeadm w/ CLI
   category: Selfhosted
   url: https://github.com/kubernetes/kubernetes
+  icon_url: https://kubernetes.io/images/kubernetes-horizontal-color.png
   license: Apache 2.0
   open_source: true
   references:
@@ -1207,6 +1293,7 @@ solutions:
 - name: kubeadm w/ ClusterConfiguration
   category: Selfhosted
   url: https://github.com/kubernetes/kubernetes
+  icon_url: https://kubernetes.io/images/kubernetes-horizontal-color.png
   license: Apache 2.0
   open_source: true
   references:
@@ -1222,6 +1309,7 @@ solutions:
 - name: Kubean
   category: Selfhosted
   url: https://github.com/kubean-io/kubean
+  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/kubean.svg
   license: Apache 2.0
   open_source: true
   based_on:
@@ -1229,6 +1317,7 @@ solutions:
 - name: KubeKey
   category: Selfhosted
   url: https://github.com/kubesphere/kubekey
+  icon_url: https://kubesphere.io/images/kubesphere-icon.svg
   publisher: KubeSphere
   license: Apache 2.0
   open_source: true
@@ -1256,6 +1345,7 @@ solutions:
 - name: KubeOne
   category: Selfhosted
   url: https://github.com/kubermatic/kubeone
+  icon_url: https://www.kubermatic.com/images/kubermatic-logo.svg
   publisher: Kubermatic
   license: Apache 2.0
   open_source: true
@@ -1283,6 +1373,7 @@ solutions:
 - name: Kurl
   category: Selfhosted
   url: https://github.com/replicatedhq/kurl
+  icon_url: https://kurl.sh/images/kurl-logo.png
   publisher: ReplicatedHQ
   license: Apache 2.0
   open_source: true
@@ -1297,6 +1388,7 @@ solutions:
 - name: Magnum
   category: Selfhosted
   url: https://github.com/openstack/magnum
+  icon_url: https://www.openstack.org/img/openstack-logo.svg
   publisher: OpenStack
   license: Apache 2.0
   open_source: true
@@ -1311,6 +1403,7 @@ solutions:
 - name: MKE (Mirantis Kubernetes Engine)
   category: Selfhosted
   url: https://docs.mirantis.com/mke4k/latest/
+  icon_url: https://www.mirantis.com/wp-content/themes/mirantis-sage/dist/images/logo.svg
   publisher: Mirantis
   license: proprietary
   open_source: false
@@ -1319,12 +1412,14 @@ solutions:
 - name: NKP (Nutanix Kubernetes Platform)
   category: Selfhosted
   url: https://www.nutanix.com/products/kubernetes-management-platform
+  icon_url: https://www.nutanix.com/content/dam/nutanix/global/logos/Nutanix_Logo_Positive.svg
   publisher: Nutanix
   license: proprietary
   open_source: false
 - name: OKD (open source openshift)
   category: Selfhosted
   url: https://github.com/okd-project/okd
+  icon_url: https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-OpenShift-A-Standard-RGB.svg
   publisher: Red Hat
   license: Apache 2.0
   open_source: true
@@ -1339,6 +1434,7 @@ solutions:
 - name: OneKE
   category: Selfhosted
   url: https://github.com/OpenNebula/one-apps
+  icon_url: https://opennebula.io/wp-content/uploads/2019/04/img-logo.svg
   publisher: OpenNebula
   license: Apache 2.0
   open_source: true
@@ -1353,6 +1449,7 @@ solutions:
 - name: Red Hat Build of Microshift
   category: Selfhosted
   url: https://github.com/openshift/microshift
+  icon_url: https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-OpenShift-A-Standard-RGB.svg
   publisher: Red Hat
   license: Apache 2.0
   open_source: true
@@ -1361,6 +1458,7 @@ solutions:
 - name: RKE2
   category: Selfhosted
   url: https://github.com/rancher/rke2
+  icon_url: https://www.suse.com/assets/img/rancher.svg
   publisher: Rancher
   license: Apache 2.0
   open_source: true
