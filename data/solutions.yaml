@@ -1,7 +1,7 @@
 solutions:
 - name: canonical kubernetes (snap)
   category: Desktop
-  url: https://github.com/canonical/microk8s
+  url: https://github.com/canonical/k8s-snap
   icon_url: https://assets.ubuntu.com/v1/adac6928-ubuntu.svg
   publisher: Canonical
   license: Apache 2.0
@@ -15,7 +15,7 @@ solutions:
 - name: colima
   category: Desktop
   url: https://github.com/abiosoft/colima
-  icon_url: https://raw.githubusercontent.com/abiosoft/colima/main/docs/colima.png
+  icon_url: https://github.com/abiosoft/colima/raw/main/colima.png
   license: MIT
   open_source: true
   based_on:
@@ -28,7 +28,7 @@ solutions:
 - name: crc (openshift 4 on a desktop)
   category: Desktop
   url: https://github.com/crc-org/crc
-  icon_url: https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-OpenShift-A-Standard-RGB.svg
+  icon_url: https://avatars.githubusercontent.com/u/46589369?s=120
   publisher: Openshift
   license: Apache 2.0
   open_source: true
@@ -194,7 +194,7 @@ solutions:
 - name: Minishift
   category: Desktop
   url: https://github.com/minishift/minishift
-  icon_url: https://www.redhat.com/rhdc/managed-files/Logo-Red_Hat-OpenShift-A-Standard-RGB.svg
+  icon_url: https://avatars.githubusercontent.com/u/23212309?s=200&v=4
   publisher: Red Hat
   license: Apache 2.0
   open_source: true
@@ -216,14 +216,14 @@ solutions:
 - name: Oracle Cloud Native Environment
   category: Desktop
   url: https://github.com/oracle-cne/ocne
-  icon_url: https://www.oracle.com/a/ocom/img/rh01-oracle-logo.svg
+  icon_url: https://avatars.githubusercontent.com/u/179813183?s=200&v=4
   publisher: Oracle
   license: Apache 2.0
   open_source: true
 - name: Orbstack
   category: Desktop
   url: https://orbstack.dev/
-  icon_url: https://orbstack.dev/favicon.svg
+  icon_url: https://camo.githubusercontent.com/d20582f77f0d485f7ab60b8e5c3116591e0abae14ad12ca91fe8f9d23ca254ff/68747470733a2f2f6f7262737461636b2e6465762f696d672f69636f6e3235362e706e67
   publisher: Orbital Stack
   license: proprietary
   open_source: false
@@ -240,7 +240,7 @@ solutions:
 - name: Podman Desktop
   category: Desktop
   url: https://github.com/podman-desktop/podman-desktop
-  icon_url: https://raw.githubusercontent.com/containers/podman-desktop/main/website/static/img/logo.png
+  icon_url: https://avatars.githubusercontent.com/u/129859460?s=200&v=4
   publisher: Podman Desktop
   license: Apache 2.0
   open_source: true
@@ -255,7 +255,7 @@ solutions:
 - name: Rancher Desktop
   category: Desktop
   url: https://github.com/rancher-sandbox/rancher-desktop
-  icon_url: https://rancherdesktop.io/images/logo-square.svg
+  icon_url: https://avatars.githubusercontent.com/u/78982867?s=200&v=4
   publisher: Rancher
   license: Apache 2.0
   open_source: true
