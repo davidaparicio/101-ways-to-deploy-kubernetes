@@ -216,6 +216,7 @@ solutions:
 - name: Oracle Cloud Native Environment
   category: Desktop
   url: https://github.com/oracle-cne/ocne
+  icon_url: https://www.oracle.com/a/ocom/img/rh01-oracle-logo.svg
   publisher: Oracle
   license: Apache 2.0
   open_source: true
@@ -269,6 +270,7 @@ solutions:
 - name: aks-engine
   category: IaC
   url: https://github.com/Azure/aks-engine
+  icon_url: https://azure.microsoft.com/svghandler/kubernetes-service/
   publisher: Azure
   license: Apache 2.0
   open_source: true
@@ -656,11 +658,13 @@ solutions:
 - name: Clever Kubernetes Engine (CKE)
   category: Managed
   url: https://www.clever-cloud.com/product/kubernetes/
+  icon_url: https://www.clever-cloud.com/images/brand-assets/logo.svg
   publisher: Clever Cloud
   license: cloud
 - name: CoreWeave Kubernetes Service (CKS)
   category: Managed
   url: https://www.coreweave.com/products/coreweave-kubernetes-service
+  icon_url: https://www.coreweave.com/hubfs/coreweave-logo.svg
   publisher: CoreWeave
   license: cloud
 - name: DOKS
@@ -677,6 +681,7 @@ solutions:
 - name: Elastx Private Kubernetes
   category: Managed
   url: https://elastx.se/en/kubernetes/
+  icon_url: https://elastx.se/favicon.ico
   publisher: Elastx
   license: cloud
 - name: EKS
@@ -694,6 +699,7 @@ solutions:
 - name: Gcore Managed Kubernetes
   category: Managed
   url: https://gcore.com/cloud/managed-kubernetes
+  icon_url: https://gcore.com/img/logo-gcore.svg
   publisher: Gcore
   license: cloud
 - name: GKE
@@ -714,6 +720,7 @@ solutions:
 - name: Gridscale Managed Kubernetes (GSK)
   category: Managed
   url: https://gridscale.io/en/products/kubernetes/
+  icon_url: https://gridscale.io/wp-content/uploads/2023/05/gridscale_logo.svg
   publisher: Gridscale
   license: cloud
 - name: IBM Cloud (IKS)
@@ -752,6 +759,7 @@ solutions:
 - name: Kosmos
   category: Managed
   url: https://www.scaleway.com/fr/kubernetes-kosmos/
+  icon_url: https://www.scaleway.com/en/assets/favicon/favicon.svg
   publisher: Scaleway
   license: cloud
   references:
@@ -763,6 +771,7 @@ solutions:
 - name: LeafCloud
   category: Managed
   url: https://www.leaf.cloud/
+  icon_url: https://www.leaf.cloud/images/leaf-logo.svg
   publisher: LeafCloud
   license: cloud
   based_on:
@@ -781,11 +790,13 @@ solutions:
 - name: Metal Stack Cloud Kubernetes
   category: Managed
   url: https://www.metalstack.cloud/
+  icon_url: https://www.metalstack.cloud/images/metalstack-logo.svg
   publisher: Metal Stack
   license: cloud
 - name: MetaKube
   category: Managed
   url: https://www.syseleven.de/en/
+  icon_url: https://www.syseleven.de/wp-content/themes/syseleven/assets/images/syseleven-logo.svg
   publisher: SysEleven
   license: cloud
 - name: MKS
@@ -854,6 +865,7 @@ solutions:
 - name: STACKIT Kubernetes Engine (SKE)
   category: Managed
   url: https://stackit.com/en/products/runtime/stackit-kubernetes-engine
+  icon_url: https://stackit.de/wp-content/themes/stackit/assets/images/stackit-logo.svg
   publisher: STACKIT
   license: cloud
 - name: StarlingX
@@ -914,6 +926,7 @@ solutions:
 - name: k0rdent
   category: ManagementPlatform
   url: https://github.com/k0rdent/kcm
+  icon_url: https://www.mirantis.com/wp-content/themes/mirantis-sage/dist/images/logo.svg
   publisher: Mirantis
   license: Apache 2.0
   open_source: true
@@ -936,6 +949,7 @@ solutions:
 - name: KubeClipper
   category: ManagementPlatform
   url: https://github.com/kubeclipper/kubeclipper
+  icon_url: https://raw.githubusercontent.com/kubeclipper/kubeclipper/master/docs/img/kubeclipper-logo.png
   license: Apache 2.0
   open_source: true
   based_on:
@@ -1066,6 +1080,7 @@ solutions:
 - name: Kubernetes the hard way
   category: Other
   url: https://github.com/kelseyhightower/kubernetes-the-hard-way
+  icon_url: https://raw.githubusercontent.com/kelseyhightower/kubernetes-the-hard-way/master/docs/images/kubernetes.png
   license: Apache 2.0
   open_source: true
 - name: Kubernetes the hard way w/ Terraform (GCP)
@@ -1102,6 +1117,7 @@ solutions:
 - name: Play with k8s
   category: Other
   url: https://github.com/play-with-docker/play-with-k8s
+  icon_url: https://raw.githubusercontent.com/play-with-docker/play-with-docker.github.io/master/pwd-logo.png
   license: Apache 2.0
   open_source: true
   references:
@@ -1293,6 +1309,7 @@ solutions:
 - name: Kubean
   category: Selfhosted
   url: https://github.com/kubean-io/kubean
+  icon_url: https://raw.githubusercontent.com/kubean-io/kubean/main/docs/logo/logo.svg
   license: Apache 2.0
   open_source: true
   based_on:
@@ -1417,6 +1434,7 @@ solutions:
 - name: OneKE
   category: Selfhosted
   url: https://github.com/OpenNebula/one-apps
+  icon_url: https://opennebula.io/wp-content/uploads/2019/04/img-logo.svg
   publisher: OpenNebula
   license: Apache 2.0
   open_source: true
