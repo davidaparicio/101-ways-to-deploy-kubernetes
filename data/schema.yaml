@@ -31,6 +31,14 @@ solution:
   # Example: "https://example.com/logo.svg"
   # Note: Only use URLs from trusted sources (official websites, CDNs, reputable image hosts)
   
+  icon_background_color: enum
+  # Optional background color for the icon container to ensure visibility in light/dark modes
+  # Use this when the icon has transparency and doesn't display correctly in both themes
+  # Allowed values:
+  # - light: Always use a light background for this icon (for dark logos)
+  # - dark: Always use a dark background for this icon (for light logos)
+  # If omitted, the icon background will follow the current theme (light in light mode, dark in dark mode)
+  
   publisher: string
   # Publisher, company, or project organization
   # Example: "Rancher", "AWS", "Canonical", "SideroLabs"
@@ -105,6 +113,7 @@ example_solution:
   publisher: "SideroLabs"
   url: "https://github.com/siderolabs/talos"
   icon_url: "https://www.talos.dev/images/logo.svg"
+  # icon_background_color: "dark"  # Optional - use "light" or "dark" to force a specific background
   description: "Secure, immutable, and minimal Linux OS designed for Kubernetes"
   license: "MPL 2.0"
   open_source: true
