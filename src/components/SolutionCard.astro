@@ -7,6 +7,7 @@ interface Props {
     category: string;
     url: string;
     icon_url?: string;
+    icon_background_color?: 'light' | 'dark';
     publisher?: string;
     description?: string;
     license?: string;
@@ -29,6 +30,19 @@ const { solution } = Astro.props;
 
 // Helper variables - Abandoned badge styling
 const abandonedBadgeStyle = "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300";
+
+// Helper function - Get icon background classes based on icon_background_color
+const getIconBackgroundClasses = () => {
+  if (solution.icon_background_color === 'light') {
+    return 'bg-white dark:bg-white';
+  } else if (solution.icon_background_color === 'dark') {
+    return 'bg-gray-700 dark:bg-gray-700';
+  }
+  // Default: follow theme
+  return 'bg-white dark:bg-gray-700';
+};
+
+const iconBgClasses = getIconBackgroundClasses();
 
 const isGitHub = solution.url.includes("github.com");
 const referencesCount = solution.references?.length || 0;
@@ -53,7 +67,7 @@ const cardId = `card-${solution.url.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}
     <!-- Logo Placeholder -->
     {solution.icon_url ? (
       <div 
-        class="w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 bg-white dark:bg-gray-700 p-2"
+        class={`w-16 h-16 rounded-lg flex items-center justify-center flex-shrink-0 ${iconBgClasses} p-2`}
         data-fallback-letter={firstLetter}
       >
         <img 
@@ -287,7 +301,7 @@ const cardId = `card-${solution.url.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}
         <!-- Logo -->
         {solution.icon_url ? (
           <div 
-            class="w-20 h-20 rounded-lg flex items-center justify-center flex-shrink-0 bg-white dark:bg-gray-700 p-2"
+            class={`w-20 h-20 rounded-lg flex items-center justify-center flex-shrink-0 ${iconBgClasses} p-2`}
             data-fallback-letter={firstLetter}
           >
             <img 

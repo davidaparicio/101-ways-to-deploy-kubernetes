@@ -350,6 +350,7 @@ solutions:
   category: IaC
   url: https://github.com/easzlab/kubeasz
   icon_url: https://github.com/easzlab/kubeasz/raw/master/docs/pics/kubeasz.svg
+  icon_background_color: light
   publisher: EaszLab
   license: MIT
   open_source: true
@@ -749,6 +750,7 @@ solutions:
   category: Managed
   url: https://cloud.ionos.com/managed/kubernetes
   icon_url: https://cloud.ionos.com/_next/static/media/ionos.b2910554.svg
+  icon_background_color: dark
   publisher: IONOS
   license: cloud
 - name: Kapsule
@@ -907,6 +909,7 @@ solutions:
   category: Managed
   url: https://www.volcengine.com/product/vke
   icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/volcano-engine.svg
+  icon_background_color: dark
   publisher: ByteDance
   license: cloud
 - name: Gardener
