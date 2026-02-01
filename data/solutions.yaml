@@ -50,6 +50,7 @@ solutions:
   category: Desktop
   url: https://github.com/aceeric/desktop-kubernetes
   icon_url: https://github.com/aceeric/desktop-kubernetes/raw/main/resources/desktop-kubernetes-no-text.jpg
+  icon_background_color: light
   license: Apache 2.0
   open_source: true
   references:
@@ -1184,6 +1185,7 @@ solutions:
   category: Selfhosted
   url: https://github.com/harvester/harvester
   icon_url: https://harvesterhci.io/img/logo_horizontal.svg
+  icon_background_color: light
   publisher: Rancher
   license: Apache 2.0
   open_source: true
@@ -1394,6 +1396,7 @@ solutions:
   category: Selfhosted
   url: https://github.com/kubermatic/kubeone
   icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/kubermatic.svg
+  icon_background_color: light
   publisher: Kubermatic
   license: Apache 2.0
   open_source: true
@@ -1454,6 +1457,7 @@ solutions:
   category: Selfhosted
   url: https://docs.mirantis.com/mke4k/latest/
   icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/mirantis.svg
+  icon_background_color: light
   publisher: Mirantis
   license: proprietary
   open_source: false
@@ -1483,6 +1487,7 @@ solutions:
   category: Selfhosted
   url: https://github.com/OpenNebula/one-apps
   icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/opennebula.svg
+  icon_background_color: light
   publisher: OpenNebula
   license: Apache 2.0
   open_source: true
