@@ -1066,7 +1066,7 @@ solutions:
   open_source: false
 - name: Tanzu Mission Control
   category: ManagementPlatform
-  url: https://techdocs.broadcom.com/us/en/vmware-tanzu/standalone-components/tanzu-mission-control/1-4.html
+  url: https://techdocs.broadcom.com/us/en/vmware-tanzu/standalone-components/tanzu-mission-control-self-managed/1-4.html
   icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/vmware-tanzu.svg
   publisher: VMware
   license: proprietary
@@ -1142,10 +1142,10 @@ solutions:
     url: https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/
     type: book
     description: Chapter 49 (KwoK)
-- name: Play with k8s
+- name: Play with k8s (play with docker)
   category: Other
-  url: https://github.com/play-with-docker/play-with-k8s
-  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/play-with-kubernetes.svg
+  url: https://github.com/play-with-docker/play-with-kubernetes.github.io
+  icon_url: https://galaxyproject.github.io/training-material/topics/admin/images/docker_whale.png
   license: Apache 2.0
   open_source: true
   references:
@@ -1203,7 +1203,7 @@ solutions:
 - name: k0s
   category: Selfhosted
   url: https://github.com/k0sproject/k0s
-  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/k0s.svg
+  icon_url: https://avatars.githubusercontent.com/u/72999283?s=200&v=4
   publisher: Mirantis
   license: Apache 2.0
   open_source: true
@@ -1216,7 +1216,7 @@ solutions:
 - name: k0smotron
   category: Selfhosted
   url: https://github.com/k0sproject/k0smotron
-  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/k0s.svg
+  icon_url: https://k0smotron.io/images/k0smotron_logo.svg
   publisher: Mirantis
   license: Apache 2.0
   open_source: true
@@ -1232,7 +1232,7 @@ solutions:
 - name: k3s
   category: Selfhosted
   url: https://github.com/k3s-io/k3s
-  icon_url: https://k3s.io/img/k3s-logo-light.svg
+  icon_url: https://avatars.githubusercontent.com/u/49319725?s=200&v=4
   publisher: Rancher
   license: Apache 2.0
   open_source: true
