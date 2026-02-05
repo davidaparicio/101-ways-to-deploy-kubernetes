@@ -501,7 +501,7 @@ solutions:
   category: IaC
   url: https://github.com/poseidon/typhoon
   icon_url: https://raw.githubusercontent.com/poseidon/typhoon/main/docs/img/typhoon.png
-  description: Minimal and free Kubernetes distribution with Terraform
+  description: Minimal and free Kubernetes distribution with Terraform / Opentofu
   license: MIT
   open_source: true
   based_on:
