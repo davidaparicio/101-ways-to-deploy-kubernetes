@@ -1208,7 +1208,7 @@ solutions:
   category: Other
   url: https://github.com/aidanSoles/kubernetes-the-hard-way-terraform
   icon_url: https://avatars.githubusercontent.com/u/142061836?s=200&v=4
-  description: Automated Kubernetes The Hard Way deployment on GCP using Terraform
+  description: Automated Kubernetes The Hard Way deployment on GCP using Terraform / Opentofu
   license: Apache 2.0
   open_source: true
   based_on:
