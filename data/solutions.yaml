@@ -1983,7 +1983,7 @@ solutions:
 - name: Magnum
   category: Selfhosted
   url: https://github.com/openstack/magnum
-  icon_url: https://www.openstack.org/img/openstack-logo.svg
+  icon_url: https://avatars.githubusercontent.com/u/324574?s=200&v=4
   publisher: OpenStack
   description: OpenStack service for deploying and managing container orchestration
     engines
