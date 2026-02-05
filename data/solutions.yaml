@@ -356,7 +356,7 @@ solutions:
   category: IaC
   url: https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner
   icon_url: https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner/raw/master/.images/kube-hetzner-logo.png
-  description: Automated Kubernetes deployment on Hetzner Cloud with Terraform
+  description: Automated Kubernetes deployment on Hetzner Cloud with Terraform / Opentofu
   license: MIT
   open_source: true
   based_on:
