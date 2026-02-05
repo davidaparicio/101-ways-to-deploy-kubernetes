@@ -882,7 +882,7 @@ solutions:
   url: https://www.ovhcloud.com/fr/public-cloud/kubernetes/
   icon_url: https://pbs.twimg.com/profile_images/1580905240341127181/8nyVAd7F_400x400.jpg
   publisher: OVHcloud
-  description: Managed Kubernetes service on Vultr infrastructure
+  description: Managed Kubernetes service on OVHcloud infrastructure
   license: cloud
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters de production
@@ -1392,7 +1392,7 @@ solutions:
   category: Selfhosted
   url: https://github.com/darxkies/k8s-tew
   icon_url: https://blog.zwindler.fr/2025/05/k8s-tew-logo.svg
-  description: Streamlined Kubernetes installation guide for beginners
+  description: Automated tool for deploying single-node or multi-node Kubernetes clusters
   license: MIT
   open_source: true
   references:
