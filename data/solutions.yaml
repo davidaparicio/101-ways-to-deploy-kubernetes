@@ -380,7 +380,7 @@ solutions:
   icon_url: https://github.com/easzlab/kubeasz/raw/master/docs/pics/kubeasz.svg
   icon_background_color: light
   publisher: EaszLab
-  description: Kubernetes cluster deployment tool with Chinese documentation
+  description: Kubernetes cluster deployment tool (Chinese documentation only)
   license: MIT
   open_source: true
 - name: Kubernetes ClusterAPI
