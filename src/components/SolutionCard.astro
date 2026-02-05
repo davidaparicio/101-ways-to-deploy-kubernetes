@@ -28,6 +28,37 @@ interface Props {
 
 const { solution } = Astro.props;
 
+// Helper function - Convert language code to flag emoji
+const languageToFlag = (langCode: string): string => {
+  const languageToCountry: Record<string, string> = {
+    'en': 'gb', // English -> UK flag
+    'fr': 'fr', // French -> France
+    'de': 'de', // German -> Germany
+    'es': 'es', // Spanish -> Spain
+    'zh': 'cn', // Chinese -> China
+    'ja': 'jp', // Japanese -> Japan
+    'pt': 'pt', // Portuguese -> Portugal
+    'ko': 'kr', // Korean -> South Korea
+    'it': 'it', // Italian -> Italy
+    'ru': 'ru', // Russian -> Russia
+    'nl': 'nl', // Dutch -> Netherlands
+    'pl': 'pl', // Polish -> Poland
+    'tr': 'tr', // Turkish -> Turkey
+    'ar': 'sa', // Arabic -> Saudi Arabia
+    'hi': 'in', // Hindi -> India
+  };
+
+  const countryCode = languageToCountry[langCode.toLowerCase()] || langCode.toLowerCase();
+  
+  // Convert country code to flag emoji using regional indicator symbols
+  // A = U+1F1E6, B = U+1F1E7, etc.
+  const codePoints = [...countryCode.toUpperCase()].map(char => 
+    0x1F1E6 + char.charCodeAt(0) - 'A'.charCodeAt(0)
+  );
+  
+  return String.fromCodePoint(...codePoints);
+};
+
 // Helper variables - Abandoned badge styling
 const abandonedBadgeStyle = "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300";
 
@@ -432,8 +463,8 @@ const cardId = `card-${solution.url.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}
                       <span class="font-medium text-gray-900 dark:text-white">
                         {ref.title}
                       </span>
-                      <span class="text-xs px-2 py-0.5 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded">
-                        {ref.language}
+                      <span class="text-base" title={ref.language}>
+                        {languageToFlag(ref.language)}
                       </span>
                       <span class="text-xs px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded">
                         {ref.type}
