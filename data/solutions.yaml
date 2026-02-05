@@ -830,7 +830,7 @@ solutions:
   url: https://www.scaleway.com/fr/kubernetes-kosmos/
   icon_url: https://www-uploads.scaleway.com/medium_Kubernetes_Kosmos_Illustration_Banner_f3a83046d6.webp
   publisher: Scaleway
-  description: Managed Kubernetes service for multi-cloud deployments
+  description: Managed Kubernetes service for multi-cloud deployments (bring your own nodes)
   license: cloud
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters de production
