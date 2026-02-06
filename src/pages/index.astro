@@ -13,9 +13,10 @@ const solutionsFile = fs.readFileSync(path.join(process.cwd(), 'data/solutions.y
 const data = yaml.load(solutionsFile) as { solutions: any[] };
 const solutions = data.solutions;
 
-// Extract unique categories and cloud providers for filters
+// Extract unique categories, cloud providers, and tags for filters
 const categories = [...new Set(solutions.map(s => s.category))].sort();
 const cloudProviders = [...new Set(solutions.flatMap(s => s.cloud_providers || []))].sort();
+const tags = [...new Set(solutions.flatMap(s => s.tags || []))].sort();
 ---
 
 <Layout title="101 Ways to Deploy Kubernetes">
@@ -44,7 +45,7 @@ const cloudProviders = [...new Set(solutions.flatMap(s => s.cloud_providers || [
     <!-- Main Content -->
     <div class="max-w-7xl mx-auto px-4 py-8">
       <!-- Filter Bar -->
-      <FilterBar categories={categories} cloudProviders={cloudProviders} />
+      <FilterBar categories={categories} cloudProviders={cloudProviders} tags={tags} />
       
       <!-- Results count -->
       <div class="mb-6 text-gray-600 dark:text-gray-400">
@@ -101,7 +102,8 @@ const cloudProviders = [...new Set(solutions.flatMap(s => s.cloud_providers || [
     category: 'all',
     cloudProvider: '',
     openSourceOnly: false,
-    statuses: ['active']
+    statuses: ['active'],
+    tags: [] as string[]
   };
 
   function filterSolutions() {
@@ -146,6 +148,12 @@ const cloudProviders = [...new Set(solutions.flatMap(s => s.cloud_providers || [
         visible = currentFilters.statuses.includes(itemStatus);
       }
 
+      // Tags filter
+      if (visible && currentFilters.tags.length > 0) {
+        const itemTags = el.dataset.tags?.split(' ') || [];
+        visible = currentFilters.tags.some(tag => itemTags.includes(tag.toLowerCase()));
+      }
+
       el.style.display = visible ? '' : 'none';
       if (visible) visibleCount++;
     });
@@ -187,7 +195,8 @@ const cloudProviders = [...new Set(solutions.flatMap(s => s.cloud_providers || [
       category: 'all',
       cloudProvider: '',
       openSourceOnly: false,
-      statuses: ['active']
+      statuses: ['active'],
+      tags: []
     };
     // Dispatch reset events
     window.dispatchEvent(new CustomEvent('filters-reset'));

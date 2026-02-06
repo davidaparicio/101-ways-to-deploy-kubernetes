@@ -42,6 +42,9 @@ const cloudProviders = [
   "ibm",
   "alibaba",
 ];
+
+// Extract unique tags
+const tags = [...new Set(allSolutions.flatMap(s => s.tags || []))].sort();
 ---
 
 <Layout title="Kubernetes Deployment Solutions">
@@ -65,7 +68,7 @@ const cloudProviders = [
       </div>
 
       <!-- Filter Bar -->
-      <FilterBar categories={categories} cloudProviders={cloudProviders} />
+      <FilterBar categories={categories} cloudProviders={cloudProviders} tags={tags} />
 
       <!-- Search Bar -->
       <SearchBar />
@@ -183,7 +186,8 @@ const cloudProviders = [
         category: "all",
         cloudProvider: "",
         openSourceOnly: false,
-        statuses: ["active"]
+        statuses: ["active"],
+        tags: [] as string[]
       };
 
       function applyCombinedFilters() {
@@ -242,6 +246,14 @@ const cloudProviders = [
           if (currentFilterState.statuses.length > 0) {
             const itemStatus = solutionData.abandoned ? 'abandoned' : 'active';
             if (!currentFilterState.statuses.includes(itemStatus)) {
+              visible = false;
+            }
+          }
+
+          // Tags filter
+          if (visible && currentFilterState.tags.length > 0) {
+            const itemTags = solutionData.tags.map((t: string) => t.toLowerCase());
+            if (!currentFilterState.tags.some((tag: string) => itemTags.includes(tag.toLowerCase()))) {
               visible = false;
             }
           }
