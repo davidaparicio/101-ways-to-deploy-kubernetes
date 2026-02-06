@@ -203,6 +203,11 @@ const tags = [...new Set(solutions.flatMap(s => s.tags || []))].sort();
     window.dispatchEvent(new CustomEvent('filters-reset'));
     filterSolutions();
   });
+
+  // Apply initial filters on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    filterSolutions();
+  });
 </script>
 
 <script>
