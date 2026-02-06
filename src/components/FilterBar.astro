@@ -221,6 +221,7 @@ function formatCategoryName(category: string): string {
     if (isHidden) {
       const searchInput = document.getElementById('tags-search-input') as HTMLInputElement | null;
       if (searchInput) {
+        // Small delay to ensure DOM updates complete before focusing
         setTimeout(() => searchInput.focus(), 100);
       }
     }
