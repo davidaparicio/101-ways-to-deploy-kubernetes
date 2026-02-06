@@ -685,7 +685,8 @@ solutions:
   open_source: true
   based_on:
   - kubeadm
-  - k3s or k0s
+  - k3s
+  - k0s
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters
       de production
@@ -865,7 +866,8 @@ solutions:
   description: Fast and simple managed Kubernetes cloud provider
   license: Cloud
   based_on:
-  - k3s or Talos Linux
+  - k3s
+  - Talos Linux
   references:
   - title: Kubernetes - 50 solutions pour les postes de développement et les clusters
       de production
