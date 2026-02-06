@@ -4,9 +4,10 @@
 interface Props {
   categories: string[];
   cloudProviders: string[];
+  tags: string[];
 }
 
-const { categories, cloudProviders } = Astro.props;
+const { categories, cloudProviders, tags } = Astro.props;
 
 // Utility function to format category names with spaces between words
 function formatCategoryName(category: string): string {
@@ -81,6 +82,39 @@ function formatCategoryName(category: string): string {
       </label>
     </div>
 
+    <!-- Tags dropdown -->
+    <div class="relative">
+      <button
+        id="tags-dropdown-button"
+        type="button"
+        class="px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors flex items-center gap-2 hover:bg-gray-50 dark:hover:bg-gray-600"
+      >
+        <span id="tags-dropdown-label">Tags</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div
+        id="tags-dropdown-menu"
+        class="hidden absolute top-full left-0 mt-1 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg z-20 max-h-64 overflow-y-auto min-w-[200px]"
+      >
+        <div class="p-2 space-y-1">
+          {
+            tags.map((tag) => (
+              <label class="flex items-center gap-2 px-2 py-1.5 hover:bg-gray-100 dark:hover:bg-gray-600 rounded cursor-pointer text-sm">
+                <input
+                  type="checkbox"
+                  data-tag={tag}
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <span class="text-gray-700 dark:text-gray-300">{tag}</span>
+              </label>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
     <!-- Clear button -->
     <button
       id="clear-filters"
@@ -99,6 +133,7 @@ function formatCategoryName(category: string): string {
     cloudProvider: string;
     openSourceOnly: boolean;
     statuses: string[];
+    tags: string[];
   }
 
   // Get filter state
@@ -117,7 +152,12 @@ function formatCategoryName(category: string): string {
       (cb) => (cb as HTMLElement).getAttribute('data-status') || ''
     ).filter(Boolean);
     
-    return { category, cloudProvider, openSourceOnly, statuses };
+    const tagCheckboxes = document.querySelectorAll('input[data-tag]:checked');
+    const tags = Array.from(tagCheckboxes).map(
+      (cb) => (cb as HTMLElement).getAttribute('data-tag') || ''
+    ).filter(Boolean);
+    
+    return { category, cloudProvider, openSourceOnly, statuses, tags };
   }
 
   // Emit filter change event
@@ -130,6 +170,7 @@ function formatCategoryName(category: string): string {
     document.dispatchEvent(event);
     updateClearButtonVisibility();
     updateCloudProviderVisibility();
+    updateTagsDropdownLabel();
   }
 
   // Update clear button visibility
@@ -142,7 +183,8 @@ function formatCategoryName(category: string): string {
       filterState.category !== 'all' ||
       filterState.cloudProvider !== '' ||
       filterState.openSourceOnly ||
-      !(filterState.statuses.length === 1 && filterState.statuses[0] === 'active');
+      !(filterState.statuses.length === 1 && filterState.statuses[0] === 'active') ||
+      filterState.tags.length > 0;
     
     clearBtn.classList.toggle('hidden', !hasActiveFilters);
   }
@@ -155,6 +197,26 @@ function formatCategoryName(category: string): string {
     
     const showCloudProvider = filterState.category === 'Managed' || filterState.category === 'IaC';
     container.classList.toggle('hidden', !showCloudProvider);
+  }
+
+  // Toggle tags dropdown visibility
+  function toggleTagsDropdown() {
+    const menu = document.getElementById('tags-dropdown-menu');
+    if (!menu) return;
+    menu.classList.toggle('hidden');
+  }
+
+  // Update tags dropdown label
+  function updateTagsDropdownLabel() {
+    const label = document.getElementById('tags-dropdown-label');
+    if (!label) return;
+    
+    const selectedTags = getFilterState().tags;
+    if (selectedTags.length === 0) {
+      label.textContent = 'Tags';
+    } else {
+      label.textContent = `Tags (${selectedTags.length})`;
+    }
   }
 
   // Clear all filters
@@ -182,6 +244,13 @@ function formatCategoryName(category: string): string {
       checkbox.checked = status === 'active';
     });
     
+    // Reset tag checkboxes
+    document.querySelectorAll('input[data-tag]').forEach((cb) => {
+      const checkbox = cb as HTMLInputElement;
+      checkbox.checked = false;
+    });
+    
+    updateTagsDropdownLabel();
     emitFilterChange();
   }
 
@@ -215,6 +284,33 @@ function formatCategoryName(category: string): string {
       cb.addEventListener('change', emitFilterChange);
     });
     
+    // Tags dropdown button
+    const tagsDropdownButton = document.getElementById('tags-dropdown-button');
+    tagsDropdownButton?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleTagsDropdown();
+    });
+    
+    // Tags checkboxes
+    document.querySelectorAll('input[data-tag]').forEach((cb) => {
+      cb.addEventListener('change', () => {
+        updateTagsDropdownLabel();
+        emitFilterChange();
+      });
+    });
+    
+    // Close tags dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      const menu = document.getElementById('tags-dropdown-menu');
+      const button = document.getElementById('tags-dropdown-button');
+      if (menu && button && !menu.classList.contains('hidden')) {
+        const target = e.target as HTMLElement;
+        if (!menu.contains(target) && !button.contains(target)) {
+          menu.classList.add('hidden');
+        }
+      }
+    });
+    
     // Clear button
     const clearBtn = document.getElementById('clear-filters');
     clearBtn?.addEventListener('click', clearAllFilters);
@@ -222,6 +318,7 @@ function formatCategoryName(category: string): string {
     // Initial state
     updateClearButtonVisibility();
     updateCloudProviderVisibility();
+    updateTagsDropdownLabel();
   }
 
   // Listen for filters-reset event from outside (e.g., reset button in page)
