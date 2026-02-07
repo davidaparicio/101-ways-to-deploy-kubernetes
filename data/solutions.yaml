@@ -455,6 +455,7 @@ solutions:
   - automation
   - infrastructure-as-code
   stars: 11400
+  production_ready: true
 - name: Cybozu Kubernetes Engine (CKE)
   category: InfraAsCode
   url: https://github.com/cybozu-go/cke
@@ -530,6 +531,7 @@ solutions:
   - automation
   - infrastructure-as-code
   stars: 4100
+  production_ready: true
 - name: Kubespray
   category: InfraAsCode
   url: https://github.com/kubernetes-sigs/kubespray
@@ -622,6 +624,7 @@ solutions:
   - automation
   - infrastructure-as-code
   stars: 24700
+  production_ready: true
 - name: Puppet
   category: InfraAsCode
   url: https://forge.puppet.com/modules/puppetlabs/kubernetes/readme
@@ -923,7 +926,6 @@ solutions:
   tags:
   - cloud
   - managed
-  production_ready: true
 - name: CoreWeave Kubernetes Service (CKS)
   category: Managed
   url: https://www.coreweave.com/products/coreweave-kubernetes-service
@@ -1609,6 +1611,7 @@ solutions:
   tags:
   - learning
   - educational
+  stars: 47300
 - name: The hard way w/ Terraform (GCP)
   category: Other
   url: https://github.com/aidanSoles/kubernetes-the-hard-way-terraform
@@ -1974,6 +1977,8 @@ solutions:
   - on-premise
   - self-hosted
   - beginner-friendly
+  production_ready: true
+  stars: 2800
 - name: KubeMarine
   category: Selfhosted
   url: https://github.com/Netcracker/KubeMarine
@@ -2218,7 +2223,7 @@ solutions:
   - openshift
 - name: tarook
   category: Selfhosted
-  url: https://github.com/alasca-association/tarook
+  url: https://gitlab.com/alasca.cloud/tarook/tarook
   icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/tarook.svg
   description: Kubernetes deployment tool for on-premises and cloud infrastructure
   license: Apache 2.0
@@ -2228,17 +2233,3 @@ solutions:
   tags:
   - on-premise
   - self-hosted
-- name: Welkin
-  category: Selfhosted
-  url: https://github.com/elastisys/welkin
-  icon_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/welkin.svg
-  publisher: Elastisys
-  description: Lightweight Kubernetes distribution for edge computing and IoT
-  license: Apache 2.0
-  open_source: true
-  based_on:
-  - Cluster API
-  tags:
-  - on-premise
-  - self-hosted
-  - lightweight
