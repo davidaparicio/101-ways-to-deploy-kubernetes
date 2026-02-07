@@ -454,6 +454,7 @@ solutions:
   tags:
   - automation
   - infrastructure-as-code
+  stars: 11400
 - name: Cybozu Kubernetes Engine (CKE)
   category: InfraAsCode
   url: https://github.com/cybozu-go/cke
@@ -490,6 +491,7 @@ solutions:
   tags:
   - automation
   - infrastructure-as-code
+  stars: 3700
 - name: Kubeasz (Chinese documentation only)
   category: InfraAsCode
   url: https://github.com/easzlab/kubeasz
@@ -527,6 +529,7 @@ solutions:
   tags:
   - automation
   - infrastructure-as-code
+  stars: 4100
 - name: Kubespray
   category: InfraAsCode
   url: https://github.com/kubernetes-sigs/kubespray
@@ -562,6 +565,7 @@ solutions:
   tags:
   - automation
   - infrastructure-as-code
+  stars: 18200
   production_ready: true
 - name: OpenTofu
   category: InfraAsCode
@@ -588,6 +592,8 @@ solutions:
   tags:
   - automation
   - infrastructure-as-code
+  production_ready: true
+  stars: 27800
 - name: Pulumi
   category: InfraAsCode
   url: https://github.com/pulumi/pulumi
@@ -615,6 +621,7 @@ solutions:
   tags:
   - automation
   - infrastructure-as-code
+  stars: 24700
 - name: Puppet
   category: InfraAsCode
   url: https://forge.puppet.com/modules/puppetlabs/kubernetes/readme
@@ -658,6 +665,8 @@ solutions:
   - automation
   - infrastructure-as-code
   - lightweight
+  production_ready: true
+  stars: 2000
 - name: k3k
   category: KubernetesInKubernetes
   url: https://github.com/rancher/k3k
@@ -716,6 +725,8 @@ solutions:
   tags:
   - multi-tenancy
   - virtualization
+  stars: 10900
+  production_ready: true
 - name: elemental (ex k3os)
   category: KubernetesOS
   url: https://github.com/rancher/elemental
@@ -743,7 +754,6 @@ solutions:
   - immutable
   - production
   - declarative
-  production_ready: true
 - name: Kairos Linux
   category: KubernetesOS
   url: https://github.com/kairos-io/kairos
@@ -783,6 +793,7 @@ solutions:
   - immutable
   - production
   - edge
+  stars: 1600
   production_ready: true
 - name: RKE
   category: KubernetesOS
@@ -807,6 +818,7 @@ solutions:
   tags:
   - immutable
   - production
+  stars: 3300
 - name: Talos Linux
   category: KubernetesOS
   url: https://github.com/siderolabs/talos
@@ -847,6 +859,7 @@ solutions:
   - production
   - lightweight
   production_ready: true
+  stars: 9800
 - name: AKS
   category: Managed
   url: https://azure.microsoft.com/fr-fr/products/kubernetes-service
