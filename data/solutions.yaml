@@ -391,8 +391,9 @@ solutions:
   category: Desktop
   url: https://github.com/loft-sh/vind
   publisher: loft.sh
-  description: Run Kubernetes clusters as Docker containers
+  description: vCluster in Docker : run Kubernetes clusters as Docker containers
   license: Apache 2.0
+  icon_url: https://avatars.githubusercontent.com/u/65466868?s=200&v=4
   open_source: true
   based_on:
   - vcluster
