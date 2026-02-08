@@ -6,7 +6,9 @@ A comprehensive list of ways to deploy Kubernetes, organized by deployment type.
 >
 > Browse all deployment solutions in a beautiful, searchable interface!
 
+<a href="https://zwindler.github.io/101-ways-to-deploy-kubernetes" target="_blank">
 <img width="1346" height="1120" alt="Capture d’écran du 2026-02-08 15-04-21" src="https://github.com/user-attachments/assets/b44344ca-da11-4321-9a7b-8de1039b7bfd" />
+</a>
 
 This repository is based on the original work [@zwindler](https://github.com/zwindler) did in a [Google Sheet file](https://docs.google.com/spreadsheets/d/1zjOLU8MblsN8VPwUyHNDFbBQ7EihHM2joD2Q9Tv2DiI/edit?usp=sharing).
 
