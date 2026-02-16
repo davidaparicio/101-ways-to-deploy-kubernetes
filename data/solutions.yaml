@@ -1593,6 +1593,34 @@ solutions:
   - multi-cluster
   - enterprise
   production_ready: true
+- name: Xen Orchestra
+  category: ManagementPlatform
+  url: https://github.com/vatesfr/xen-orchestra
+  icon_url: https://docs.xen-orchestra.com/img/logo.png
+  publisher: Vates
+  description: Multi-cloud virtualization management platform with Kubernetes deployment
+    recipes based on MicroK8s
+  license: AGPL-3.0
+  open_source: true
+  based_on:
+  - microk8s
+  references:
+  - title: Deploy Kubernetes with recipes
+    language: en
+    url: https://docs.vates.tech/devops-tools/kubernetes/
+    type: documentation
+    description: Official documentation for deploying Kubernetes clusters using Xen
+      Orchestra recipes
+  - title: 'VirtOps#6: create a Kubernetes cluster in minutes'
+    language: en
+    url: https://xen-orchestra.com/blog/virtops-6-create-a-kubernetes-cluster-in-minutes/
+    type: article
+    description: Tutorial on using Xen Orchestra to deploy Kubernetes clusters
+  tags:
+  - multi-cluster
+  - gui
+  - virtualization
+  production_ready: true
 - name: Using containers (manually)
   category: Other
   url: https://github.com/kubernetes/registry.k8s.io
