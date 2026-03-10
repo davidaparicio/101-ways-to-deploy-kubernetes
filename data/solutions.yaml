@@ -2300,6 +2300,19 @@ solutions:
   tags:
   - self-hosted
   - secure
+- name: talos-bootstrap
+  category: Selfhosted
+  url: https://github.com/cozystack/talos-bootstrap
+  icon_url: https://avatars.githubusercontent.com/u/202342215?s=200&v=4
+  publisher: Cozystack
+  description: Interactive script for bootstrapping Kubernetes clusters on Talos OS
+  license: Apache 2.0
+  open_source: true
+  based_on:
+  - Talos Linux
+  tags:
+  - self-hosted
+  - automation
 - name: TALM
   category: Selfhosted
   url: https://github.com/cozystack/talm
