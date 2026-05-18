@@ -2290,6 +2290,21 @@ solutions:
     tags:
       - self-hosted
       - automation
+  - name: taloprox
+    category: Selfhosted
+    url: https://github.com/jpetazzo/taloprox
+    icon_url: https://avatars.githubusercontent.com/u/171481?v=4
+    publisher: jpetazzo
+    description: Opinionated Terraform/OpenTofu module to provision Talos Kubernetes clusters on Proxmox
+    open_source: true
+    based_on:
+      - Talos Linux
+      - Proxmox
+    tags:
+      - self-hosted
+      - automation
+      - proxmox
+    stars: 17
   - name: talos-bootstrap
     category: Selfhosted
     url: https://github.com/cozystack/talos-bootstrap
