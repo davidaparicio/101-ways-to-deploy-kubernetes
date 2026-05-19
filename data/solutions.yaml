@@ -1815,6 +1815,17 @@ solutions:
       - self-hosted
       - lightweight
       - edge
+  - name: hetzner-k3s
+    category: Selfhosted
+    url: https://github.com/vitobotta/hetzner-k3s
+    icon_url: https://github.com/vitobotta/hetzner-k3s/raw/main/logo-v2.png
+    description: easy and fast way to create production-ready Kubernetes clusters on Hetzner Cloud
+    license: MIT
+    open_source: true
+    tags:
+      - self-hosted
+    based_on:
+      - k3s
   - name: k0s
     category: Selfhosted
     url: https://github.com/k0sproject/k0s
@@ -2300,7 +2311,6 @@ solutions:
     open_source: true
     based_on:
       - Talos Linux
-      - Proxmox
     tags:
       - self-hosted
       - automation
