@@ -1,0 +1,48 @@
+name: Update stars
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-stars:
+    name: Refresh GitHub stars count
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Update stars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -o pipefail
+          node scripts/update-stars.mjs | tee report.txt
+          {
+            echo 'Automated monthly refresh of the `stars` field.'
+            echo
+            echo '```'
+            cat report.txt
+            echo '```'
+          } > pr-body.md
+          rm report.txt
+
+      - name: Create or update pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: chore/update-stars
+          delete-branch: true
+          add-paths: data/solutions.yaml
+          commit-message: 'chore: update stars count'
+          title: 'chore: update stars count'
+          body-path: pr-body.md
