@@ -747,6 +747,21 @@ solutions:
       - lightweight
     stars: 11300
     production_ready: true
+  - name: Corium
+    category: KubernetesOS
+    url: https://github.com/Corium-OS/Corium
+    icon_url: https://avatars.githubusercontent.com/u/329587486?s=200&v=4
+    publisher: Corium-OS
+    description: Immutable Kubernetes node built as an OCI image, Fedora bootc with k0s baked into a read-only /usr and configured with cloud-init
+    license: MIT
+    open_source: true
+    based_on:
+      - k0s
+    tags:
+      - immutable
+      - bare-metal
+      - gitops
+    stars: 10
   - name: elemental (ex k3os)
     category: KubernetesOS
     url: https://github.com/rancher/elemental
@@ -2331,6 +2346,19 @@ solutions:
       - self-hosted
       - secure
     stars: 200
+  - name: Superphenix
+    category: Selfhosted
+    url: https://github.com/super-phenix/superphenix
+    icon_url: https://raw.githubusercontent.com/super-phenix/superphenix/main/assets/logo.svg
+    publisher: Rayshift
+    description: Open source platform to build your own cloud (IaaS, PaaS, SaaS) on your hardware, with Kubernetes as a Service for tenant clusters
+    license: Apache 2.0
+    open_source: true
+    tags:
+      - self-hosted
+      - multi-tenancy
+      - virtualization
+    stars: 78
   - name: talhelper
     category: Selfhosted
     url: https://github.com/budimanjojo/talhelper
